@@ -1,0 +1,59 @@
+@use "../global" as g;
+
+/*---------------------------------
+
+  footer フッターcss
+  
+---------------------------------*/
+.footer {
+  background: #000;
+  &-inner {
+    color: #fff;
+    padding: 100px 7%;
+  }
+  &-logo {
+    max-width: 300px;
+  }
+  &-nav__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+  &-nav {
+    &__title {
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    &__list {
+      margin-top: 40px;
+    }
+    &__item {
+      font-size: 0.9375rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      margin-top: 20px;
+    }
+  }
+  &-translate {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-right: 130px;
+    &-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin: 0 5px;
+      }
+    }
+  }
+  &-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-top: 80px;
+  }
+}

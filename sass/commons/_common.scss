@@ -1,0 +1,115 @@
+@use "../global" as g;
+
+/*---------------------------------
+
+  common 共通パーツcss
+  
+---------------------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.c-sec-title {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.c-head {
+  padding-top: 40px;
+  &-title__inner {
+    height: 150px;
+    background: #000;
+    color: #fff;
+  }
+  &-body {
+    margin: 0 7%;
+    padding-top: 70px;
+  }
+  &-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    &-text {
+      font-size: 0.8125rem;
+    }
+  }
+  &-category__inner {
+    font-size: 0.625rem;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-left: 7%;
+  }
+  &-img {
+    margin-top: 60px;
+    margin-left: 7%;
+  }
+}
+
+.c-modelHouse {
+  margin: 0 7%;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    width: 530px;
+    height: 290px;
+    color: #fff;
+    text-align: center;
+    &__title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-top: 20%;
+    }
+    &__btn {
+      position: relative;
+      margin-top: 80px;
+      padding: 15px 70px;
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 1px #fff;
+        border-right: solid 1px #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  &__reservationCard {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../images/shinjuku_section_2_01.png);
+    background-size: cover;
+    background-position: center;
+    &__btn {
+      background: #2847B4;
+    }
+  }
+  &__claimCard {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../images/shinjuku_section_2_01.png);
+    background-size: cover;
+    background-position: center;
+    &__btn {
+      background: #393939;
+    }
+  }
+}
+

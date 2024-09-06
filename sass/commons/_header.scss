@@ -1,0 +1,43 @@
+@use "../global" as g;
+
+/*---------------------------------
+
+  header ヘッダーcss
+  
+---------------------------------*/
+
+.header {
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px 0 40px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &-btn {
+    background: #000;
+    color: #fff;
+    font-size: 0.875rem;
+    font-family: "Shippori Mincho", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 50px;
+    margin-left: 10px;
+  }
+  &-translate {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: serif;
+    margin-left: 10px;
+    span {
+      margin: 0 5px;
+    }
+  }
+}

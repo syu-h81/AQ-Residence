@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  privacy-policy プライバシーポリシーcss
+
+---------------------------------*/
+.privacy-policy__inner {
+  line-height: 39px;
+}
+.privacy-policy__title {
+  margin-top: -160px;
+  background: #fff;
+  padding: 60px;
+  padding-left: 140px;
+  margin-right: 8%;
+  position: relative;
+}
+.privacy-policy__title__desc {
+  margin: 0 14%;
+}
+.privacy-policy__body__inner {
+  margin: 0 14%;
+}
+.privacy-policy__body {
+  margin-top: 60px;
+}
+.privacy-policy__body p {
+  font-size: 0.875rem;
+}
+.privacy-policy__body__item {
+  font-size: 0.875rem;
+}/*# sourceMappingURL=privacy-policy.css.map */

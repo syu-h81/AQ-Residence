@@ -1,0 +1,35 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  privacy-policy プライバシーポリシーcss
+  
+---------------------------------*/
+.privacy-policy {
+  &__inner {
+    line-height: 39px;
+  }
+  &__title {
+    margin-top: -160px;
+    background: #fff;
+    padding: 60px;
+    padding-left: 140px;
+    margin-right: 8%;
+    position: relative;
+    &__desc {
+      margin: 0 14%;
+    }
+  }
+  &__body__inner {
+    margin: 0 14%;
+  }
+  &__body {
+    margin-top: 60px;
+    p {
+      font-size: 0.875rem;
+    }
+    &__item {
+      font-size: 0.875rem;
+    }
+  }
+}

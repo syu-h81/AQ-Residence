@@ -443,13 +443,79 @@ img {
   margin-left: 7%;
 }
 
+.c-about {
+  background: #000;
+  margin-top: 120px;
+}
+.c-about__inner {
+  padding: 60px 0;
+  padding-bottom: 140px;
+}
+.c-about__title__inner {
+  margin: 0 10%;
+}
+.c-about__title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.c-about__title span {
+  font-size: 0.875rem;
+  font-weight: 200;
+  margin-left: 30px;
+}
+.c-about__content__inner {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.c-about__content {
+  width: 380px;
+  height: 120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.c-about__content__design {
+  background-image: url(../images/about_img_01.png);
+}
+.c-about__content__performance {
+  background-image: url(../images/about_img_02.png);
+}
+.c-about__content__artist {
+  background-image: url(../images/about_img_03.png);
+}
+.c-about__content__name {
+  color: #fff;
+  font-size: 1.25rem;
+  margin-right: 120px;
+}
+.c-about__content__name::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 40px;
+  bottom: 0;
+  margin: auto;
+}
+
 .c-modelHouse {
   margin: 0 7%;
 }
 .c-modelHouse__inner {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 100px;
+  margin: 100px 0;
 }
 .c-modelHouse__card {
   width: 530px;

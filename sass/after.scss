@@ -1,0 +1,157 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  after アフターサポートページcss
+  
+---------------------------------*/
+.after {
+  &-inner {
+    margin: 0 auto;
+    margin-top: 80px;
+    max-width: 960px;
+  }
+  &-body {
+    display: flex;
+    justify-content: space-between
+  }
+  &__title {
+    text-align: justify;
+    &__desc {
+      line-height: 39px;
+      margin-top: 40px;
+    }
+  }
+  &-concept__box {
+    border: 1px solid #000;
+    font-size: 1.75rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 140px;
+  }
+  &-guarantee__content {
+    margin-top: 100px;
+    text-align: center;
+    &__title {
+      width: 700px;
+      border-bottom: 1px solid #000;
+      font-size: 1.65rem;
+      font-weight: 500;
+      padding-bottom: 40px;
+      margin: 0 auto;
+    }
+    &__drawing__inner {
+      margin: 0 auto;
+      margin-top: 60px;
+      max-width: 700px;
+    }
+    &__drawing__year__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    &__year {
+      font-weight: 200;
+      position: relative;
+      &::after {
+        content: '';
+        display: block;
+        background-image: url(../images/after_polygon_icon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 10px;
+        margin: 0 auto;
+        margin-top: 10px;
+      }
+      &__color {
+        &::after {
+          background-image: url(../images/after_polygon_icon_02.png);
+        }
+      }
+      &__text {
+        color: #2847B4;
+        font-size: 1.5rem;
+        font-weight: 500;
+        &::after {
+          background-image: url();
+        }
+      }
+    }
+    &__guarantee__box__inner {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__guarantee__border__box {
+      width: 345px;
+      border: 1px solid #000;
+      font-size: 1.125rem;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__warrnty_border__box {
+      border: 0;
+      position: relative;
+      padding: 15px;
+      color: #fff;
+      background: #2847B4;
+      z-index: 0;
+      &::before,
+      &::after {
+        position: absolute;
+        right: -15px;
+        width: 50%;
+        height: 50%;
+        background: #2847B4;
+        content: '';
+        z-index: -1;
+      }
+      &::before {
+        top: 0;
+        transform: skew(45deg);
+      }
+      &::after {
+        top: 50%;
+        transform: skew(-45deg);
+      }
+      &__text {
+        &::before {
+          background-image: url(../images/after_polygon_icon_02.png)!important;
+        }
+      }
+    }
+    &__guarantee__box__text {
+      margin-top: 20px;
+      text-align: justify;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: '';
+        display: inline-block;
+        background-image: url(../images/after_polygon_icon.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 14px;
+        margin-right: 5px;
+      }
+    }
+    &__text__inner {
+      margin: 0 auto;
+      margin-top: 60px;
+      max-width: 700px;
+      line-height: 39px;
+    }
+    &__text__supplyment {
+      margin-top: 30px;
+      font-size: 0.8125rem;
+      text-align: justify;
+    }
+  }
+}

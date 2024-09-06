@@ -67,12 +67,78 @@ img {
   }
 }
 
+.c-about {
+  background: #000;
+  margin-top: 120px;
+  &__inner {
+    padding: 60px 0;
+    padding-bottom: 140px;
+  }
+  &__title__inner {
+    margin: 0 10%;
+  }
+  &__title {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    span {
+      font-size: 0.875rem;
+      font-weight: 200;
+      margin-left: 30px;
+    }
+  }
+  &__content__inner {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+  }
+  &__content {
+    width: 380px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &__design {
+      background-image: url(../images/about_img_01.png);
+    }
+    &__performance {
+      background-image: url(../images/about_img_02.png);
+    }
+    &__artist {
+      background-image: url(../images/about_img_03.png);
+    }
+    &__name {
+      color: #fff;
+      font-size: 1.25rem;
+      margin-right: 120px;
+      &::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        border: 0;
+        border-top: solid 1px #fff;
+        border-right: solid 1px #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: 40px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
 .c-modelHouse {
   margin: 0 7%;
   &__inner {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 100px;
+    margin: 100px 0;
   }
   &__card {
     width: 530px;

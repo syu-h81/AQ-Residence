@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  modelhouses モデルハウス一覧ページcss
+
+---------------------------------*/
+.modelhouses-main {
+  padding-top: 100px;
+}
+.modelhouses-odd-section {
+  background: #000;
+}
+.modelhouses-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 60px;
+}
+.modelhouses-odd-inner {
+  padding-left: 0;
+  padding-right: 100px;
+  color: #fff;
+}
+.modelhouses-even-inner {
+  padding-right: 0;
+  align-items: flex-end;
+}
+.modelhouses__img__inner {
+  position: relative;
+  width: 63%;
+}
+.modelhouses__img__inner::after {
+  content: "";
+  position: absolute;
+  color: #D3D3D3;
+  font-size: 14.5625rem;
+  font-family: "Shippori Mincho", serif;
+  writing-mode: vertical-rl;
+  opacity: 0.7;
+}
+.modelhouses-komazawa__img__inner::after {
+  content: "駒沢";
+  position: absolute;
+  top: -150px;
+  right: -110px;
+}
+.modelhouses-shinjuku__img__inner::after {
+  content: "新宿";
+  position: absolute;
+  top: -200px;
+  left: -110px;
+}
+.modelhouses-seta__img__inner::after {
+  content: "瀬田";
+  position: absolute;
+  top: -150px;
+  right: -110px;
+}
+.modelhouses-magome__img__inner::after {
+  content: "馬込";
+  position: absolute;
+  top: -200px;
+  left: -110px;
+}
+.modelhouses-komazawa__body, .modelhouses-seta__body {
+  margin-top: 60px;
+}
+.modelhouses__body__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.modelhouses-shinjuku__body__title, .modelhouses-magome__body__title {
+  margin-top: 30px;
+  line-height: 44px;
+}
+.modelhouses-seta__body__title {
+  line-height: 49px;
+}
+.modelhouses__body__text__inner {
+  margin-top: 30px;
+}
+.modelhouses__body__text {
+  font-size: 0.875rem;
+  line-height: 39px;
+}
+.modelhouses__body__btn {
+  display: block;
+  border: 1px solid;
+  width: 217px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 60px;
+}
+.modelhouses-komazawa__body__btn, .modelhouses-seta__body__btn {
+  background: #fff;
+  color: #000;
+}
+.modelhouses-komazawa__body__img__inner, .modelhouses-seta__body__img__inner {
+  margin-top: 60px;
+}/*# sourceMappingURL=modelhouses.css.map */

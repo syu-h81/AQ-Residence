@@ -403,6 +403,15 @@ img {
   text-align: center;
 }
 
+.c-heading {
+  margin-top: -220px !important;
+  background: #fff;
+  padding: 60px !important;
+  padding-left: 140px !important;
+  margin-right: 8%;
+  position: relative;
+}
+
 .c-head {
   padding-top: 40px;
 }
@@ -438,7 +447,8 @@ img {
 }
 .c-modelHouse__inner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
 .c-modelHouse__card {
   width: 530px;
@@ -479,7 +489,7 @@ img {
   background: #2847B4;
 }
 .c-modelHouse__claimCard {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/shinjuku_section_2_01.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/Group143.png);
   background-size: cover;
   background-position: center;
 }

@@ -7,19 +7,26 @@
 .privacy-policy__inner {
   line-height: 39px;
 }
+.privacy-policy__title__inner {
+  margin-top: 60px;
+}
 .privacy-policy__title {
-  margin-top: -160px;
-  background: #fff;
   padding: 60px;
-  padding-left: 140px;
-  margin-right: 8%;
-  position: relative;
 }
 .privacy-policy__title__desc {
   margin: 0 14%;
 }
 .privacy-policy__body__inner {
   margin: 0 14%;
+}
+.privacy-policy__window__body {
+  margin: 0 14%;
+}
+.privacy-policy__window__body__date {
+  text-align: right;
+}
+.privacy-policy__window__body__company__name {
+  text-align: right;
 }
 .privacy-policy__body {
   margin-top: 60px;

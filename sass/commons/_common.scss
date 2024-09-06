@@ -27,6 +27,15 @@ img {
   text-align: center;
 }
 
+.c-heading {
+  margin-top: -220px!important;
+  background: #fff;
+  padding: 60px!important;
+  padding-left: 140px!important;
+  margin-right: 8%;
+  position: relative;
+}
+
 .c-head {
   padding-top: 40px;
   &-title__inner {
@@ -61,7 +70,8 @@ img {
   margin: 0 7%;
   &__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 100px;
   }
   &__card {
     width: 530px;
@@ -104,7 +114,7 @@ img {
   }
   &__claimCard {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url(../images/shinjuku_section_2_01.png);
+        url(../images/Group143.png);
     background-size: cover;
     background-position: center;
     &__btn {

@@ -16,6 +16,14 @@
 .privacy-policy__title__desc {
   margin: 0 14%;
 }
+.privacy-policy__title__top {
+  margin-top: -220px;
+  background: #fff;
+  padding: 60px;
+  padding-left: 140px;
+  margin-right: 8%;
+  position: relative;
+}
 .privacy-policy__body__inner {
   margin: 0 14%;
 }

@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  company 企業情報css
+
+---------------------------------*/
+.company-info__title__inner {
+  margin: -120px 10% 0 0;
+  padding: 60px;
+  background: #fff;
+  padding-left: 12%;
+  position: relative;
+}
+.company-info__title {
+  text-align: justify;
+}
+.company-info__content {
+  padding: 0 12%;
+}
+.company-info__content__item {
+  border-bottom: 1px solid #000;
+  display: flex;
+  font-size: 0.875rem;
+  line-height: 39px;
+  padding: 20px 0;
+  position: relative;
+}
+.company-info__content__item::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  border-bottom: 2px solid #000;
+  bottom: -2px;
+  width: 24%;
+}
+.company-info__content__item__label {
+  width: 280px;
+}
+.company-info__recruit {
+  border: 1px solid #000;
+  margin: 0 16%;
+  margin-top: 100px;
+}
+.company-info__recruit__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+.company-info__recruit__body__title {
+  font-size: 1.675rem;
+  font-weight: 500;
+}
+.company-info__recruit__body__text {
+  line-height: 28px;
+  margin-top: 40px;
+  width: 440px;
+}
+.company-info__recruit__body__number {
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin-top: 40px;
+  display: flex;
+  /*&::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    background-image: url(../images/phone_icon.png);
+  }*/
+}
+.company-info__recruit__body__number__img {
+  width: 13px;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.company-modelHouse {
+  background: #000;
+  margin-top: 100px;
+}
+.company-modelHouse__inner {
+  padding: 80px 0;
+  padding-bottom: 140px;
+}
+.company-modelHouse__heading__inner {
+  margin: 0 12%;
+}
+.company-modelHouse__heading {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 600;
+}
+.company-modelHouse__exhibition__inner {
+  color: #fff;
+  display: flex;
+  margin-top: 60px;
+}
+.company-modelHouse__exhibition {
+  width: 360px;
+  height: 360px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.company-modelHouse__exhibition__komazawa {
+  background-image: url(../images/company_gallery_img_01.png);
+}
+.company-modelHouse__exhibition__shinjuku {
+  background-image: url(../images/company_gallery_img_02.png);
+}
+.company-modelHouse__exhibition__seta {
+  background-image: url(../images/company_gallery_img_03.png);
+}
+.company-modelHouse__exhibition__magome {
+  background-image: url(../images/company_gallery_img_04.png);
+}
+.company-modelHouse__exhibition__name {
+  margin-right: 140px;
+}
+.company-modelHouse__exhibition__name::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 40px;
+  bottom: 0;
+  margin: auto;
+}
+.company-modelHouse__cards {
+  margin-top: 60px;
+}/*# sourceMappingURL=company.css.map */

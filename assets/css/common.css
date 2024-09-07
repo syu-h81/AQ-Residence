@@ -483,6 +483,9 @@ img {
 .c-about__content__design {
   background-image: url(../images/about_img_01.png);
 }
+.c-about__content__design2 {
+  background-image: url(../images/about_design_img.png);
+}
 .c-about__content__performance {
   background-image: url(../images/about_img_02.png);
 }

@@ -1,0 +1,93 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  design デザインページcss
+  
+---------------------------------*/
+.design-housing {
+  &__inner {
+    padding: 120px 0 120px 120px;
+    background: #000;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-left: auto;
+  }
+  &__body {
+    color: #fff;
+    &__title {
+      line-height: 66px;
+      text-align: justify;
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__img__inner {
+    margin-top: 100px;
+  }
+  &__sub__img__inner {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 120px;
+    margin-top: -220px;
+  }
+}
+.design-trend {
+  padding-top: 140px;
+  &__content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__img__inner {
+    display: grid;
+    gap: 5px;
+  }
+  &__body {
+    margin-left: 200px;
+    &__title {
+      line-height: 66px;
+      text-align: justify;
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 35px;
+      }
+    }
+    &__btn {
+      width: 217px;
+      height: 45px;
+      border: 1px solid #000;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      padding-left: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 1px #000;
+        border-right: solid 1px #000;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}

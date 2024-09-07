@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  design デザインページcss
+
+---------------------------------*/
+.design-housing__inner {
+  padding: 120px 0 120px 120px;
+  background: #000;
+}
+.design-housing__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+}
+.design-housing__body {
+  color: #fff;
+}
+.design-housing__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.design-housing__body__text {
+  line-height: 39px;
+}
+.design-housing__body__text__inner {
+  margin-top: 30px;
+}
+.design-housing__img__inner {
+  margin-top: 100px;
+}
+.design-housing__sub__img__inner {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 120px;
+  margin-top: -220px;
+}
+
+.design-trend {
+  padding-top: 140px;
+}
+.design-trend__content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.design-trend__img__inner {
+  display: grid;
+  gap: 5px;
+}
+.design-trend__body {
+  margin-left: 200px;
+}
+.design-trend__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.design-trend__body__text {
+  line-height: 39px;
+}
+.design-trend__body__text__inner {
+  margin-top: 35px;
+}
+.design-trend__body__btn {
+  width: 217px;
+  height: 45px;
+  border: 1px solid #000;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding-left: 30px;
+  position: relative;
+}
+.design-trend__body__btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}/*# sourceMappingURL=design.css.map */

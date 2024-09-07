@@ -1,0 +1,199 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  modelhouse-seta モデルハウス瀬田ページcss
+
+---------------------------------*/
+.mh-seta-main {
+  padding-top: 100px;
+}
+.mh-seta-inner {
+  display: flex;
+  align-items: end;
+  padding: 100px 0;
+}
+.mh-seta-odd-inner {
+  padding-left: 0;
+  padding-right: 100px;
+  color: #fff;
+}
+.mh-seta-even-inner {
+  padding-right: 0;
+  align-items: flex-end;
+}
+.mh-seta__img__inner {
+  position: relative;
+  width: 58%;
+}
+.mh-seta__img__inner::after {
+  content: "";
+  position: absolute;
+  color: #D3D3D3;
+  font-size: 14.5625rem;
+  font-family: "Shippori Mincho", serif;
+  writing-mode: vertical-rl;
+  opacity: 0.7;
+}
+.mh-seta__img__inner::after {
+  content: "瀬田";
+  position: absolute;
+  top: -150px;
+  right: -110px;
+}
+.mh-seta__body, .mh-seta-seta__body {
+  margin-left: 120px;
+  width: 25%;
+}
+.mh-seta__body__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.mh-seta-seta__body__title {
+  line-height: 49px;
+}
+.mh-seta__body__text__inner {
+  margin-top: 30px;
+}
+.mh-seta__body__text {
+  font-size: 0.875rem;
+  line-height: 39px;
+}
+
+.mh-c-sec {
+  padding-top: 120px;
+}
+.mh-c-sec__content__body__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.mh-c-sec__content__body__text {
+  font-size: 0.875rem;
+  line-height: 39px;
+}
+
+.mh-about__content__komazawa {
+  background-image: url(../images/mh_banner_komazawa.png);
+}
+
+.mh-about__content__shinjuku {
+  background-image: url(../images/mh_banner_shinjuku.png);
+}
+
+.mh-about__content__magome {
+  background-image: url(../images/mh_banner_magome.png);
+}
+
+.mh-c-sec2__content {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+.mh-c-sec2__content__body {
+  width: 40%;
+  margin-left: auto;
+  margin-right: 60px;
+}
+.mh-c-sec2__content__body__text__inner {
+  width: 50%;
+  margin-top: 50px;
+}
+.mh-c-sec2__content__body__img__inner {
+  display: flex;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.mh-c-sec3__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mh-c-sec3__content__img__inner__box:last-child {
+  display: flex;
+  justify-content: end;
+  margin-top: 40px;
+  margin-right: 140px;
+}
+.mh-c-sec3__content__img__inner__box:last-child img {
+  width: 200px;
+}
+.mh-c-sec3__content__body {
+  width: 30%;
+  margin-left: 100px;
+}
+.mh-c-sec3__content__body__text__inner {
+  width: 70%;
+  margin-top: 50px;
+}
+
+.mh-c-sec4__content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.mh-c-sec4__content__body {
+  width: 30%;
+}
+.mh-c-sec4__content__body__text__inner {
+  width: 75%;
+  margin-top: 50px;
+}
+.mh-c-sec4__img__inner {
+  margin-top: 60px;
+  width: 500px;
+}
+
+.mh-c-sec5 {
+  padding-top: 120px;
+}
+.mh-c-sec5__inner {
+  background: #F5F5F5;
+  padding: 80px;
+}
+.mh-c-sec5__content {
+  display: flex;
+  justify-content: space-around;
+}
+.mh-c-sec5__content__body {
+  margin-top: 50px;
+}
+.mh-c-sec5__content__body__title {
+  text-align: justify;
+}
+.mh-c-sec5__content__body__text__inner {
+  margin-top: 50px;
+}
+.mh-c-sec5__content__body__text__number {
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+.mh-c-sec5__content__map__btn {
+  width: 200px;
+  height: 35px;
+  color: #fff;
+  font-size: 0.6875rem;
+  letter-spacing: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #393939;
+  margin-top: 50px;
+  padding-right: 60px;
+  position: relative;
+}
+.mh-c-sec5__content__map__btn::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}/*# sourceMappingURL=modelhouse-seta.css.map */

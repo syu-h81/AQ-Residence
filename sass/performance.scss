@@ -1,0 +1,146 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  performance パフォーマンスページcss
+  
+---------------------------------*/
+.performance-heading {
+  padding-top: 120px;
+  &__body {
+    max-width: 1000px;
+    margin: 0 auto;
+    &__title {
+      line-height: 66px;
+      text-align: justify;
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 35px;
+      }
+    }
+  }
+  &__content__inner {
+    margin-top: 80px;
+    margin-right: 7%;
+    padding: 100px;
+    background: #F5F5F5;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    &:last-child {
+      margin-top: 40px;
+    }
+    &__img__inner {
+      width: 40%;
+    }
+    &__body {
+      width: 50%;
+      &__title {
+        font-size: 1.9375rem;
+        font-weight: 500;
+        &__inner {
+          margin-top: 30px;
+        }
+      }
+      &__text {
+        line-height: 26.4px;
+      }
+      &__text__inner {
+        margin-top: 35px;
+      }
+    }
+  }
+}
+
+.performance-drawing {
+  padding-top: 100px;
+  &__title {
+    text-align: justify;
+    &__inner {
+      margin-left: 12%;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    &__body {
+      &__text {
+        font-size: 1.25rem;
+        line-height: 49.5px;
+        &__inner {
+          margin-top: 45px;
+        }
+      }
+      &__supplyment__inner {
+        margin-top: 50px;
+      }
+      &__supplyment {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        span {
+          font-size: 0.875rem;
+          font-weight: 200;
+          margin-left: 10px;
+        }
+        &__box {
+          width: 40px;
+          height: 20px;
+          border: 1px solid #000;
+          &__1 {
+            background: #F5F5F5;
+          }
+          &__2 {
+            background: #C4C4C4;
+          }
+          &__3 {
+            background: #707070;
+          }
+        }
+      }
+    }
+    &__img__inner {
+      width: 50%;
+    }
+  }
+  &-pr {
+    &__inner {
+      margin-top: 120px;
+    }
+    &__content {
+      background: #000;
+      max-width: 830px;
+      margin: 0 auto;
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      &__body {
+        color: #fff;
+        &__title {
+          font-size: 1.25rem;
+          line-height: 39px;
+        }
+        &__text {
+          font-size: 0.8125rem;
+          font-weight: 200;
+          line-height: 28px;
+          &__inner {
+            margin-top: 40px;
+            width: 75%;
+          }
+        }
+      }
+      &__img__inner {
+        width: 100%;
+      }
+    }
+  }
+}

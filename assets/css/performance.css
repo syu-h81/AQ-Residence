@@ -1,0 +1,141 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  performance パフォーマンスページcss
+
+---------------------------------*/
+.performance-heading {
+  padding-top: 120px;
+}
+.performance-heading__body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.performance-heading__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.performance-heading__body__text {
+  line-height: 39px;
+}
+.performance-heading__body__text__inner {
+  margin-top: 35px;
+}
+.performance-heading__content__inner {
+  margin-top: 80px;
+  margin-right: 7%;
+  padding: 100px;
+  background: #F5F5F5;
+}
+.performance-heading__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.performance-heading__content:last-child {
+  margin-top: 40px;
+}
+.performance-heading__content__img__inner {
+  width: 40%;
+}
+.performance-heading__content__body {
+  width: 50%;
+}
+.performance-heading__content__body__title {
+  font-size: 1.9375rem;
+  font-weight: 500;
+}
+.performance-heading__content__body__title__inner {
+  margin-top: 30px;
+}
+.performance-heading__content__body__text {
+  line-height: 26.4px;
+}
+.performance-heading__content__body__text__inner {
+  margin-top: 35px;
+}
+
+.performance-drawing {
+  padding-top: 100px;
+}
+.performance-drawing__title {
+  text-align: justify;
+}
+.performance-drawing__title__inner {
+  margin-left: 12%;
+}
+.performance-drawing__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.performance-drawing__content__body__text {
+  font-size: 1.25rem;
+  line-height: 49.5px;
+}
+.performance-drawing__content__body__text__inner {
+  margin-top: 45px;
+}
+.performance-drawing__content__body__supplyment__inner {
+  margin-top: 50px;
+}
+.performance-drawing__content__body__supplyment {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.performance-drawing__content__body__supplyment span {
+  font-size: 0.875rem;
+  font-weight: 200;
+  margin-left: 10px;
+}
+.performance-drawing__content__body__supplyment__box {
+  width: 40px;
+  height: 20px;
+  border: 1px solid #000;
+}
+.performance-drawing__content__body__supplyment__box__1 {
+  background: #F5F5F5;
+}
+.performance-drawing__content__body__supplyment__box__2 {
+  background: #C4C4C4;
+}
+.performance-drawing__content__body__supplyment__box__3 {
+  background: #707070;
+}
+.performance-drawing__content__img__inner {
+  width: 50%;
+}
+.performance-drawing-pr__inner {
+  margin-top: 120px;
+}
+.performance-drawing-pr__content {
+  background: #000;
+  max-width: 830px;
+  margin: 0 auto;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.performance-drawing-pr__content__body {
+  color: #fff;
+}
+.performance-drawing-pr__content__body__title {
+  font-size: 1.25rem;
+  line-height: 39px;
+}
+.performance-drawing-pr__content__body__text {
+  font-size: 0.8125rem;
+  font-weight: 200;
+  line-height: 28px;
+}
+.performance-drawing-pr__content__body__text__inner {
+  margin-top: 40px;
+  width: 75%;
+}
+.performance-drawing-pr__content__img__inner {
+  width: 100%;
+}/*# sourceMappingURL=performance.css.map */

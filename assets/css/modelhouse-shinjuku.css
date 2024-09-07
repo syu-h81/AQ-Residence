@@ -40,24 +40,6 @@
   top: -150px;
   right: -110px;
 }
-.mh-shinjuku-shinjuku__img__inner::after {
-  content: "新宿";
-  position: absolute;
-  top: -200px;
-  left: -110px;
-}
-.mh-shinjuku-seta__img__inner::after {
-  content: "瀬田";
-  position: absolute;
-  top: -150px;
-  right: -110px;
-}
-.mh-shinjuku-magome__img__inner::after {
-  content: "馬込";
-  position: absolute;
-  top: -200px;
-  left: -110px;
-}
 .mh-shinjuku__body, .mh-shinjuku-seta__body {
   margin-left: 120px;
   width: 25%;

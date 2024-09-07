@@ -40,24 +40,6 @@
   top: -150px;
   right: -110px;
 }
-.mh-komazawa-shinjuku__img__inner::after {
-  content: "新宿";
-  position: absolute;
-  top: -200px;
-  left: -110px;
-}
-.mh-komazawa-seta__img__inner::after {
-  content: "瀬田";
-  position: absolute;
-  top: -150px;
-  right: -110px;
-}
-.mh-komazawa-magome__img__inner::after {
-  content: "馬込";
-  position: absolute;
-  top: -200px;
-  left: -110px;
-}
 .mh-komazawa__body, .mh-komazawa-seta__body {
   margin-left: 120px;
   width: 25%;

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  artist アーティストページcss
+
+---------------------------------*/
+.artist-heading {
+  padding: 120px 0;
+}
+.artist-heading__body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.artist-heading__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.artist-heading__body__text {
+  line-height: 39px;
+}
+.artist-heading__body__text__inner {
+  margin-top: 35px;
+}
+.artist-heading__content__inner {
+  margin-top: 80px;
+  margin-right: 7%;
+  padding: 100px;
+  background: #F5F5F5;
+}
+.artist-heading__content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.artist-heading__content:last-child {
+  margin-top: 40px;
+}
+.artist-heading__content__img__inner {
+  width: 40%;
+}
+.artist-heading__content__body {
+  width: 50%;
+}
+.artist-heading__content__body__title {
+  font-size: 1.9375rem;
+  font-weight: 500;
+}
+.artist-heading__content__body__title__inner {
+  margin-top: 30px;
+}
+.artist-heading__content__body__text {
+  line-height: 26.4px;
+}
+.artist-heading__content__body__text__inner {
+  margin-top: 35px;
+}
+
+.artist-designer__inner__border {
+  border-top: 1px solid #000;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.artist-designer__text {
+  line-height: 39px;
+  text-align: center;
+}
+.artist-designer__text__inner {
+  margin-top: 50px;
+}
+.artist-designer__content__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.artist-designer__content {
+  margin-top: 160px;
+  display: flex;
+}
+.artist-designer__content:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.artist-designer__content__body {
+  width: 50%;
+}
+.artist-designer__content__body__inner {
+  margin-left: 60px;
+  width: 82%;
+}
+.artist-designer__content__body__position {
+  font-weight: 300;
+}
+.artist-designer__content__body__title {
+  font-size: 1.4375rem;
+  margin-top: 20px;
+}
+.artist-designer__content__body__text {
+  font-size: 0.8125rem;
+  line-height: 26.4px;
+  margin-top: 30px;
+}
+.artist-designer__content__body__img__inner {
+  margin-right: -180px;
+  margin-top: 50px;
+  z-index: 10;
+  position: relative;
+}
+.artist-designer__content__body__img__inner__even {
+  width: 100%;
+  margin-right: 0;
+  margin-left: -180px;
+}
+.artist-designer__content__body__img__inner img {
+  width: 550px;
+}
+.artist-designer__content__bg {
+  position: relative;
+}
+.artist-designer__content__bg__img__inner img {
+  width: 240px;
+  position: absolute;
+  top: -80px;
+  left: 60px;
+  z-index: 10;
+}
+.artist-designer__content__bg__img__inner__even img {
+  top: -40px;
+  right: 50px;
+  left: auto;
+}
+.artist-designer__content__black__bg {
+  background: #000;
+  width: 500px;
+  height: 500px;
+}
+
+.artist-architect {
+  padding-top: 120px;
+}
+.artist-architect__inner__border {
+  border-top: 1px solid #000;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+.artist-architect__text {
+  line-height: 39px;
+  text-align: center;
+}
+.artist-architect__text__inner {
+  margin-top: 50px;
+}
+.artist-architect__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 120px;
+}
+.artist-architect__content:nth-of-type(even) {
+  flex-direction: row-reverse;
+  margin-top: 240px;
+  margin-bottom: 300px;
+}
+.artist-architect__content__icon__img__inner {
+  width: 240px;
+  margin-bottom: 80px;
+  position: relative;
+}
+.artist-architect__content__icon__img__inner img {
+  position: absolute;
+  bottom: -60px;
+  right: -100px;
+  z-index: 10;
+}
+.artist-architect__content__icon__img__inner__even img {
+  right: auto;
+  left: -100px;
+}
+.artist-architect__content__icon__body__img__inner {
+  width: 100%;
+  position: relative;
+}
+.artist-architect__content__icon__body__img__inner img {
+  width: 700px;
+  z-index: 10;
+  position: absolute;
+  top: 100px;
+  left: -100px;
+}
+.artist-architect__content__icon__body__img__inner__even img {
+  right: -100px;
+  top: 100px;
+  left: auto;
+}
+.artist-architect__content__body {
+  background: #000;
+  width: 900px;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.artist-architect__content__body__inner {
+  color: #fff;
+  margin-bottom: 220px;
+  width: 58%;
+}
+.artist-architect__content__body__position {
+  font-weight: 300;
+}
+.artist-architect__content__body__title {
+  font-size: 1.4375rem;
+  margin-top: 20px;
+}
+.artist-architect__content__body__text {
+  font-size: 0.8125rem;
+  line-height: 26.4px;
+  margin-top: 30px;
+}
+
+.artist-about-content__after {
+  background-image: url(../images/about_after_img_02.png);
+}/*# sourceMappingURL=artist.css.map */

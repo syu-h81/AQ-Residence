@@ -529,16 +529,33 @@ img {
   justify-content: space-around;
   margin: 100px 0;
 }
+@media screen and (max-width: 835px) {
+  .c-modelHouse__inner {
+    display: block;
+  }
+}
 .c-modelHouse__card {
   width: 530px;
   height: 290px;
   color: #fff;
   text-align: center;
 }
+@media screen and (max-width: 835px) {
+  .c-modelHouse__card {
+    width: 100%;
+    height: 230px;
+  }
+}
 .c-modelHouse__card__title {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 20%;
+}
+@media screen and (max-width: 835px) {
+  .c-modelHouse__card__title {
+    padding-top: 60px;
+    margin-top: 10%;
+  }
 }
 .c-modelHouse__card__btn {
   width: 300px;
@@ -898,17 +915,48 @@ input[type=radio] {
 .footer {
   background: #000;
 }
+@media screen and (max-width: 835px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+}
 .footer-inner {
   color: #fff;
   padding: 100px 7%;
 }
+@media screen and (max-width: 835px) {
+  .footer-inner {
+    padding: 60px 14%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .footer-logo {
   max-width: 300px;
+}
+@media screen and (max-width: 835px) {
+  .footer-logo {
+    padding-top: 120px;
+  }
 }
 .footer-nav__body {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+}
+@media screen and (max-width: 835px) {
+  .footer-nav__body {
+    display: block;
+  }
+}
+@media screen and (max-width: 835px) {
+  .footer-nav {
+    margin-top: 60px;
+  }
+  .footer-nav:first-child {
+    margin-top: 0;
+  }
 }
 .footer-nav__title {
   font-weight: 500;
@@ -916,6 +964,11 @@ input[type=radio] {
 }
 .footer-nav__list {
   margin-top: 40px;
+}
+@media screen and (max-width: 835px) {
+  .footer-nav__list {
+    margin-top: 0;
+  }
 }
 .footer-nav__item {
   font-size: 0.9375rem;
@@ -926,6 +979,11 @@ input[type=radio] {
 .footer-nav__btn {
   margin-top: 30px;
 }
+@media screen and (max-width: 835px) {
+  .footer-nav__btn {
+    margin-top: 20px;
+  }
+}
 .footer-nav__btn:first-child {
   margin-top: 0;
 }
@@ -934,6 +992,11 @@ input[type=radio] {
   justify-content: flex-end;
   margin-top: 60px;
   margin-right: 130px;
+}
+@media screen and (max-width: 835px) {
+  .footer-translate {
+    display: none;
+  }
 }
 .footer-translate-inner {
   display: flex;
@@ -950,4 +1013,10 @@ input[type=radio] {
   font-weight: 200;
   letter-spacing: 2px;
   margin-top: 80px;
+}
+@media screen and (max-width: 835px) {
+  .footer-copyright {
+    color: #fff;
+    margin-top: 40px;
+  }
 }/*# sourceMappingURL=common.css.map */

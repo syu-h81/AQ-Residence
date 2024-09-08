@@ -7,25 +7,49 @@
 ---------------------------------*/
 .footer {
   background: #000;
+  @include g.mq(md) {
+    padding-bottom: 100px;
+  }
   &-inner {
     color: #fff;
     padding: 100px 7%;
+    @include g.mq(md) {
+      padding: 60px 14%;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    } 
   }
   &-logo {
     max-width: 300px;
+    @include g.mq(md) {
+      padding-top: 120px;
+    }
   }
   &-nav__body {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    @include g.mq(md) {
+      display: block;
+    }
   }
   &-nav {
+    @include g.mq(md) {
+      margin-top: 60px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
     &__title {
       font-weight: 500;
       letter-spacing: 2px;
     }
     &__list {
       margin-top: 40px;
+      @include g.mq(md) {
+        margin-top: 0;
+      }
     }
     &__item {
       font-size: 0.9375rem;
@@ -35,12 +59,18 @@
     }
     &__btn {
       margin-top: 30px;
+      @include g.mq(md) {
+        margin-top: 20px;
+      }
       &:first-child {
         margin-top: 0;
       }
     }
   }
   &-translate {
+    @include g.mq(md) {
+      display: none;
+    }
     display: flex;
     justify-content: flex-end;
     margin-top: 60px;
@@ -61,5 +91,9 @@
     font-weight: 200;
     letter-spacing: 2px;
     margin-top: 80px;
+    @include g.mq(md) {
+      color: #fff;
+      margin-top: 40px;
+    }
   }
 }

@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  contact 資料請求ページcss
+
+---------------------------------*/
+input[type=date],
+input[type=text],
+input[type=number] {
+  width: 670px;
+  height: 46px;
+  border: 1px solid #040000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+}
+
+input[type=radio] {
+  width: 20px;
+  height: 20px;
+}
+
+.contact__title__inner {
+  margin: -120px 10% 0 0;
+  padding: 120px 0 0px 16%;
+  background: #fff;
+  position: relative;
+}
+.contact__title {
+  text-align: justify;
+}
+.contact__text__inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+  line-height: 39px;
+}
+.contact__text {
+  font-size: 0.875rem;
+  width: 80%;
+}
+.contact__text__en {
+  font-size: 0.8125rem;
+  margin-top: 40px;
+}
+
+.mh-reservation-banner {
+  padding-top: 200px;
+  padding-bottom: 80px;
+}
+.mh-reservation-banner__inner {
+  width: 1100px;
+  height: 290px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/reservation_banner_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.mh-reservation-banner__content {
+  color: #fff;
+  position: relative;
+  z-index: 10;
+}
+.mh-reservation-banner__content__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 4px;
+}
+.mh-reservation-banner__content__btn {
+  width: 300px;
+  height: 45px;
+  background: #2847B4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+}
+.mh-reservation-banner__content__btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}/*# sourceMappingURL=contact.css.map */

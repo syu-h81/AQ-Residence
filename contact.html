@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONTACT</title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+  <!-- Import JS/slick Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!---- header ---->
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <img src="assets/images/header_logo.png" alt="">
+        </div>
+        <div class="header-content">
+          <div class="header-btn header-reservation-btn">来場予約</div>
+          <div class="header-btn header-claim-btn">資料請求</div>
+          <div class="header-btn header-menu-btn">MENU</div>
+          <div class="header-translate">
+            <div class="header-translate__jpn">JP</div>
+            <span>/</span>
+            <div class="header-translate__en">EN</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="contact-head c-head">
+      <div class="contact-head-inner c-head-inner">
+        <div class="contact-head-title__inner c-head-title__inner">
+          <div class="contact-head-body c-head-body">
+            <p class="contact-head-title-text c-head-title-text">資料請求</p>
+            <h1 class="contact-head-title c-head-title">CONTACT</h1>
+          </div>
+        </div>
+        <div class="contact-head-category__inner c-head-category__inner">
+          <span>HOME</span>
+          <span>〉</span>
+          <span>資料請求</span>
+        </div>
+        <div class="contact-head-img c-head-img">
+          <img src="assets/images/contact_head.png" alt="">
+        </div>
+      </div>
+    </div>
+    <main class="main contact-main">
+      <section class="contact">
+        <div class="contact__inner">
+          <div class="contact__title__inner">
+            <h2 class="contact__title c-sec-title">資料請求</h2>
+            <p class="contact__title__kana">CONTACT</p>
+          </div>
+          <div class="contact__text__inner">
+            <p class="contact__text">
+              この度はお問い合わせ、誠にありがとうございます。<br>
+              AQレジデンスに関する資料を無料でご送付させていただきますので、
+              お手数ですが下記フォームにご入力いただきますようお願いします。
+            </p>
+            <p class="contact__text__en">
+              Thank you very much for your inquiry. <br>
+              Please fill out the form below so that we can send you information about AQ Residence free of charge.
+            </p>
+          </div>
+  
+          <div class="c-form__inner">
+            <form action="">
+              <!-- お客様情報 -->
+              <div class="c-form__customer__info__inner c-form__content">
+                <div class="c-form__desc__inner">
+                  <div class="c-form__desc">お客様情報</div>
+                  <span class="c-form__desc__en">Customer Information</span>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">名前</label>
+                    <span class="require">※必須</span>
+                    <div class="c-form__label__inner__en">
+                      <div>Name</div>
+                      <span>※absolute</span>
+                    </div>
+                  </div>
+                  <div class="c-form__customer__input__inner">
+                    <input type="text" name="name" value="">
+                  </div>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">よみがな（ひらがな）</label>
+                    <span class="require">※必須</span>
+                  </div>
+                  <div class="c-form__customer__input__inner">
+                    <input type="text" name="yomigana" value="">
+                  </div>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">電話番号（ハイフンなし）</label>
+                    <span class="require">※必須</span>
+                    <div class="c-form__label__inner__en">
+                      <div>Phone number (without hyphen)</div>
+                      <span>※absolute</span>
+                    </div>
+                  </div>
+                  <div class="c-form__customer__input__inner">
+                    <input type="number" name="phone" value="">
+                  </div>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">メールアドレス</label>
+                    <span class="require">※必須</span>
+                    <div class="c-form__label__inner__en">
+                      <div>Email Address</div>
+                      <span>※absolute</span>
+                    </div>
+                  </div>
+                  <div class="c-form__customer__input__inner">
+                    <input type="text" name="email" value="">
+                  </div>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">郵便番号</label>
+                    <span class="require">※必須</span>
+                    <div class="c-form__label__inner__en">
+                      <div>Postal Code</div>
+                      <span>※absolute</span>
+                    </div>
+                  </div>
+                  <div class="c-form__customer__input__inner c-form__customer__post__input__inner">
+                    <input type="text" name="post" class="c-form__customer__post__input" value="">
+                    <input type="text" name="post" class="c-form__customer__post__input" placeholder="住所自動入力">
+                  </div>
+                </div>
+                <div class="c-form__customer__name__inner c-form__customer__content__inner">
+                  <div class="c-form__customer__label__inner c-form__label__inner">
+                    <label for="">住所</label>
+                    <span class="require">※必須</span>
+                    <div class="c-form__label__inner__en">
+                      <div>address (e.g. of house)</div>
+                      <span>※absolute</span>
+                    </div>
+                  </div>
+                  <div class="c-form__customer__input__inner">
+                    <input type="text" name="address" value="">
+                  </div>
+                </div>
+              </div>
+              <!-- 建築予定・希望地 -->
+              <div class="c-form__architecture__hope__inner c-form__content">
+                <div class="c-form__architecture__hope__label__inner c-form__label__inner">
+                  <label for="">建築予定・希望地（都道府県）はどちらですか</label>
+                  <span class="require">必須</span>
+                  <div class="c-form__label__inner__en">
+                    <div>Where do you plan to build or where do you want to build (prefecture)?</div>
+                    <span>※absolute</span>
+                  </div>
+                </div>
+                <div class="c-form__architecture__hope__radio__inner">
+                  <div class="c-form__architecture__hope__radio">
+                    <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
+                      <input type="radio" name="place">
+                      <span class="radio-name">東京 - Tokyo</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__hope__radio">
+                    <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
+                      <input type="radio" name="place">
+                      <span class="radio-name">神奈川 -Kanawaga</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__hope__radio">
+                    <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
+                      <input type="radio" name="place">
+                      <span class="radio-name">千葉 - Chiba</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__hope__radio">
+                    <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
+                      <input type="radio" name="place">
+                      <span class="radio-name">埼玉 - Saitama</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__hope__radio">
+                    <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
+                      <input type="radio" name="place">
+                      <span class="radio-name">未定 - Undecided</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 建築予定時期 -->
+              <div class="c-form__architecture__season__inner c-form__content">
+                <div class="c-form__architecture__season__label__inner c-form__label__inner">
+                  <label for="">来場希望のモデルハウス（展示場）</label>
+                  <span class="require">必須</span>
+                  <div class="c-form__label__inner__en">
+                    <div>Model house (exhibition hall) you wish to visit</div>
+                    <span>※absolute</span>
+                  </div>
+                  <div class="c-form__architecture__season__call__text">
+                    現在想定されている建築予定時期をお教えください。<br>
+                    <span class="c-form__architecture__season__call__text__en">What is your current anticipated construction schedule?</span>
+                  </div>
+                </div>
+                <div class="c-form__architecture__season__radio__inner">
+                  <div class="c-form__architecture__season__radio">
+                    <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">今すぐ - Right Now</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__season__radio c-form__architecture__season__radio__2">
+                    <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">半年以内 - Within Six Months</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__season__radio">
+                    <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">１年以内 - Within 1 year</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__season__radio">
+                    <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">２年以内 - Within 2 year</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__season__radio c-form__architecture__season__radio__5">
+                    <div class="c-form__architecture__season__radio__flex  c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">２年以上先 - More than 2 years ahead</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__season__radio">
+                    <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
+                      <input type="radio" name="season">
+                      <span class="radio-name">未定 - Undecided</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 建築予算 -->
+              <div class="c-form__architecture__budget__inner c-form__content">
+                <div class="c-form__architecture__budget__label__inner c-form__label__inner">
+                  <label for="">建物ご予算について教えてください。</label>
+                  <span class="require">必須</span>
+                  <div class="c-form__label__inner__en">
+                    <div>What is your post-building budget?</div>
+                    <span>※absolute</span>
+                  </div>
+                </div>
+                <div class="c-form__architecture__budget__radio__inner">
+                  <div class="c-form__architecture__budget__radio">
+                    <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
+                      <input type="radio" name="budget">
+                      <span class="radio-name">4,000～5,000万</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__budget__radio">
+                    <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
+                      <input type="radio" name="budget">
+                      <span class="radio-name">5,000～6,000万</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__budget__radio">
+                    <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
+                      <input type="radio" name="budget">
+                      <span class="radio-name">6,000～7,000万</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__budget__radio">
+                    <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
+                      <input type="radio" name="budget">
+                      <span class="radio-name">7,000～8,000万</span>
+                    </div>
+                  </div>
+                  <div class="c-form__architecture__budget__radio">
+                    <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
+                      <input type="radio" name="budget">
+                      <span class="radio-name">8,000万以上</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- アンケート -->
+              <div class="c-form__trigger__inner c-form__content">
+                <div class="c-form__trigger__label__inner c-form__label__inner">
+                  <label for="">当社をどちらでお知りになりましたか？（複数選択可）</label>
+                  <div class="c-form__label__inner__en">
+                    <div>How did you hear about us? (Multiple selections allowed)</div>
+                  </div>
+                </div>
+                <div class="c-form__trigger__checkbox__inner">
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__radio__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">折込チラシ - leaflet</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">テレビ - TV</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">新聞 - Newspaper</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">雑誌・書籍 - Magazines & Books</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">ホームページ - HP</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">友人・知人 - Friends and acquaintances</span>
+                    </div>
+                  </div>
+                  <div class="c-form__trigger__checkbox">
+                    <div class="c-form__trigger__checkbox__flex c-form__checkbox__flex">
+                      <input type="checkbox" name="trigger">
+                      <span class="checkbox-name">その他 - Other</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 質問・ご連絡事項 -->
+              <div class="c-form__question__inner c-form__content">
+                <div class="c-form__question__label__inner c-form__label__inner">
+                  <label for="">質問・ご連絡事項</label>
+                  <div class="c-form__label__inner__en">
+                    <div>Questions or c Information</div>
+                  </div>
+                </div>
+                <div class="c-form__question__textarea__inner">
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="c-form__submit__inner">
+                <input type="submit" name="submit" value="入力内容を確認する">
+                <span class="c-form__submit__inner__text__en">Confirmation</span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="mh-reservation-banner">
+      <div class="mh-reservation-banner__inner">
+        <div class="mh-reservation-banner__content">
+          <div class="mh-reservation-banner__content__title">モデルハウス来場予約</div>
+          <div>
+            <a class="mh-reservation-banner__content__btn" href="">来場予約はこちら</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- footer ---->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/images/footer_logo.png" alt="">
+        </div>
+        <div class="footer-nav__body">
+          <div class="footer-nav">
+            <div class="footer-nav__title">ABOUT</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-デザイン</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-性能について</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-アフターサポート</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-アーティスト</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title">MODELHOUSE</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-駒沢展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-新宿展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-瀬田展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="">-馬込展示場</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title">GALLERY</div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title">CONTACT</div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title footer-nav__btn">来場予約</div>
+            <div class="footer-nav__title footer-nav__btn">資料請求</div>
+            <div class="footer-nav__title footer-nav__btn">プライバシーポリシー</div>
+          </div>
+        </div>
+        <div class="footer-translate">
+          <div class="footer-translate-inner">
+            <div class="footer-translate__jpn">JP</div>
+            <span>/</span>
+            <div class="footer-translate__en">EN</div>
+          </div>
+        </div>
+        <small class="footer-copyright">Copyright (c) AQURAHOME Corporation All Rights Reserved.</small>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </div>
+</body>
+</html>

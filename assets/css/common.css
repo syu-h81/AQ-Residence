@@ -959,6 +959,7 @@ input[type=radio] {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     z-index: 10;
   }
 }
@@ -971,7 +972,7 @@ input[type=radio] {
 }
 .sp-header-humburger__bar:first-child.close::after {
   position: absolute;
-  top: 41px;
+  top: 8px;
   transform: rotate(45deg);
   background-color: #fff;
 }
@@ -996,6 +997,7 @@ input[type=radio] {
 ---------------------------------*/
 .sp-menu-nav {
   background: #000;
+  display: none;
 }
 @media screen and (max-width: 835px) {
   .sp-menu-nav {

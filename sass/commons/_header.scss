@@ -58,6 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     z-index: 10;
   }
   &__bar {
@@ -71,7 +72,7 @@
     &:first-child {
       &.close::after {
         position: absolute;
-        top: 41px;
+        top: 8px;
         transform: rotate(45deg);
         background-color: #fff;
       }
@@ -103,6 +104,7 @@
 ---------------------------------*/
 .sp-menu-nav {
   background: #000;
+  display: none;
   @include g.mq(md) {
     display: none;
     padding-bottom: 100px;

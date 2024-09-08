@@ -44,6 +44,9 @@
     &__title {
       font-weight: 500;
       letter-spacing: 2px;
+      @include g.mq(md) {
+        font-size: 1.25rem;
+      }
     }
     &__list {
       margin-top: 40px;

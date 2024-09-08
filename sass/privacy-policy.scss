@@ -14,8 +14,15 @@
   }
   &__title {
     padding: 60px;
+    @include g.mq(md) {
+      padding: 0;
+    }
     &__desc {
       margin: 0 14%;
+      @include g.mq(md) {
+        margin: 0 10%;
+        margin-top: 20px;
+      }   
     }
     &__top {
       margin-top: -220px;
@@ -24,27 +31,55 @@
       padding-left: 140px;
       margin-right: 8%;
       position: relative;
+      @include g.mq(md) {
+        margin-top: -40px;
+        background: #fff;
+        padding: 20px 10px;
+      }
     }
   }
   &__body__inner {
     margin: 0 14%;
+    @include g.mq(md) {
+      margin: 0 10%;
+    }
   }
   &__window__body {
     margin: 0 14%;
     &__date {
       text-align: right;
+      @include g.mq(md) {
+        margin-top: 60px;
+        font-size: 0.8125rem;
+      }
     }
     &__company__name {
       text-align: right;
+      @include g.mq(md) {
+        font-size: 0.8125rem;
+        margin-top: 20px;
+      }
     }
   }
   &__body {
     margin-top: 60px;
     p {
       font-size: 0.875rem;
+      @include g.mq(md) {
+        font-size: 0.8125rem;
+      }
+    }
+    &__purpose {
+      @include g.mq(md) {
+        margin-top: 40px;
+        margin-bottom: 10px;
+      }
     }
     &__item {
       font-size: 0.875rem;
+      @include g.mq(md) {
+        margin-top: 20px;
+      }
     }
   }
 }

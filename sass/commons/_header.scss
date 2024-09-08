@@ -12,12 +12,22 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 40px 0 40px;
+    @include g.mq(md) {
+      padding: 20px 20px 0 20px;
+    }
   }
-
+  &-logo {
+    @include g.mq(md) {
+      width: 60%;
+    }
+  }
   &-content {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @include g.mq(md) {
+      display: none;
+    }
   }
   &-btn {
     background: #000;
@@ -38,6 +48,154 @@
     margin-left: 10px;
     span {
       margin: 0 5px;
+    }
+  }
+}
+
+.sp-header-humburger {
+  display: none;
+  @include g.mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  &__bar {
+    &::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 1px;
+      background-color: #313131;
+    }
+    &:first-child {
+      &.close::after {
+        position: absolute;
+        top: 41px;
+        transform: rotate(45deg);
+        background-color: #fff;
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        margin-top: 8px;
+      }
+      &.close::after {
+        display: none;
+      }
+    }
+    &:last-child {
+      &::after {
+        margin-top: 8px;
+      }
+      &.close::after {
+        transform: rotate(-45deg);
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+/*---------------------------------
+
+  footer フッターcss
+  
+---------------------------------*/
+.sp-menu-nav {
+  background: #000;
+  @include g.mq(md) {
+    display: none;
+    padding-bottom: 100px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+  }
+  &-inner {
+    color: #fff;
+    padding: 100px 7%;
+    @include g.mq(md) {
+      padding: 60px 14%;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    } 
+  }
+  &-logo {
+    max-width: 300px;
+    @include g.mq(md) {
+      padding-top: 120px;
+    }
+  }
+  &-nav__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    @include g.mq(md) {
+      display: block;
+    }
+  }
+  &-nav {
+    @include g.mq(md) {
+      margin-top: 60px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    &__title {
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+    &__list {
+      margin-top: 40px;
+      @include g.mq(md) {
+        margin-top: 0;
+      }
+    }
+    &__item {
+      font-size: 0.9375rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      margin-top: 20px;
+    }
+    &__btn {
+      margin-top: 30px;
+      @include g.mq(md) {
+        margin-top: 20px;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &-translate {
+    @include g.mq(md) {
+      display: none;
+    }
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-right: 130px;
+    &-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        margin: 0 5px;
+      }
+    }
+  }
+  &-copyright {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-top: 80px;
+    @include g.mq(md) {
+      color: #fff;
+      margin-top: 40px;
     }
   }
 }

@@ -1,0 +1,437 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  top topページcss
+
+---------------------------------*/
+.top-hero__inner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/top_hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  margin-top: -100px;
+  min-height: 400px;
+}
+
+.top-body__inner {
+  height: 92vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 65, 162, 0.8), rgba(0, 65, 162, 0.8)), url(../images/top_hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.top-body__body {
+  color: #fff;
+  margin-left: 7%;
+}
+.top-body__body__title {
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.top-body__body__concept {
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+.top-body__body__concept__inner {
+  margin-top: 80px;
+}
+.top-body__body__text {
+  line-height: 39px;
+}
+.top-body__body__text:first-child {
+  font-size: 1.25rem;
+  margin-top: 60px;
+}
+.top-body__body__text:last-child {
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+.top-body__body__text__inner {
+  margin-top: 40px;
+}
+
+.top-about__inner {
+  background: #000;
+  padding: 120px 0 180px 0;
+}
+.top-about__title {
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+}
+.top-about__title__inner {
+  color: #fff;
+  margin-left: 7%;
+}
+.top-about__title__text {
+  font-size: 1.25rem;
+  margin-top: 40px;
+}
+.top-about__content__inner {
+  padding-top: 60px;
+  display: flex;
+}
+.top-about__content {
+  width: 25%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.top-about__content__design {
+  background-image: url(../images/top_about_design.png);
+}
+.top-about__content__performance {
+  background-image: url(../images/top_about_structure.png);
+}
+.top-about__content__after {
+  background-image: url(../images/top_about_after.png);
+}
+.top-about__content__artist {
+  background-image: url(../images/top_about_artist.png);
+}
+.top-about__content__body {
+  color: #fff;
+  margin-top: 100px;
+}
+.top-about__content__body__title {
+  font-size: 2.5rem;
+}
+.top-about__content__body__desc {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.top-mh__inner {
+  margin-top: 100px;
+}
+.top-mh-title__body {
+  margin-left: 7%;
+}
+.top-mh-title__body__title {
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+}
+.top-mh-title__body__text {
+  line-height: 39px;
+}
+.top-mh-title__body__text__inner {
+  margin-top: 40px;
+}
+.top-mh-title__body__link {
+  border: 1px solid;
+  width: 217px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 60px;
+  position: relative;
+}
+.top-mh-title__body__link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}
+
+.top-mh-main {
+  padding-top: 100px;
+}
+.top-mh-odd-section {
+  background: #000;
+}
+.top-mh-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  position: relative;
+  margin-top: 100px;
+}
+.top-mh-odd-inner {
+  padding-left: 0;
+}
+.top-mh-odd-inner__bg {
+  width: 90%;
+  height: 700px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -10;
+}
+.top-mh-even-inner {
+  padding-right: 0;
+  align-items: flex-end;
+}
+.top-mh-even-inner__bg {
+  width: 90%;
+  height: 700px;
+  background-color: #F5F5F5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.top-mh__img__inner {
+  position: relative;
+  width: 63%;
+}
+.top-mh__img__inner::after {
+  content: "";
+  position: absolute;
+  color: #D3D3D3;
+  font-size: 14.5625rem;
+  font-family: "Shippori Mincho", serif;
+  writing-mode: vertical-rl;
+  opacity: 0.7;
+}
+.top-mh-komazawa__img__inner::after {
+  content: "駒沢";
+  position: absolute;
+  top: -200px;
+  right: -110px;
+}
+.top-mh-shinjuku__img__inner::after {
+  content: "新宿";
+  position: absolute;
+  top: -200px;
+  left: -110px;
+}
+.top-mh-seta__img__inner::after {
+  content: "瀬田";
+  position: absolute;
+  top: -150px;
+  right: -110px;
+}
+.top-mh-magome__img__inner::after {
+  content: "馬込";
+  position: absolute;
+  top: -200px;
+  left: -110px;
+}
+.top-mh-komazawa__body, .top-mh-seta__body {
+  margin-top: 60px;
+}
+.top-mh__body__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+.top-mh-shinjuku__body__title, .top-mh-magome__body__title {
+  margin-top: 30px;
+  line-height: 44px;
+}
+.top-mh-shinjuku__body__title__inner, .top-mh-magome__body__title__inner {
+  margin-left: 60px;
+}
+.top-mh-shinjuku__body__text__inner, .top-mh-magome__body__text__inner {
+  margin-left: 60px;
+}
+.top-mh-seta__body__title {
+  line-height: 49px;
+}
+.top-mh__body__text__inner {
+  margin-top: 30px;
+}
+.top-mh__body__text {
+  font-size: 0.875rem;
+  line-height: 39px;
+}
+.top-mh__body__btn {
+  display: block;
+  border: 1px solid;
+  width: 217px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 60px;
+  position: relative;
+}
+.top-mh__body__btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}
+.top-mh-komazawa__body__btn, .top-mh-seta__body__btn {
+  background: #fff;
+  color: #000;
+}
+.top-mh-shinjuku__body__btn, .top-mh-magome__body__btn {
+  margin-left: 60px;
+}
+.top-mh-komazawa__body__img__inner, .top-mh-seta__body__img__inner {
+  margin-top: 60px;
+}
+.top-mh-komazawa__body__img__inner img, .top-mh-seta__body__img__inner img {
+  width: 350px;
+}
+
+.top-gallery {
+  margin-top: 220px;
+}
+.top-gallery__img__inner {
+  margin-top: 60px;
+}
+.top-gallery__img__inner .slick-img img {
+  height: 520px;
+  opacity: 0.3;
+  transition: opacity 0.5s, transform 0.5s;
+  width: 100%;
+}
+.top-gallery__img__inner .slider .slick-center img {
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.top-news__inner {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+}
+.top-news__title__inner {
+  margin-left: 14%;
+}
+.top-news__title {
+  font-size: 2.5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+}
+.top-news__body {
+  margin: 0 auto;
+}
+.top-news__body__article {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.top-news__body__article:first-child {
+  margin-top: 0;
+}
+.top-news__body__article__date {
+  font-weight: 200;
+}
+.top-news__body__article__date__inner {
+  margin-right: 100px;
+}
+
+.top-event__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.top-event__content {
+  border: 1px solid #000;
+  display: flex;
+  padding: 20px;
+  position: relative;
+}
+.top-event__content__body {
+  padding-top: 40px;
+  margin: 0 auto;
+}
+.top-event__content__body__date__inner {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.top-event__content__body__title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.top-event__content__body__text {
+  line-height: 39px;
+}
+.top-event__content__body__text__inner {
+  margin-top: 50px;
+}
+.top-event__content__body__address__inner {
+  margin-top: 30px;
+}
+
+.top-company__inner {
+  width: 100%;
+  height: 480px;
+  background-image: url(../images/top_company_bg.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+}
+.top-company__body {
+  color: #fff;
+  margin-left: 10%;
+}
+.top-company__body__title {
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+}
+.top-company__body__text {
+  line-height: 39px;
+}
+.top-company__body__text__inner {
+  margin-top: 50px;
+}
+.top-company__body__link {
+  background-color: #fff;
+  border: 1px solid;
+  color: #000;
+  width: 217px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 60px;
+  position: relative;
+}
+.top-company__body__link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}/*# sourceMappingURL=top.css.map */

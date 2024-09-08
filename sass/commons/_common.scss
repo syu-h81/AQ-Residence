@@ -5,6 +5,12 @@
   common 共通パーツcss
   
 ---------------------------------*/
+.sp-only {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;

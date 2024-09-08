@@ -3,39 +3,395 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>TOP</title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
 
   <!-- Import Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 
   <!-- Import CSS -->
-  <link rel="stylesheet" href="/assets/css/destyle.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/top.css">
 
   <!-- Import JS/jQuery Library -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
           integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
           crossorigin="anonymous">
   </script>
+  <!-- Import JS/slick Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <!---- header ---->
-    <header class="header">
-      <div class="header-Container cmn-Container">
+    <header class="header top-header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="assets/images/header_logo.png" alt="">
+          </a>
+        </div>
+        <div class="header-content">
+          <div class="header-btn header-reservation-btn"><a href="reservation.html">来場予約</a></div>
+          <div class="header-btn header-claim-btn"><a href="contact.html">資料請求</a></div>
+          <div class="header-btn header-menu-btn"><a href="">MENU</a></div>
+          <div class="header-translate">
+            <div class="header-translate__jpn"><a href="index.html">JP</a></div>
+            <span>/</span>
+            <div class="header-translate__en"><a href="top-en.html">EN</a></div>
+          </div>
+        </div>
       </div>
-    </header><!---- header end ---->
-
+    </header>
+    <main class="main top-main">
+      <section class="top-hero">
+        <div class="top-hero__inner">
+          <div class="top-hero__bgImg__inner"></div>
+        </div>
+      </section>
+      <section class="top-body">
+        <div class="top-body__inner">
+          <div class="top-body__body">
+            <div class="top-body__body__title__inner">
+              <h1 class="top-body__body__title">Design of Life</h1>
+            </div>
+            <div class="top-body__body__concept__inner">
+              <div class="top-body__body__concept">世代を超える最高峰の技と美に住まう</div>
+            </div>
+            <div class="top-body__body_text__inner">
+              <p class="top-body__body__text">原点に回帰した本物の家づくり</p>
+              <p class="top-body__body__text">
+                厳選された素材と伝統の技を、<br>
+                最高の職人と最新のテクノロジーで昇華させる、<br>
+                従来の注文住宅を一線を画す<br>
+                本物の家づくり。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-about">
+        <div class="top-about__inner">
+          <div class="top-about__title__inner">
+            <h2 class="top-about__title c-sec-title">ABOUT</h2>
+            <p class="top-about__title__text">質と美を極める、AQレジデンスの真価</p>
+            <p class="top-about__title__text">素材、技術、経験、ノウハウ、匠の技...そのすべてをあなたの理想の邸宅のために。</p>
+          </div>
+          <div class="top-about__content__inner">
+            <div class="top-about__content top-about__content__design">
+              <div class="top-about__content__body">
+                <h3 class="top-about__content__body__title">DESIGN</h3>
+                <p class="top-about__content__body__desc">デザイン</p>
+              </div>
+            </div>
+            <div class="top-about__content top-about__content__performance">
+              <div class="top-about__content__body">
+                <h3 class="top-about__content__body__title">STRUCTURE</h3>
+                <p class="top-about__content__body__desc">性能について</p>
+              </div>
+            </div>
+            <div class="top-about__content top-about__content__after">
+              <div class="top-about__content__body">
+                <h3 class="top-about__content__body__title">QUALITY</h3>
+                <p class="top-about__content__body__desc">アフターサポート</p>
+              </div>
+            </div>
+            <div class="top-about__content top-about__content__artist">
+              <div class="top-about__content__body">
+                <h3 class="top-about__content__body__title">ARTIST</h3>
+                <p class="top-about__content__body__desc">アーティスト</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-mh">
+        <div class="top-mh__inner">
+          <div class="top-mh-title__body">
+            <div class="top-mh-title__body__title__inner">
+              <h2 class="top-mh-title__body__title">MODEL HOUSES</h2>
+            </div>
+            <div class="top-mh-title__body__text__inner">
+              <p class="top-mh-title__body__text">
+                五感を刺激する、感動の空間をお確かめください<br>
+                随所に嗜好を凝らしたモデルハウスで、AQレジデンスのポテンシャルを体感いただけます。
+              </p>
+            </div>
+            <a href="modelhouses.html" class="top-mh-title__body__link">展示場一覧</a>
+          </div>
+          <div class="top-mh-komazawa__inner top-mh-odd-inner top-mh-inner">
+            <div class="top-mh-odd-inner__bg"></div>
+            <div class="top-mh-komazawa__img__inner top-mh__img__inner">
+              <img src="assets/images/modelhouse_hero_komazawa.png" alt="">
+            </div>
+            <div class="top-mh-komazawa__body top-mh__body">
+              <div class="top-mh-komazawa__body__title__inner top-mh__body__title__inner">
+                <h2 class="top-mh-komazawa__body__title top-mh__body__title">次代の栄華を纏う本物の邸</h2>
+              </div>
+              <div class="top-mh-komazawa__body__text__inner top-mh__body__text__inner">
+                <p class="top-mh-komazawa__body__title top-mh__body__text">
+                  本物の家造りを追求し、<br>
+                  全てにおいて妥協を許さず<br>
+                  匠の知恵と技術を融合し実現させた、<br>
+                  唯一無二の邸宅。
+                </p>
+              </div>
+              <a class="top-mh-komazawa__body__btn top-mh__body__btn" href="modelhouse-komazawa.html">駒沢展示場 詳細</a>
+              <div class="top-mh-komazawa__body__img__inner top-mh__body__img__inner">
+                <img src="assets/images/modelhouses_komazawa_img.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="top-mh-shinjuku__inner top-mh-even-inner top-mh-inner">
+            <div class="top-mh-even-inner__bg"></div>
+            <div class="top-mh-shinjuku__body top-mh__body">
+              <div class="top-mh-shinjuku__body__img__inner top-mh__body__img__inner">
+                <img src="assets/images/modelhouses_shinjuku_img.png" alt="">
+              </div>
+              <div class="top-mh-shinjuku__body__title__inner top-mh-even__body__title__inner top-mh__body__title__inner">
+                <h2 class="top-mh-shinjuku__body__title top-mh__body__title">圧倒的な空間設計と、<br>多様な素材が織り成す<br>世界基準の邸</h2>
+              </div>
+              <div class="top-mh-shinjuku__body__text__inner top-mh-even__body__text__inner top-mh__body__text__inner">
+                <p class="top-mh-shinjuku__body__title top-mh__body__text">
+                  流行を追わず長く愛される<br>
+                  タイムレスなデザイン。<br>
+                  圧倒的であり、心地よい空間を<br>
+                  デザインする自由度の高い設計力。
+                </p>
+              </div>
+              <a class="top-mh-shinjuku__body__btn top-mh__body__btn" href="modelhouse-shinjuku.html">新宿展示場 詳細</a>
+            </div>
+            <div class="top-mh-shinjuku__img__inner top-mh__img__inner">
+              <img src="assets/images/modelhouse_hero_shinjuku.png" alt="">
+            </div>
+          </div>
+          <div class="top-mh-seta__inner top-mh-odd-inner top-mh-inner">
+            <div class="top-mh-odd-inner__bg"></div>
+            <div class="top-mh-seta__img__inner top-mh__img__inner">
+              <img src="assets/images/modelhouse_hero_seta.png" alt="">
+            </div>
+            <div class="top-mh-seta__body top-mh__body">
+              <div class="top-mh-seta__body__title__inner top-mh__body__title__inner">
+                <h2 class="top-mh-seta__body__title top-mh__body__title">室内外がひとつになり、<br>ここちよい時を刻む<br>技術の結晶</h2>
+              </div>
+              <div class="top-mh-seta__body__text__inner top-mh__body__text__inner">
+                <p class="top-mh-seta__body__title top-mh__body__text">
+                  どこまでも広がる空と融け合う至福の時。<br>
+                  暖かな光と緑の潤いに包まれる開放感。<br>
+                  穏やかに時が流れるやすらぎの場所。
+                </p>
+              </div>
+              <a class="top-mh-seta__body__btn top-mh__body__btn" href="modelhouse-seta.html">瀬田展示場 詳細</a>
+              <div class="top-mh-seta__body__img__inner top-mh__body__img__inner">
+                <img src="assets/images/modelhouses_seta_img.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="top-mh-magome__inner top-mh-even-inner top-mh-inner">
+            <div class="top-mh-even-inner__bg"></div>
+            <div class="top-mh-magome__body top-mh__body">
+              <div class="top-mh-magome__body__img__inner top-mh__body__img__inner">
+                <img src="assets/images/modelhouses_magome_img.png" alt="">
+              </div>
+              <div class="top-mh-magome__body__title__inner top-mh__body__title__inner">
+                <h2 class="top-mh-magome__body__title top-mh__body__title">AQレジデンスの最先端<br>技術を体現した邸宅</h2>
+              </div>
+              <div class="top-mh-magome__body__text__inner top-mh__body__text__inner">
+                <p class="top-mh-magome__body__title top-mh__body__text">
+                  こころから満たされる開放感と満足感。<br>
+                  家と自然が一体となり自然と共生する、<br>
+                  潤いに満ちた優しい邸宅。
+                </p>
+              </div>
+              <a class="top-mh-magome__body__btn top-mh__body__btn" href="modelhouse-magome.html">馬込展示場 詳細</a>
+            </div>
+            <div class="top-mh-magome__img__inner top-mh__img__inner">
+              <img src="assets/images/modelhouse_hero_magome.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-gallery top-gallery">
+        <div class="c-gallery__inner">
+          <div class="c-gallery-header">
+            <div class="c-gallery-header__heading__inner">
+              <div class="c-gallery-header__heading">GALLERY<span>AQレジデンスの作品集</span></div>
+            </div>
+            <a class="c-gallery-header__construction__btn">施工例</a>
+          </div>
+          <div class="c-gallery__img__inner top-gallery__img__inner">
+            <div class="slider">
+              <div class="slick-img">
+                <img src="assets/images/gallery_img_01.png" alt=""/>
+              </div>
+              <div class="slick-img">
+                <img src="assets/images/gallery_img_02.png" alt=""/>
+              </div>
+              <div class="slick-img">
+                <img src="assets/images/gallery_img_03.png" alt=""/>
+              </div>
+              <div class="slick-img">
+                <img src="assets/images/gallery_img_04.png" alt=""/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-news">
+        <div class="top-news__inner">
+          <div class="top-news__title__inner">
+            <h2 class="top-news__title c-sec-title">NEWS</h2>
+          </div>
+          <div class="top-news__body">
+            <article class="top-news__body__article">
+              <div class="top-news__body__article__date__inner">
+                <time class="top-news__body__article__date">2022.10.14</time>
+              </div>
+              <div class="top-news__body__article__title__inner">
+                <a class="top__news__body__article__title" href="">モダンリビングNo.265に掲載されました</a>
+              </div>
+            </article>
+            <article class="top-news__body__article">
+              <div class="top-news__body__article__date__inner">
+                <time class="top-news__body__article__date">2022.2.21</time>
+              </div>
+              <div class="top-news__body__article__title__inner">
+                <a class="top__news__body__article__title" href="">モダンリビングNo.261に掲載されました</a>
+              </div>
+            </article>
+            <article class="top-news__body__article">
+              <div class="top-news__body__article__date__inner">
+                <time class="top-news__body__article__date">2022.12.14</time>
+              </div>
+              <div class="top-news__body__article__title__inner">
+                <a class="top__news__body__article__title" href="">モダンリビングNo.260に掲載されました</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="top-event">
+        <div class="top-event__inner">
+          <div class="top-event__content">
+            <div class="top-event__content__img__inner">
+              <img src="assets/images/top_event.png" alt="">
+            </div>
+            <div class="top-event__content__body">
+              <div class="top-event__content__body__date__inner">
+                <time>2024.00.00</time>
+              </div>
+              <div class="top-event__content__body__title__inner">
+                <div class="top-event__content__body__title">キャンペーン  予約承認制</div>
+              </div>
+              <div class="top-event__content__body__text__inner">
+                <p class="top-event__content__body__text">
+                  AQ PRIME駒沢展示場 大人のラグジュアリー車雑誌、<br>
+                  ENGINE12月号に掲載されました
+                </p>
+              </div>
+              <div class="top-event__content__body__address__inner">
+                <p class="top-event__content__body__address">
+                  〜2022年11月29日(火)<br class="sp-only">東京都世田谷区深沢4-6
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-company">
+        <div class="top-company__inner">
+          <div class="top-company__body">
+            <div class="top-company__body__title__inner">
+              <h2 class="top-company__body__title c-sec-title">COMPANY</h2>
+            </div>
+            <div class="top-company__body__text__inner">
+              <p class="top-company__body__text">
+                これまでにない、最高の邸宅を形にする<br>
+                AQレジデンスの企業情報です
+              </p>
+            </div>
+            <a href="company.html" class="top-company__body__link">企業情報</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="c-modelHouse">
+      <div class="c-modelHouse__inner">
+        <div class="c-modelHouse__card c-modelHouse__reservationCard">
+          <div class="c-modelHouse__card__title">モデルハウス来場予約</div>
+          <button class="c-modelHouse__card__btn c-modelHouse__reservationCard__btn">来場予約はこちら</button>
+        </div>
+        <div class="c-modelHouse__card c-modelHouse__claimCard">
+          <div class="c-modelHouse__card__title">資料請求</div>
+          <button class="c-modelHouse__card__btn c-modelHouse__claimCard__btn">資料請求はこちら</button>
+        </div>
+      </div>
+    </div>
     <!---- footer ---->
     <footer class="footer">
-      <div class="footer-Container cmn-Container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/images/footer_logo.png" alt="">
+        </div>
+        <div class="footer-nav__body">
+          <div class="footer-nav">
+            <div class="footer-nav__title">ABOUT</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="design.html">-デザイン</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="performance.html">-性能について</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="after.html">-アフターサポート</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="artist.html">-アーティスト</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title">MODELHOUSE</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-komazawa.html">-駒沢展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-shinjuku.html">-新宿展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-seta.html">-瀬田展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-magome.html">-馬込展示場</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title"><a href="gallery.html">GALLERY</a></div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title"><a href="contact.html">CONTACT</a></div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title footer-nav__btn"><a href="reservation.html">来場予約</a></div>
+            <div class="footer-nav__title footer-nav__btn"><a href="contact.html">資料請求</a></div>
+            <div class="footer-nav__title footer-nav__btn"><a href="privacy-policy.html">プライバシーポリシー</a></div>
+          </div>
+        </div>
+        <div class="footer-translate">
+          <div class="footer-translate-inner">
+            <div class="footer-translate__jpn">JP</div>
+            <span>/</span>
+            <div class="footer-translate__en">EN</div>
+          </div>
+        </div>
+        <small class="footer-copyright">Copyright (c) AQURAHOME Corporation All Rights Reserved.</small>
       </div>
-    </footer><!---- footer end ---->
-
+    </footer>
+    <script src="assets/js/main.js"></script>
   </div>
-  <!-- Import JS -->
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

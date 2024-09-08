@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALLERY</title>
+
+  <!-- OGP -->
+  <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
+  <meta property="og:type" content=""> <!-- //ページの種類を設定 -->
+  <meta property="og:title" content=""> <!-- //ページのタイトルを設定 -->
+  <meta property="og:description" content=""> <!-- //ページのディスカッションを設定 -->
+  <meta property="og:site_name" content=""> <!-- //サイトの名前を設定 -->
+  <meta property="og:image" content=""> <!-- //ogp画像の設定 -->
+  <meta property="og:locale" content="ja_JP"> <!-- //ページの国コードの設定 -->
+
+  <!-- Import Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <!-- Import CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+
+  <!-- Import JS/jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+  </script>
+  <!-- Import JS/slick Library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <!---- header ---->
+    <header class="header">
+      <div class="header-inner">
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="assets/images/header_logo.png" alt="">
+          </a>
+        </div>
+        <div class="header-content">
+          <div class="header-btn header-reservation-btn"><a href="reservation.html">来場予約</a></div>
+          <div class="header-btn header-claim-btn"><a href="contact.html">資料請求</a></div>
+          <div class="header-btn header-menu-btn"><a href="">MENU</a></div>
+          <div class="header-translate">
+            <div class="header-translate__jpn"><a href="index.html">JP</a></div>
+            <span>/</span>
+            <div class="header-translate__en"><a href="top-en.html">EN</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="gallery-head c-head">
+      <div class="gallery-head-inner c-head-inner">
+        <div class="gallery-head-title__inner c-head-title__inner">
+          <div class="gallery-head-body c-head-body">
+            <p class="gallery-head-title-text c-head-title-text">施工例</p>
+            <h1 class="gallery-head-title c-head-title">GALLERY</h1>
+          </div>
+        </div>
+        <div class="gallery-head-category__inner c-head-category__inner">
+          <span>HOME</span>
+          <span>〉</span>
+          <span>施工例</span>
+        </div>
+      </div>
+    </div>
+    <main class="main gallery-main">
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner">
+            <img src="assets/images/gallery_sec1_head.png" alt="">
+          </div>
+          <div class="gallery__content">
+            <div class="gallery__content__body">
+              <div class="gallery__content__body__title__inner">
+                <h2 class="gallery__content__body__title c-sec-title">豊かな時間が流れる家</h2>
+                <span class="gallery__content__body__title__text">D様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec1_01.png" alt="">
+                <img src="assets/images/gallery_sec1_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec1_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner ">
+          <div class="gallery__head__inner gallery__head__inner__even">
+            <img src="assets/images/gallery_sec2_head.png" alt="">
+          </div>
+          <div class="gallery__content gallery__content__even">
+            <div class="gallery__content__body gallery__content__body__even">
+              <div class="gallery__content__body__title__inner gallery__content__body__title__inner__even">
+                <h2 class="gallery__content__body__title  c-sec-title">ガレージの家</h2>
+                <span class="gallery__content__body__title__text">F様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec2_01.png" alt="">
+                <img src="assets/images/gallery_sec2_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec2_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner">
+            <img src="assets/images/gallery_sec3_head.png" alt="">
+          </div>
+          <div class="gallery__content">
+            <div class="gallery__content__body">
+              <div class="gallery__content__body__title__inner">
+                <h2 class="gallery__content__body__title c-sec-title">シンプルモダンの家</h2>
+                <span class="gallery__content__body__title__text">A様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec3_01.png" alt="">
+                <img src="assets/images/gallery_sec3_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec3_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner ">
+          <div class="gallery__head__inner gallery__head__inner__even">
+            <img src="assets/images/gallery_sec4_head.png" alt="">
+          </div>
+          <div class="gallery__content gallery__content__even">
+            <div class="gallery__content__body gallery__content__body__even">
+              <div class="gallery__content__body__title__inner gallery__content__body__title__inner__even">
+                <h2 class="gallery__content__body__title  c-sec-title">開放的な中庭のある家</h2>
+                <span class="gallery__content__body__title__text">S様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec4_01.png" alt="">
+                <img src="assets/images/gallery_sec4_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec4_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner">
+            <img src="assets/images/gallery_sec5_head.png" alt="">
+          </div>
+          <div class="gallery__content">
+            <div class="gallery__content__body">
+              <div class="gallery__content__body__title__inner">
+                <h2 class="gallery__content__body__title c-sec-title">洋と和を楽しむ家（仮）</h2>
+                <span class="gallery__content__body__title__text">S様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec5_01.png" alt="">
+                <img src="assets/images/gallery_sec5_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec5_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner ">
+          <div class="gallery__head__inner gallery__head__inner__even">
+            <img src="assets/images/gallery_sec6_head.png" alt="">
+          </div>
+          <div class="gallery__content gallery__content__even">
+            <div class="gallery__content__body gallery__content__body__even">
+              <div class="gallery__content__body__title__inner gallery__content__body__title__inner__even">
+                <h2 class="gallery__content__body__title  c-sec-title">抜け感のある家（仮）</h2>
+                <span class="gallery__content__body__title__text">M様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec6_01.png" alt="">
+                <img src="assets/images/gallery_sec6_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec6_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner">
+            <img src="assets/images/gallery_sec7_head.png" alt="">
+          </div>
+          <div class="gallery__content">
+            <div class="gallery__content__body">
+              <div class="gallery__content__body__title__inner">
+                <h2 class="gallery__content__body__title c-sec-title">涼しさのある家（仮）</h2>
+                <span class="gallery__content__body__title__text">T様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec7_01.png" alt="">
+                <img src="assets/images/gallery_sec7_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec7_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner gallery__head__inner__even">
+            <img src="assets/images/gallery_sec8_head.png" alt="">
+          </div>
+          <div class="gallery__content gallery__content__even">
+            <div class="gallery__content__body gallery__content__body__even">
+              <div class="gallery__content__body__title__inner gallery__content__body__title__inner__even">
+                <h2 class="gallery__content__body__title c-sec-title">シックで落ち着きのある家</h2>
+                <span class="gallery__content__body__title__text">S様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec8_01.png" alt="">
+                <img src="assets/images/gallery_sec8_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec8_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__inner">
+          <div class="gallery__head__inner">
+            <img src="assets/images/gallery_sec9_head.png" alt="">
+          </div>
+          <div class="gallery__content">
+            <div class="gallery__content__body">
+              <div class="gallery__content__body__title__inner">
+                <h2 class="gallery__content__body__title c-sec-title">和風モダンの家</h2>
+                <span class="gallery__content__body__title__text">K様邸</span>
+              </div>
+              <div class="gallery__content__body__img__inner">
+                <img src="assets/images/gallery_sec9_01.png" alt="">
+                <img src="assets/images/gallery_sec9_02.png" alt="">
+              </div>
+            </div>
+            <div class="gallery__content__img__inner">
+              <img src="assets/images/gallery_sec9_03.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="gallery-modelHouse">
+      <div class="gallery-modelHouse__inner">
+        <div class="gallery-modelHouse__heading__inner">
+          <div class="gallery-modelHouse__heading">MODEL HOUSES</div>
+        </div>
+        <div class="gallery-modelHouse__exhibition__inner">
+          <a href="modelhouse-komazawa.html" class="gallery-modelHouse__exhibition gallery-modelHouse__exhibition__komazawa">
+            <div class="gallery-modelHouse__exhibition__name">駒沢展示場</div>
+          </a>
+          <a href="modelhouse-shinjuku.html" class="gallery-modelHouse__exhibition gallery-modelHouse__exhibition__shinjuku">
+            <div class="gallery-modelHouse__exhibition__name">新宿展示場</div>
+          </a>
+          <a href="modelhouse-seta.html" class="gallery-modelHouse__exhibition gallery-modelHouse__exhibition__seta">
+            <div class="gallery-modelHouse__exhibition__name">瀬田展示場</div>
+          </a>
+          <a href="modelhouse-magome.html" class="gallery-modelHouse__exhibition gallery-modelHouse__exhibition__magome">
+            <div class="gallery-modelHouse__exhibition__name">馬込展示場</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="c-modelHouse">
+      <div class="c-modelHouse__inner">
+        <div class="c-modelHouse__card c-modelHouse__reservationCard">
+          <div class="c-modelHouse__card__title">モデルハウス来場予約</div>
+          <button class="c-modelHouse__card__btn c-modelHouse__reservationCard__btn">来場予約はこちら</button>
+        </div>
+        <div class="c-modelHouse__card c-modelHouse__claimCard">
+          <div class="c-modelHouse__card__title">資料請求</div>
+          <button class="c-modelHouse__card__btn c-modelHouse__claimCard__btn">資料請求はこちら</button>
+        </div>
+      </div>
+    </div>
+    <div class="c-gallery">
+      <div class="c-gallery__inner">
+        <div class="c-gallery-header">
+          <div class="c-gallery-header__heading__inner">
+            <div class="c-gallery-header__heading">GALLERY<span>AQレジデンスの作品集</span></div>
+          </div>
+          <a class="c-gallery-header__construction__btn">施工例</a>
+        </div>
+        <div class="c-gallery__img__inner">
+          <div class="slider">
+            <div class="slick-img">
+              <img src="assets/images/gallery_img_01.png" alt=""/>
+            </div>
+            <div class="slick-img">
+              <img src="assets/images/gallery_img_02.png" alt=""/>
+            </div>
+            <div class="slick-img">
+              <img src="assets/images/gallery_img_03.png" alt=""/>
+            </div>
+            <div class="slick-img">
+              <img src="assets/images/gallery_img_04.png" alt=""/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---- footer ---->
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="assets/images/footer_logo.png" alt="">
+        </div>
+        <div class="footer-nav__body">
+          <div class="footer-nav">
+            <div class="footer-nav__title">ABOUT</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="design.html">-デザイン</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="performance.html">-性能について</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="after.html">-アフターサポート</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="artist.html">-アーティスト</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title">MODELHOUSE</div>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-komazawa.html">-駒沢展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-shinjuku.html">-新宿展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-seta.html">-瀬田展示場</a></li>
+              <li class="footer-nav__item"><a class="footer-nav__link" href="modelhouse-magome.html">-馬込展示場</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title"><a href="gallery.html">GALLERY</a></div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title"><a href="contact.html">CONTACT</a></div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__title footer-nav__btn"><a href="reservation.html">来場予約</a></div>
+            <div class="footer-nav__title footer-nav__btn"><a href="contact.html">資料請求</a></div>
+            <div class="footer-nav__title footer-nav__btn"><a href="privacy-policy.html">プライバシーポリシー</a></div>
+          </div>
+        </div>
+        <div class="footer-translate">
+          <div class="footer-translate-inner">
+            <div class="footer-translate__jpn">JP</div>
+            <span>/</span>
+            <div class="footer-translate__en">EN</div>
+          </div>
+        </div>
+        <small class="footer-copyright">Copyright (c) AQURAHOME Corporation All Rights Reserved.</small>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </div>
+</body>
+</html>

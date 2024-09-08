@@ -1,0 +1,178 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  top-en top-enページcss
+  
+---------------------------------*/
+.top-en-hero {
+  &__inner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/top_hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    margin-top: -100px;
+    min-height: 400px;
+  }
+}
+.top-en-body {
+  &__inner {
+    height: 92vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 65, 162, 0.8), rgba(0, 65, 162, 0.8)),url(../images/top_hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  &__body {
+    color: #fff;
+    margin-left: 7%;
+    &__title {
+      font-size: 5rem;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    &__concept {
+      font-size: 1.625rem;
+      font-weight: 500;
+      &__inner {
+        margin-top: 80px;
+      }
+    }
+    &__text {
+      line-height: 39px;
+      &:first-child {
+        font-size: 1.25rem;
+        margin-top: 60px;
+      }
+      &:last-child {
+        font-size: 1.25rem;
+        margin-top: 30px;
+      }
+      &__inner {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+.top-en-about {
+  &__inner {
+    height: 92vh;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),url(../images/top_en_about_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+  }
+  &__body {
+    margin-left: 7%;
+    &__title {
+      font-size: 5rem;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+    }
+    &__concept {
+      font-size: 1.625rem;
+      font-weight: 500;
+      &__inner {
+        margin-top: 80px;
+      }
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 40px;
+        width: 80%;
+      }
+    }
+  }
+}
+.top-en-design-housing {
+  &__inner {
+    padding: 120px 0 120px 120px;
+    background: #000;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__body {
+    color: #fff;
+    &__title {
+      line-height: 66px;
+      text-align: justify;
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 30px;
+      }
+    }
+  }
+  &__img__inner {
+    margin-top: 100px;
+  }
+  &__sub__img__inner {
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    padding-left: 120px;
+    margin-top: -220px;
+  }
+}
+.top-en-design-trend {
+  padding-top: 140px;
+  &__content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__img__inner {
+    display: grid;
+    gap: 5px;
+  }
+  &__body {
+    margin-left: 200px;
+    &__title {
+      line-height: 66px;
+      text-align: justify;
+    }
+    &__text {
+      line-height: 39px;
+      &__inner {
+        margin-top: 35px;
+      }
+    }
+    &__btn {
+      width: 217px;
+      height: 45px;
+      border: 1px solid #000;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      padding-left: 30px;
+      position: relative;
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 1px #000;
+        border-right: solid 1px #000;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}

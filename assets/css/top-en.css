@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/*---------------------------------
+
+  top-en top-enページcss
+
+---------------------------------*/
+.top-en-hero__inner {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../images/top_hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  margin-top: -100px;
+  min-height: 400px;
+}
+
+.top-en-body__inner {
+  height: 92vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 65, 162, 0.8), rgba(0, 65, 162, 0.8)), url(../images/top_hero_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.top-en-body__body {
+  color: #fff;
+  margin-left: 7%;
+}
+.top-en-body__body__title {
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.top-en-body__body__concept {
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+.top-en-body__body__concept__inner {
+  margin-top: 80px;
+}
+.top-en-body__body__text {
+  line-height: 39px;
+}
+.top-en-body__body__text:first-child {
+  font-size: 1.25rem;
+  margin-top: 60px;
+}
+.top-en-body__body__text:last-child {
+  font-size: 1.25rem;
+  margin-top: 30px;
+}
+.top-en-body__body__text__inner {
+  margin-top: 40px;
+}
+
+.top-en-about__inner {
+  height: 92vh;
+  width: 100%;
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../images/top_en_about_bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.top-en-about__body {
+  margin-left: 7%;
+}
+.top-en-about__body__title {
+  font-size: 5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+.top-en-about__body__concept {
+  font-size: 1.625rem;
+  font-weight: 500;
+}
+.top-en-about__body__concept__inner {
+  margin-top: 80px;
+}
+.top-en-about__body__text {
+  line-height: 39px;
+}
+.top-en-about__body__text__inner {
+  margin-top: 40px;
+  width: 80%;
+}
+
+.top-en-design-housing__inner {
+  padding: 120px 0 120px 120px;
+  background: #000;
+}
+.top-en-design-housing__content {
+  display: flex;
+  justify-content: space-between;
+}
+.top-en-design-housing__body {
+  color: #fff;
+}
+.top-en-design-housing__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.top-en-design-housing__body__text {
+  line-height: 39px;
+}
+.top-en-design-housing__body__text__inner {
+  margin-top: 30px;
+}
+.top-en-design-housing__img__inner {
+  margin-top: 100px;
+}
+.top-en-design-housing__sub__img__inner {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 120px;
+  margin-top: -220px;
+}
+
+.top-en-design-trend {
+  padding-top: 140px;
+}
+.top-en-design-trend__content {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.top-en-design-trend__img__inner {
+  display: grid;
+  gap: 5px;
+}
+.top-en-design-trend__body {
+  margin-left: 200px;
+}
+.top-en-design-trend__body__title {
+  line-height: 66px;
+  text-align: justify;
+}
+.top-en-design-trend__body__text {
+  line-height: 39px;
+}
+.top-en-design-trend__body__text__inner {
+  margin-top: 35px;
+}
+.top-en-design-trend__body__btn {
+  width: 217px;
+  height: 45px;
+  border: 1px solid #000;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding-left: 30px;
+  position: relative;
+}
+.top-en-design-trend__body__btn::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}/*# sourceMappingURL=top-en.css.map */

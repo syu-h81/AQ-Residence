@@ -11,6 +11,12 @@
     display: block;
   }
 }
+.pc-only {
+  display: block;
+  @include g.mq(md) {
+    display: none;
+  }
+}
 body {
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;

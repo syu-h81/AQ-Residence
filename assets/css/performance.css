@@ -4,6 +4,19 @@
   performance パフォーマンスページcss
 
 ---------------------------------*/
+@media screen and (max-width: 835px) {
+  .performance-head-img {
+    margin-left: 7%;
+  }
+  .performance-head-img img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 835px) {
+  .performance-head__img__inner img {
+    height: 270px;
+  }
+}
 .performance-heading {
   padding-top: 120px;
 }
@@ -11,12 +24,27 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .performance-heading__body {
+    margin: 0 7%;
+  }
+}
 .performance-heading__body__title {
   line-height: 66px;
   text-align: justify;
 }
+@media screen and (max-width: 835px) {
+  .performance-heading__body__title {
+    line-height: 40px;
+  }
+}
 .performance-heading__body__text {
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .performance-heading__body__text {
+    line-height: 28px;
+  }
 }
 .performance-heading__body__text__inner {
   margin-top: 35px;
@@ -27,11 +55,23 @@
   padding: 100px;
   background: #F5F5F5;
 }
+@media screen and (max-width: 835px) {
+  .performance-heading__content__inner {
+    margin: 0 7%;
+    margin-top: 80px;
+    padding: 0;
+  }
+}
 .performance-heading__content {
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
   margin: 0 auto;
+}
+@media screen and (max-width: 835px) {
+  .performance-heading__content {
+    display: grid;
+  }
 }
 .performance-heading__content:last-child {
   margin-top: 40px;
@@ -39,12 +79,27 @@
 .performance-heading__content__img__inner {
   width: 40%;
 }
+@media screen and (max-width: 835px) {
+  .performance-heading__content__img__inner {
+    width: auto;
+  }
+}
 .performance-heading__content__body {
   width: 50%;
+}
+@media screen and (max-width: 835px) {
+  .performance-heading__content__body {
+    width: auto;
+  }
 }
 .performance-heading__content__body__title {
   font-size: 1.9375rem;
   font-weight: 500;
+}
+@media screen and (max-width: 835px) {
+  .performance-heading__content__body__title {
+    font-size: 1.125rem;
+  }
 }
 .performance-heading__content__body__title__inner {
   margin-top: 30px;
@@ -72,15 +127,41 @@
   max-width: 1000px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .performance-drawing__content {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+}
 .performance-drawing__content__body__text {
   font-size: 1.25rem;
   line-height: 49.5px;
 }
+@media screen and (max-width: 835px) {
+  .performance-drawing__content__body__text {
+    font-size: 13px;
+    line-height: 28px;
+  }
+}
 .performance-drawing__content__body__text__inner {
   margin-top: 45px;
 }
+@media screen and (max-width: 835px) {
+  .performance-drawing__content__body__text__inner {
+    margin-top: 160px;
+  }
+}
 .performance-drawing__content__body__supplyment__inner {
   margin-top: 50px;
+}
+@media screen and (max-width: 835px) {
+  .performance-drawing__content__body__supplyment__inner {
+    position: absolute;
+    top: 20rem;
+    bottom: 0;
+    margin-top: 0;
+    z-index: 100;
+  }
 }
 .performance-drawing__content__body__supplyment {
   display: flex;
@@ -91,6 +172,11 @@
   font-size: 0.875rem;
   font-weight: 200;
   margin-left: 10px;
+}
+@media screen and (max-width: 835px) {
+  .performance-drawing__content__body__supplyment span {
+    font-size: 0.625rem;
+  }
 }
 .performance-drawing__content__body__supplyment__box {
   width: 40px;
@@ -109,6 +195,12 @@
 .performance-drawing__content__img__inner {
   width: 50%;
 }
+@media screen and (max-width: 835px) {
+  .performance-drawing__content__img__inner {
+    width: 90%;
+    position: relative;
+  }
+}
 .performance-drawing-pr__inner {
   margin-top: 120px;
 }
@@ -120,12 +212,24 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 835px) {
+  .performance-drawing-pr__content {
+    display: block;
+    padding: 60px 6%;
+    margin: 0 7%;
+  }
+}
 .performance-drawing-pr__content__body {
   color: #fff;
 }
 .performance-drawing-pr__content__body__title {
   font-size: 1.25rem;
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .performance-drawing-pr__content__body__title {
+    font-size: 1.125rem;
+  }
 }
 .performance-drawing-pr__content__body__text {
   font-size: 0.8125rem;
@@ -135,6 +239,11 @@
 .performance-drawing-pr__content__body__text__inner {
   margin-top: 40px;
   width: 75%;
+}
+@media screen and (max-width: 835px) {
+  .performance-drawing-pr__content__body__text__inner {
+    width: auto;
+  }
 }
 .performance-drawing-pr__content__img__inner {
   width: 100%;

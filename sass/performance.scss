@@ -5,17 +5,41 @@
   performance パフォーマンスページcss
   
 ---------------------------------*/
+@include g.mq(md) {
+  .performance-head-img {
+    margin-left: 7%;
+    img {
+      height: 300px;
+    }
+  }
+}
+@include g.mq(md) {
+  .performance-head__img__inner {
+    img {
+      height: 270px;
+    }
+  }
+}
 .performance-heading {
   padding-top: 120px;
   &__body {
     max-width: 1000px;
     margin: 0 auto;
+    @include g.mq(md) {
+      margin: 0 7%;
+    }
     &__title {
       line-height: 66px;
       text-align: justify;
+      @include g.mq(md) {
+        line-height: 40px;
+      }
     }
     &__text {
       line-height: 39px;
+      @include g.mq(md) {
+        line-height: 28px;
+      }
       &__inner {
         margin-top: 35px;
       }
@@ -26,23 +50,40 @@
     margin-right: 7%;
     padding: 100px;
     background: #F5F5F5;
+    @include g.mq(md) {
+      margin: 0 7%;
+      margin-top: 80px;
+      padding: 0;
+    }
   }
   &__content {
     display: flex;
     justify-content: space-between;
     max-width: 1000px;
     margin: 0 auto;
+    @include g.mq(md) {
+      display: grid;
+    }
     &:last-child {
       margin-top: 40px;
     }
     &__img__inner {
       width: 40%;
+      @include g.mq(md) {
+        width: auto;
+      }
     }
     &__body {
       width: 50%;
+      @include g.mq(md) {
+        width: auto;
+      }
       &__title {
         font-size: 1.9375rem;
         font-weight: 500;
+        @include g.mq(md) {
+          font-size: 1.125rem;
+        }
         &__inner {
           margin-top: 30px;
         }
@@ -71,16 +112,35 @@
     justify-content: space-around;
     max-width: 1000px;
     margin: 0 auto;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+      position: relative;
+    }
     &__body {
       &__text {
         font-size: 1.25rem;
         line-height: 49.5px;
+        @include g.mq(md) {
+          font-size: 13px;
+          line-height: 28px;
+        }
         &__inner {
           margin-top: 45px;
+          @include g.mq(md) {
+            margin-top: 160px;
+          }
         }
       }
       &__supplyment__inner {
         margin-top: 50px;
+        @include g.mq(md) {
+          position: absolute;
+          top: 20rem;
+          bottom: 0;
+          margin-top: 0;
+          z-index: 100;
+      
+        }
       }
       &__supplyment {
         display: flex;
@@ -90,6 +150,9 @@
           font-size: 0.875rem;
           font-weight: 200;
           margin-left: 10px;
+          @include g.mq(md) {
+            font-size: 0.625rem;
+          }
         }
         &__box {
           width: 40px;
@@ -109,6 +172,10 @@
     }
     &__img__inner {
       width: 50%;
+      @include g.mq(md) {
+        width: 90%;
+        position: relative;
+      }
     }
   }
   &-pr {
@@ -122,11 +189,19 @@
       padding: 60px;
       display: flex;
       justify-content: space-between;
+      @include g.mq(md) {
+        display: block;
+        padding: 60px 6%;
+        margin: 0 7%;
+      }
       &__body {
         color: #fff;
         &__title {
           font-size: 1.25rem;
           line-height: 39px;
+          @include g.mq(md) {
+            font-size: 1.125rem;
+          }
         }
         &__text {
           font-size: 0.8125rem;
@@ -135,6 +210,9 @@
           &__inner {
             margin-top: 40px;
             width: 75%;
+            @include g.mq(md) {
+              width: auto;
+            }
           }
         }
       }

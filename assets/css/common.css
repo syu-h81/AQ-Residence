@@ -395,6 +395,12 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 835px) {
+  p {
+    font-size: 13px;
+  }
+}
+
 img {
   width: 100%;
   height: auto;
@@ -490,15 +496,32 @@ img {
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
+@media screen and (max-width: 835px) {
+  .c-about__title {
+    font-size: 2.375rem;
+  }
+}
 .c-about__title span {
   font-size: 0.875rem;
   font-weight: 200;
   margin-left: 30px;
 }
+@media screen and (max-width: 835px) {
+  .c-about__title span {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
 .c-about__content__inner {
   margin-top: 60px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 835px) {
+  .c-about__content__inner {
+    display: block;
+  }
 }
 .c-about__content {
   width: 380px;
@@ -509,6 +532,13 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .c-about__content {
+    width: auto;
+    height: 180px;
+    margin-top: 20px;
+  }
 }
 .c-about__content__design {
   background-image: url(../images/about_img_01.png);

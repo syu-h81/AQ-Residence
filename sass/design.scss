@@ -5,25 +5,50 @@
   design デザインページcss
   
 ---------------------------------*/
+.design-head-img {
+  img {
+    @include g.mq(md) {
+      margin-left: 7%;
+    }
+    @include g.mq(md) {
+      height: 300px;
+    }
+  }
+}
 .design-housing {
   &__inner {
     padding: 120px 0 120px 120px;
     background: #000;
+    @include g.mq(md) {
+      padding: 0;
+    }
   }
   &__content {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin-left: auto;
+    @include g.mq(md) {
+      display: grid;
+    }
   }
   &__body {
     color: #fff;
+    @include g.mq(md) {
+      padding: 7%;
+    }
     &__title {
       line-height: 66px;
       text-align: justify;
+      @include g.mq(md) {
+        line-height: 40px;
+      }
     }
     &__text {
       line-height: 39px;
+      @include g.mq(md) {
+        line-height: 28px;
+      }
       &__inner {
         margin-top: 30px;
       }
@@ -31,6 +56,15 @@
   }
   &__img__inner {
     margin-top: 100px;
+    @include g.mq(md) {
+      margin-top: 60px;
+      margin-left: 20%;
+    }
+    img {
+      @include g.mq(md) {
+        height: 480px;
+      }
+    }
   }
   &__sub__img__inner {
     width: 40%;
@@ -38,6 +72,13 @@
     margin: 0 auto;
     padding-left: 120px;
     margin-top: -220px;
+    @include g.mq(md) {
+      width: 80%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      margin-top: -120px;
+    }
   }
 }
 .design-trend {
@@ -47,19 +88,35 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+    }
   }
   &__img__inner {
     display: grid;
     gap: 5px;
+    @include g.mq(md) {
+      margin: 0 7%;
+      margin-top: 80px;
+    }
   }
   &__body {
     margin-left: 200px;
+    @include g.mq(md) {
+      margin-left: 0;
+    }
     &__title {
       line-height: 66px;
       text-align: justify;
+      @include g.mq(md) {
+        line-height: 40px;
+      }
     }
     &__text {
       line-height: 39px;
+      @include g.mq(md) {
+        line-height: 28px;
+      }
       &__inner {
         margin-top: 35px;
       }
@@ -74,6 +131,10 @@
       margin-top: 50px;
       padding-left: 30px;
       position: relative;
+      @include g.mq(md) {
+        margin: 0 auto;
+        margin-top: 50px;
+      }
       &::after {
         content: "";
         width: 10px;

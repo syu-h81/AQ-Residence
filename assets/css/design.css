@@ -4,9 +4,25 @@
   design デザインページcss
 
 ---------------------------------*/
+@media screen and (max-width: 835px) {
+  .design-head-img img {
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .design-head-img img {
+    height: 300px;
+  }
+}
+
 .design-housing__inner {
   padding: 120px 0 120px 120px;
   background: #000;
+}
+@media screen and (max-width: 835px) {
+  .design-housing__inner {
+    padding: 0;
+  }
 }
 .design-housing__content {
   display: flex;
@@ -14,15 +30,35 @@
   max-width: 1200px;
   margin-left: auto;
 }
+@media screen and (max-width: 835px) {
+  .design-housing__content {
+    display: grid;
+  }
+}
 .design-housing__body {
   color: #fff;
+}
+@media screen and (max-width: 835px) {
+  .design-housing__body {
+    padding: 7%;
+  }
 }
 .design-housing__body__title {
   line-height: 66px;
   text-align: justify;
 }
+@media screen and (max-width: 835px) {
+  .design-housing__body__title {
+    line-height: 40px;
+  }
+}
 .design-housing__body__text {
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .design-housing__body__text {
+    line-height: 28px;
+  }
 }
 .design-housing__body__text__inner {
   margin-top: 30px;
@@ -30,12 +66,32 @@
 .design-housing__img__inner {
   margin-top: 100px;
 }
+@media screen and (max-width: 835px) {
+  .design-housing__img__inner {
+    margin-top: 60px;
+    margin-left: 20%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .design-housing__img__inner img {
+    height: 480px;
+  }
+}
 .design-housing__sub__img__inner {
   width: 40%;
   height: auto;
   margin: 0 auto;
   padding-left: 120px;
   margin-top: -220px;
+}
+@media screen and (max-width: 835px) {
+  .design-housing__sub__img__inner {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: -120px;
+  }
 }
 
 .design-trend {
@@ -47,19 +103,45 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .design-trend__content {
+    flex-direction: column-reverse;
+  }
+}
 .design-trend__img__inner {
   display: grid;
   gap: 5px;
 }
+@media screen and (max-width: 835px) {
+  .design-trend__img__inner {
+    margin: 0 7%;
+    margin-top: 80px;
+  }
+}
 .design-trend__body {
   margin-left: 200px;
+}
+@media screen and (max-width: 835px) {
+  .design-trend__body {
+    margin-left: 0;
+  }
 }
 .design-trend__body__title {
   line-height: 66px;
   text-align: justify;
 }
+@media screen and (max-width: 835px) {
+  .design-trend__body__title {
+    line-height: 40px;
+  }
+}
 .design-trend__body__text {
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .design-trend__body__text {
+    line-height: 28px;
+  }
 }
 .design-trend__body__text__inner {
   margin-top: 35px;
@@ -74,6 +156,12 @@
   margin-top: 50px;
   padding-left: 30px;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .design-trend__body__btn {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
 }
 .design-trend__body__btn::after {
   content: "";

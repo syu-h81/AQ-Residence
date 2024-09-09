@@ -4,14 +4,33 @@
   after アフターサポートページcss
 
 ---------------------------------*/
+@media screen and (max-width: 835px) {
+  .after-head-img img {
+    height: 300px;
+  }
+}
 .after-inner {
   margin: 0 auto;
   margin-top: 80px;
   max-width: 960px;
 }
+@media screen and (max-width: 835px) {
+  .after-inner {
+    margin: 0 7%;
+  }
+}
 .after-body {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 835px) {
+  .after-body {
+    display: block;
+    margin-top: 60px;
+  }
+}
+.after-body__img__inner {
+  margin-top: 60px;
 }
 .after__title {
   text-align: justify;
@@ -30,6 +49,14 @@
   padding: 20px;
   margin-top: 140px;
 }
+@media screen and (max-width: 835px) {
+  .after-concept__box {
+    font-size: 1.5rem;
+    display: block;
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
 .after-guarantee__content {
   margin-top: 100px;
   text-align: center;
@@ -42,6 +69,11 @@
   padding-bottom: 40px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__title {
+    width: auto;
+  }
+}
 .after-guarantee__content__drawing__inner {
   margin: 0 auto;
   margin-top: 60px;
@@ -51,6 +83,11 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__drawing__year__inner {
+    margin-top: 40px;
+  }
 }
 .after-guarantee__content__year {
   font-weight: 200;
@@ -67,6 +104,13 @@
   margin: 0 auto;
   margin-top: 10px;
 }
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__year::after {
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+  }
+}
 .after-guarantee__content__year__color::after {
   background-image: url(../images/after_polygon_icon_02.png);
 }
@@ -75,6 +119,11 @@
   font-size: 1.5rem;
   font-weight: 500;
 }
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__year__text {
+    font-size: 1.25rem;
+  }
+}
 .after-guarantee__content__year__text::after {
   background-image: url();
 }
@@ -82,6 +131,12 @@
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__guarantee__box__inner {
+    display: block;
+    margin-top: 20px;
+  }
 }
 .after-guarantee__content__guarantee__border__box {
   width: 345px;
@@ -99,6 +154,12 @@
   color: #fff;
   background: #2847B4;
   z-index: 0;
+}
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__warrnty_border__box {
+    width: 320px;
+    margin-top: 20px;
+  }
 }
 .after-guarantee__content__warrnty_border__box::before, .after-guarantee__content__warrnty_border__box::after {
   position: absolute;
@@ -125,6 +186,11 @@
   text-align: justify;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__guarantee__box__text {
+    text-align: center;
+  }
 }
 .after-guarantee__content__guarantee__box__text::before {
   content: "";

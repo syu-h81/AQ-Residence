@@ -381,20 +381,27 @@ th {
 
 ---------------------------------*/
 .sp-only {
-  display: none;
+  display: none !important;
 }
 @media screen and (max-width: 835px) {
   .sp-only {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 835px) {
+  .sp-only-span {
+    font-size: 1.125rem;
+    line-height: 40px;
     display: block;
   }
 }
 
 .pc-only {
-  display: block;
+  display: block !important;
 }
 @media screen and (max-width: 835px) {
   .pc-only {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -407,6 +414,7 @@ body {
 @media screen and (max-width: 835px) {
   p {
     font-size: 13px;
+    line-height: 28px;
   }
 }
 

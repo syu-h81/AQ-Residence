@@ -6,15 +6,22 @@
   
 ---------------------------------*/
 .sp-only {
-  display: none;
+  display: none!important;
   @include g.mq(md) {
-    display: block;
+    display: block!important;
+  }
+  &-span {
+    @include g.mq(md) {
+      font-size: 1.125rem;
+      line-height: 40px;
+      display: block;
+    }
   }
 }
 .pc-only {
-  display: block;
+  display: block!important;
   @include g.mq(md) {
-    display: none;
+    display: none!important;
   }
 }
 body {
@@ -26,6 +33,7 @@ body {
 p {
   @include g.mq(md) {
     font-size: 13px;
+    line-height: 28px;
   }
 }
 

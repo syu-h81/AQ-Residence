@@ -5,11 +5,19 @@
   artist アーティストページcss
   
 ---------------------------------*/
+@include g.mq(md) {
+  .artist-head-img {
+    margin-left: 7%;
+  }
+}
 .artist-heading {
   padding: 120px 0;
   &__body {
     max-width: 1000px;
     margin: 0 auto;
+    @include g.mq(md) {
+      margin: 0 7%;
+    }
     &__title {
       line-height: 66px;
       text-align: justify;
@@ -18,6 +26,40 @@
       line-height: 39px;
       &__inner {
         margin-top: 35px;
+      }
+    }
+    &__link {
+      border: 1px solid;
+      width: 217px;
+      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+      margin-top: 20px;
+      position: relative;
+      &:first-child {
+        @include g.mq(md) {
+          margin-top: 80px;
+        }
+      }
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 1px #000;
+        border-right: solid 1px #000;
+        transform: rotate(135deg);
+        position: absolute;
+        top: 0;
+        right: 20px;
+        bottom: 0;
+        margin: auto;
+      }
+      &__inner {
+        display: grid;
+        gap: 20px;
       }
     }
   }
@@ -81,6 +123,9 @@
   &__content {
     margin-top: 160px;
     display: flex;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+    }
     &:nth-of-type(even) {
       flex-direction: row-reverse;
     }
@@ -119,6 +164,9 @@
     }
     &__bg {
       position: relative;
+      @include g.mq(md) {
+        margin-top: -200px;
+      }
       &__img__inner {
         img {
           width: 240px;
@@ -126,6 +174,10 @@
           top: -80px;
           left: 60px;
           z-index: 10;
+          @include g.mq(md) {
+            width: 205px;
+            position: relative;
+          }
         }
         &__even {
           img {
@@ -140,6 +192,10 @@
       background: #000;
       width: 500px;
       height: 500px;
+      @include g.mq(md) {
+        width: 40%;
+        margin-left: auto;
+      }
     }
   }
 }

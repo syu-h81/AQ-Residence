@@ -405,6 +405,11 @@ th {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
+
 body {
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;
@@ -438,6 +443,7 @@ img {
 @media screen and (max-width: 835px) {
   .c-sec-title {
     font-size: 1.125rem;
+    line-height: 40px !important;
   }
 }
 

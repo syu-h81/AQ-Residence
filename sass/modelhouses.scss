@@ -9,9 +9,15 @@
 .modelhouses {
   &-main {
     padding-top: 100px;
+    @include g.mq(md) {
+      padding-top: 60px;
+    }
   }
   &-odd-section {
     background: #000;
+    @include g.mq(md) {
+      padding-bottom: 100px;
+    }
   }
   &-inner {
     display: flex;
@@ -23,14 +29,25 @@
     padding-left: 0;
     padding-right: 100px;
     color: #fff;
+    @include g.mq(md) {
+      padding: 0;
+      display: block;
+    }
   }
   &-even-inner {
     padding-right: 0;
     align-items: flex-end;
+    @include g.mq(md) {
+      padding: 0;
+      flex-direction: column-reverse;
+    }
   }
   &__img__inner {
     position: relative;
     width: 63%;
+    @include g.mq(md) {
+      width: auto;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -39,6 +56,9 @@
       font-family: "Shippori Mincho", serif;
       writing-mode: vertical-rl;
       opacity: 0.7;
+      @include g.mq(md) {
+        font-size: 6rem;
+      }
     }
   }
   &-komazawa__img__inner {
@@ -47,6 +67,12 @@
       position: absolute;
       top: -150px;
       right: -110px;
+      @include g.mq(md) {
+        left: 7%;
+        bottom: -160px;
+        top: auto;
+        right: auto;
+      }
     }
   }
   &-shinjuku__img__inner {
@@ -55,6 +81,11 @@
       position: absolute;
       top: -200px;
       left: -110px;
+      @include g.mq(md) {
+        top: auto;
+        left: 0;
+        bottom: -160px;
+      }
     }
   }
   &-seta__img__inner {
@@ -63,6 +94,12 @@
       position: absolute;
       top: -150px;
       right: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right: auto;
+        left: 0;
+        bottom: 0;
+      }
     }
   }
   &-magome__img__inner {
@@ -71,11 +108,19 @@
       position: absolute;
       top: -200px;
       left: -110px;
+      @include g.mq(md) {
+        top: auto;
+        left: 0;
+        bottom: -120px;
+      }
     }
   }
   &-komazawa__body,
   &-seta__body {
     margin-top: 60px;
+    @include g.mq(md) {
+      margin-left: 140px;
+    }
   }
   &__body__title {
     font-size: 20px;
@@ -115,5 +160,10 @@
   &-komazawa__body__img__inner,
   &-seta__body__img__inner {
     margin-top: 60px;
+  }
+  &__body__img__inner {
+    @include g.mq(md) {
+      margin-top: 60px;
+    }
   }
 }

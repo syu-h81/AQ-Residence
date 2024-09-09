@@ -24,6 +24,10 @@
     display: none!important;
   }
 }
+html { 
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px;
+}
 body {
   font-family: "Inter", sans-serif;
   letter-spacing: 2px;
@@ -54,6 +58,7 @@ img {
   text-align: center;
   @include g.mq(md) {
     font-size: 1.125rem;
+    line-height: 40px!important;
   }
 }
 .c-sec-subTitle {

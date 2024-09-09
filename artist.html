@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRIVACYPOLICY</title>
+  <title>ARTIST</title>
 
   <!-- OGP -->
   <meta property="og:url" content=""> <!-- //ページのURLを設定 -->
@@ -127,7 +127,8 @@
           <span>アーティスト</span>
         </div>
         <div class="artist-head-img c-head-img">
-          <img src="assets/images/artist_head.png" alt="">
+          <img class="pc-only" src="assets/images/artist_head.png" alt="">
+          <img class="sp-only" src="assets/images/sp_artist_head.png" alt="">
         </div>
       </div>
     </div>
@@ -149,10 +150,14 @@
                 どうぞご期待ください。
               </p>
             </div>
+            <div class="artist-heading__body__link__inner sp-only">
+              <a href="#artist-designer" class="artist-heading__body__link">建築デザイナー</a>
+              <a href="#artist-architect" class="artist-heading__body__link">企業建築家</a>
+            </div>
           </div>
         </div>
       </section>
-      <section class="artist-designer artist">
+      <section id="artist-designer" class="artist-designer artist">
         <div class="artist-designer__inner">
           <div class="artist-designer__inner__border"></div>
           <div class="artist-designer__title__inner artist__title__inner">
@@ -161,10 +166,10 @@
           <div class="artist-designer__text__inner artist__text__inner">
             <p class="artist-designer__text artist__text">
               AQレジデンスに所属する建築デザイナーです。<br>
-              その土地が持つポテンシャルを最大限に引き出し、光や風を心地よく採り入れた「そこで過ごす時間」<br>
+              その土地が持つポテンシャルを<br class="sp-only">最大限に引き出し、<br class="sp-only">光や風を心地よく採り入れた<br class="sp-only">「そこで過ごす時間」<br>
               そのものをデザインしていきます。<br>
-              AQレジデンスが大切にする住宅の性能や施工性にも配慮された、<br>
-              お客様のためだけの特別な1邸をご提案いたします<br>
+              AQレジデンスが大切にする<br class="sp-only">住宅の性能や施工性にも配慮された、<br>
+              お客様のためだけの特別な1邸を<br class="sp-only">ご提案いたします<br>
             </p>
           </div>
           <div class="artist-designer__content__inner">
@@ -179,15 +184,19 @@
                     など様々なこだわりから、業界トップクラスの快適に健康な住宅を提供しております。
                   </p>
                 </div>
-                <div class="artist-designer__content__body__img__inner">
+                <div class="artist-designer__content__body__img__inner pc-only">
                   <img src="assets/images/artist_body_img.png" alt="">
                 </div>
               </div>
               <div class="artist-designer__content__bg">
                 <div class="artist-designer__content__black__bg"></div>
-                <div class="artist-designer__content__bg__img__inner">
+                <div class="artist-designer__content__bg__img__inner pc-only">
                   <img src="assets/images/artist_1.png" alt="">
                 </div>
+              </div>
+              <div class="artist-designer__content__bg__img__inner sp-only">
+                <img src="assets/images/artist_1.png" alt="">
+                <img class="sp-only" src="assets/images/artist_body_img.png" alt="">
               </div>
             </div>
             <div class="artist-designer__content">
@@ -259,7 +268,7 @@
           </div>
         </div>
       </section>
-      <section class="artist-architect artist">
+      <section id="artist-architect" class="artist-architect artist">
         <div class="artist-architect__inner">
           <div class="artist-architect__inner__border"></div>
           <div class="artist-architect__title__inner artist__title__inner">

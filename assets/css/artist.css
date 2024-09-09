@@ -4,12 +4,22 @@
   artist アーティストページcss
 
 ---------------------------------*/
+@media screen and (max-width: 835px) {
+  .artist-head-img {
+    margin-left: 7%;
+  }
+}
 .artist-heading {
   padding: 120px 0;
 }
 .artist-heading__body {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media screen and (max-width: 835px) {
+  .artist-heading__body {
+    margin: 0 7%;
+  }
 }
 .artist-heading__body__title {
   line-height: 66px;
@@ -20,6 +30,40 @@
 }
 .artist-heading__body__text__inner {
   margin-top: 35px;
+}
+.artist-heading__body__link {
+  border: 1px solid;
+  width: 217px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+@media screen and (max-width: 835px) {
+  .artist-heading__body__link:first-child {
+    margin-top: 80px;
+  }
+}
+.artist-heading__body__link::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-top: solid 1px #000;
+  border-right: solid 1px #000;
+  transform: rotate(135deg);
+  position: absolute;
+  top: 0;
+  right: 20px;
+  bottom: 0;
+  margin: auto;
+}
+.artist-heading__body__link__inner {
+  display: grid;
+  gap: 20px;
 }
 .artist-heading__content__inner {
   margin-top: 80px;
@@ -78,6 +122,11 @@
   margin-top: 160px;
   display: flex;
 }
+@media screen and (max-width: 835px) {
+  .artist-designer__content {
+    flex-direction: column-reverse;
+  }
+}
 .artist-designer__content:nth-of-type(even) {
   flex-direction: row-reverse;
 }
@@ -117,12 +166,23 @@
 .artist-designer__content__bg {
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .artist-designer__content__bg {
+    margin-top: -200px;
+  }
+}
 .artist-designer__content__bg__img__inner img {
   width: 240px;
   position: absolute;
   top: -80px;
   left: 60px;
   z-index: 10;
+}
+@media screen and (max-width: 835px) {
+  .artist-designer__content__bg__img__inner img {
+    width: 205px;
+    position: relative;
+  }
 }
 .artist-designer__content__bg__img__inner__even img {
   top: -40px;
@@ -133,6 +193,12 @@
   background: #000;
   width: 500px;
   height: 500px;
+}
+@media screen and (max-width: 835px) {
+  .artist-designer__content__black__bg {
+    width: 40%;
+    margin-left: auto;
+  }
 }
 
 .artist-architect {

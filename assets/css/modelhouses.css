@@ -7,8 +7,18 @@
 .modelhouses-main {
   padding-top: 100px;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses-main {
+    padding-top: 60px;
+  }
+}
 .modelhouses-odd-section {
   background: #000;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses-odd-section {
+    padding-bottom: 100px;
+  }
 }
 .modelhouses-inner {
   display: flex;
@@ -21,13 +31,30 @@
   padding-right: 100px;
   color: #fff;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses-odd-inner {
+    padding: 0;
+    display: block;
+  }
+}
 .modelhouses-even-inner {
   padding-right: 0;
   align-items: flex-end;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses-even-inner {
+    padding: 0;
+    flex-direction: column-reverse;
+  }
+}
 .modelhouses__img__inner {
   position: relative;
   width: 63%;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses__img__inner {
+    width: auto;
+  }
 }
 .modelhouses__img__inner::after {
   content: "";
@@ -38,11 +65,24 @@
   writing-mode: vertical-rl;
   opacity: 0.7;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses__img__inner::after {
+    font-size: 6rem;
+  }
+}
 .modelhouses-komazawa__img__inner::after {
   content: "駒沢";
   position: absolute;
   top: -150px;
   right: -110px;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses-komazawa__img__inner::after {
+    left: 7%;
+    bottom: -160px;
+    top: auto;
+    right: auto;
+  }
 }
 .modelhouses-shinjuku__img__inner::after {
   content: "新宿";
@@ -50,11 +90,26 @@
   top: -200px;
   left: -110px;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses-shinjuku__img__inner::after {
+    top: auto;
+    left: 0;
+    bottom: -160px;
+  }
+}
 .modelhouses-seta__img__inner::after {
   content: "瀬田";
   position: absolute;
   top: -150px;
   right: -110px;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses-seta__img__inner::after {
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: 0;
+  }
 }
 .modelhouses-magome__img__inner::after {
   content: "馬込";
@@ -62,8 +117,20 @@
   top: -200px;
   left: -110px;
 }
+@media screen and (max-width: 835px) {
+  .modelhouses-magome__img__inner::after {
+    top: auto;
+    left: 0;
+    bottom: -120px;
+  }
+}
 .modelhouses-komazawa__body, .modelhouses-seta__body {
   margin-top: 60px;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses-komazawa__body, .modelhouses-seta__body {
+    margin-left: 140px;
+  }
 }
 .modelhouses__body__title {
   font-size: 20px;
@@ -100,4 +167,9 @@
 }
 .modelhouses-komazawa__body__img__inner, .modelhouses-seta__body__img__inner {
   margin-top: 60px;
+}
+@media screen and (max-width: 835px) {
+  .modelhouses__body__img__inner {
+    margin-top: 60px;
+  }
 }/*# sourceMappingURL=modelhouses.css.map */

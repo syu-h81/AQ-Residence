@@ -124,7 +124,7 @@
 }
 @media screen and (max-width: 835px) {
   .artist-designer__content {
-    flex-direction: column-reverse;
+    display: none;
   }
 }
 .artist-designer__content:nth-of-type(even) {
@@ -214,6 +214,11 @@
   line-height: 39px;
   text-align: center;
 }
+@media screen and (max-width: 835px) {
+  .artist-architect__text {
+    line-height: 28px;
+  }
+}
 .artist-architect__text__inner {
   margin-top: 50px;
 }
@@ -222,6 +227,11 @@
   justify-content: flex-end;
   align-items: center;
   margin-top: 120px;
+}
+@media screen and (max-width: 835px) {
+  .artist-architect__content {
+    position: relative;
+  }
 }
 .artist-architect__content:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -233,11 +243,32 @@
   margin-bottom: 80px;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__img__inner {
+    width: 200px;
+    margin-bottom: 140%;
+    margin-left: 50%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__img__inner__even {
+    margin-right: 50%;
+    margin-left: 0;
+  }
+}
 .artist-architect__content__icon__img__inner img {
   position: absolute;
   bottom: -60px;
   right: -100px;
   z-index: 10;
+}
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__img__inner img {
+    bottom: 200px;
+    top: auto;
+    right: auto;
+  }
 }
 .artist-architect__content__icon__img__inner__even img {
   right: auto;
@@ -247,6 +278,11 @@
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__body__img__inner {
+    position: static;
+  }
+}
 .artist-architect__content__icon__body__img__inner img {
   width: 700px;
   z-index: 10;
@@ -254,10 +290,25 @@
   top: 100px;
   left: -100px;
 }
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__body__img__inner img {
+    width: 360px;
+    top: 20%;
+    right: 0;
+    left: auto;
+  }
+}
 .artist-architect__content__icon__body__img__inner__even img {
   right: -100px;
   top: 100px;
   left: auto;
+}
+@media screen and (max-width: 835px) {
+  .artist-architect__content__icon__body__img__inner__even img {
+    right: auto;
+    top: 20%;
+    left: 0;
+  }
 }
 .artist-architect__content__body {
   background: #000;
@@ -267,10 +318,23 @@
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 835px) {
+  .artist-architect__content__body {
+    width: auto;
+  }
+}
 .artist-architect__content__body__inner {
   color: #fff;
   margin-bottom: 220px;
   width: 58%;
+}
+@media screen and (max-width: 835px) {
+  .artist-architect__content__body__inner {
+    width: auto;
+    margin-bottom: 0;
+    padding: 0 8%;
+    margin-top: 100%;
+  }
 }
 .artist-architect__content__body__position {
   font-weight: 300;
@@ -287,4 +351,70 @@
 
 .artist-about-content__after {
   background-image: url(../images/about_after_img_02.png);
+}
+
+.sp-artist-designer__content {
+  display: none;
+}
+
+@media screen and (max-width: 835px) {
+  .sp-artist-designer__content {
+    display: flex;
+  }
+  .sp-artist-designer__content__odd {
+    margin-top: 100px;
+  }
+  .sp-artist-designer__content__flex__even {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .sp-artist-designer__content__even {
+    display: block;
+  }
+  .sp-artist-designer__content__body {
+    width: 70%;
+  }
+  .sp-artist-designer__content__body__even {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sp-artist-designer__content__body__icon__inner {
+    max-width: 200px;
+  }
+  .sp-artist-designer__content__body__icon__inner img:first-child {
+    margin-left: 15%;
+  }
+  .sp-artist-designer__content__body__icon__inner img:last-child {
+    width: 190%;
+    z-index: 1;
+    margin-top: 20px;
+    position: relative;
+  }
+  .sp-artist-designer__content__body__icon__inner__even img:last-child {
+    width: 200px;
+    margin-top: 0;
+  }
+  .sp-artist-designer__content__body__body {
+    padding: 7%;
+    padding-top: 8%;
+  }
+  .sp-artist-designer__content__body__body__title__inner {
+    margin-top: 20px;
+  }
+  .sp-artist-designer__content__body__body__text__inner {
+    margin-top: 40px;
+  }
+  .sp-artist-designer__content__bg {
+    width: 35%;
+    height: 450px;
+    background-color: #000;
+    margin-top: 22%;
+  }
+  .sp-artist-designer__content__bg__even {
+    margin-top: 30%;
+  }
+  .sp-artist-designer__img__inner {
+    width: 90%;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=artist.css.map */

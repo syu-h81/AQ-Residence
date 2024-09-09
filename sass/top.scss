@@ -35,10 +35,17 @@
       font-size: 5rem;
       font-family: "Jost", sans-serif;
       font-weight: 600;
+      @include g.mq(md) {
+        font-size: 2.375rem;
+      }
     }
     &__concept {
       font-size: 1.625rem;
       font-weight: 500;
+      @include g.mq(md) {
+        font-size: 1.125rem;
+        line-height: 40px;
+      }
       &__inner {
         margin-top: 80px;
       }
@@ -48,10 +55,16 @@
       &:first-child {
         font-size: 1.25rem;
         margin-top: 60px;
+        @include g.mq(md) {
+          font-size: 1.125rem;
+        }
       }
       &:last-child {
         font-size: 1.25rem;
         margin-top: 30px;
+        @include g.mq(md) {
+          font-size: 1.125rem;
+        }
       }
       &__inner {
         margin-top: 40px;
@@ -63,12 +76,18 @@
   &__inner {
     background: #000;
     padding: 120px 0 180px 0;
+    @include g.mq(md) {
+      padding-bottom: 100px;
+    }
   }
   &__title {
     font-size: 5rem;
     font-family: "Jost", sans-serif;
     font-weight: 600;
     text-align: justify;
+    @include g.mq(md) {
+      font-size: 2.375rem;
+    }
     &__inner {
       color: #fff;
       margin-left: 7%;
@@ -76,11 +95,17 @@
     &__text {
       font-size: 1.25rem;
       margin-top: 40px;
+      @include g.mq(md) {
+        font-size: 1.125rem;
+      }
     }
   }
   &__content__inner {
     padding-top: 60px;
     display: flex;
+    @include g.mq(md) {
+      display: block;
+    }
   }
   &__content {
     width: 25%;
@@ -90,6 +115,12 @@
     display: flex;
     justify-content: center;
     position: relative;
+    @include g.mq(md) {
+      width: auto;
+      height: 180px;
+      margin-top: 20px;
+      align-items: center;
+    }
     &__design {
       background-image: url(../images/top_about_design.png);
     }
@@ -105,13 +136,25 @@
     &__body {
       color: #fff;
       margin-top: 100px;
+      @include g.mq(md) {
+        margin-top: 0;
+        margin-right: 80px;
+      }
       &__title {
         font-size: 2.5rem;
+        @include g.mq(md) {
+          font-size: 1.125rem;
+          font-weight: bold;
+        }
       }
       &__desc {
         font-size: 1.25rem;
         font-weight: 500;
         margin-top: 20px;
+        @include g.mq(md) {
+          font-size: 0.875rem;
+          margin-top: 0;
+        }
       }
     }
   }
@@ -124,9 +167,13 @@
     margin-left: 7%;
     &__title {
       font-size: 5rem;
-    font-family: "Jost", sans-serif;
-    font-weight: 600;
-    text-align: justify;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      text-align: justify;
+      @include g.mq(md) {
+        font-size: 2.375rem;
+        line-height: 60px;
+      }
     }
     &__text {
       line-height: 39px;
@@ -144,6 +191,9 @@
       padding: 15px;
       margin-top: 60px;
       position: relative;
+      @include g.mq(md) {
+        display: none;
+      }
       &::after {
         content: "";
         width: 10px;
@@ -178,6 +228,9 @@
     margin-top: 100px;
   }
   &-odd-inner {
+    @include g.mq(md) {
+      flex-direction: column;
+    }
     padding-left: 0;
     &__bg {
       width: 90%;
@@ -187,11 +240,17 @@
       top: 0;
       right: 0;
       z-index: -10;
+      @include g.mq(md) {
+        display: none;
+      }
     }
   }
   &-even-inner {
     padding-right: 0;
     align-items: flex-end;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+    }
     &__bg {
       width: 90%;
       height: 700px;
@@ -200,11 +259,17 @@
       top: 0;
       left: 0;
       z-index: -10;
+      @include g.mq(md) {
+        display: none;
+      }
     }
   }
   &__img__inner {
     position: relative;
     width: 63%;
+    @include g.mq(md) {
+      width: auto;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -213,6 +278,9 @@
       font-family: "Shippori Mincho", serif;
       writing-mode: vertical-rl;
       opacity: 0.7;
+      @include g.mq(md) {
+        font-size: 6rem;
+      }
     }
   }
   &-komazawa__img__inner {
@@ -221,6 +289,12 @@
       position: absolute;
       top: -200px;
       right: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right:auto;
+        left: 10%;
+        bottom: -50%;
+      }
     }
   }
   &-shinjuku__img__inner {
@@ -229,6 +303,12 @@
       position: absolute;
       top: -200px;
       left: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right:auto;
+        left: 10%;
+        bottom: -50%;
+      }
     }
   }
   &-seta__img__inner {
@@ -237,6 +317,12 @@
       position: absolute;
       top: -150px;
       right: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right:auto;
+        left: 10%;
+        bottom: -50%;
+      }
     }
   }
   &-magome__img__inner {
@@ -245,22 +331,46 @@
       position: absolute;
       top: -200px;
       left: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right:auto;
+        left: 10%;
+        bottom: -50%;
+      }
     }
   }
   &-komazawa__body,
   &-seta__body {
     margin-top: 60px;
+    @include g.mq(md) {
+      width: 100%;
+      margin-top: 20%;
+    }
   }
   &__body__title {
     font-size: 20px;
     font-weight: 500;
+    @include g.mq(md) {
+      line-height: 40px;
+      margin-left: 35%;
+    }
   }
   &-shinjuku__body__title,
   &-magome__body__title {
     margin-top: 30px;
     line-height: 44px;
+    @include g.mq(md) {
+      margin-top: 20%;
+    }
     &__inner {
       margin-left: 60px;
+    }
+  }
+  &-magome__body__title {
+    &__inner {
+      @include g.mq(md) {
+        margin-left: 30px;
+      }
     }
   }
   &-shinjuku__body__text,
@@ -274,6 +384,26 @@
   }
   &__body__text__inner {
     margin-top: 30px;
+    @include g.mq(md) {
+      margin-left: 25%;
+    }
+  }
+  &-shinjuku__body__text__inner,
+  &-magome__body__text__inner {
+    @include g.mq(md) {
+      margin-left: 40%;
+    }
+  }
+  &-magome__body__text__inner {
+    @include g.mq(md) {
+      margin-left: 0;
+    }
+  }
+  &-magome__body__text {
+    @include g.mq(md) {
+      width: 70%;
+      margin-left: auto;
+    }
   }
   &__body__text {
     font-size: 0.875rem;
@@ -309,16 +439,38 @@
   &-seta__body__btn {
     background: #fff;
     color: #000;
+    @include g.mq(md) {
+      margin: 0 auto;
+      margin-top: 30px;
+    }
   }
   &-shinjuku__body__btn,
   &-magome__body__btn {
     margin-left: 60px;
   }
+  &-magome__body__btn {
+    margin-left: 0;
+    @include g.mq(md) {
+      margin-left: 60px;
+    }
+  }
   &-komazawa__body__img__inner,
   &-seta__body__img__inner {
     margin-top: 60px;
+    @include g.mq(md) {
+      text-align: right;
+    }
     img {
       width: 350px;
+      @include g.mq(md) {
+        width: auto;
+      }
+    }
+  }
+  &-shinjuku__body__img__inner,
+  &-magome__body__img__inner {
+    @include g.mq(md) {
+      margin-top: 60px;
     }
   }
 }
@@ -332,6 +484,9 @@
         opacity: .3; // スライドを薄くする
         transition: opacity .5s, transform .5s; // スライド透過率と拡大のアニメーション時間を0.5秒に設定
         width: 100%;
+        @include g.mq(md) {
+          height: 230px;
+        }
       }
     }
     .slider .slick-center img {
@@ -347,6 +502,9 @@
     padding: 100px 0;
     display: flex;
     align-items: center;
+    @include g.mq(md) {
+      display: block;
+    }
   }
   &__title__inner {
     margin-left: 14%;
@@ -363,13 +521,31 @@
       display: flex;
       align-items: center;
       margin-top: 40px;
+      display: block;
+      display: block;
+      @include g.mq(md) {
+        margin-left: 14%;
+      }
       &:first-child {
         margin-top: 0;
+        @include g.mq(md) {
+          margin-top: 40px;
+        }
       }
       &__date {
         font-weight: 200;
+        @include g.mq(md) {
+          font-size: 0.8125rem;
+        }
         &__inner {
           margin-right: 100px;
+        }
+      }
+      &__title {
+        @include g.mq(md) {
+          font-size: 0.8125rem;
+          display: block;
+          margin-top: 10px;
         }
       }
     }
@@ -380,12 +556,25 @@
     max-width: 1100px;
     margin: 0 auto;
     margin-top: 120px;
+    @include g.mq(md) {
+      padding: 0 7%;
+    }
+  }
+  &__title {
+    font-size: 2.5rem;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    text-align: justify;
   }
   &__content {
     border: 1px solid #000;
     display: flex;
     padding: 20px;
+    margin-top: 40px;
     position: relative;
+    @include g.mq(md) {
+      display: block;
+    }
     &__body {
       padding-top: 40px;
       margin: 0 auto;
@@ -393,6 +582,9 @@
         position: absolute;
         top: 20px;
         right: 20px;
+        @include g.mq(md) {
+          position: static;
+        }
       }
       &__title {
         font-family: "Jost", sans-serif;
@@ -400,6 +592,9 @@
       }
       &__text {
         line-height: 39px;
+        @include g.mq(md) {
+          line-height: 30px;
+        }
         &__inner {
           margin-top: 50px;
         }

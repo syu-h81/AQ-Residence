@@ -10,6 +10,12 @@
   background: #fff;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .reservation__title__inner {
+    margin: -60px 10% 0 0;
+    padding: 60px 0 0 16%;
+  }
+}
 .reservation__title {
   text-align: justify;
 }
@@ -28,6 +34,12 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+}
+@media screen and (max-width: 835px) {
+  .request-info-banner__inner {
+    width: auto;
+    background-position-x: 50%;
+  }
 }
 .request-info-banner__content {
   color: #fff;

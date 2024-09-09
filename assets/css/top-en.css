@@ -34,9 +34,20 @@
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
+@media screen and (max-width: 835px) {
+  .top-en-body__body__title {
+    font-size: 2.375rem;
+  }
+}
 .top-en-body__body__concept {
   font-size: 1.625rem;
   font-weight: 500;
+}
+@media screen and (max-width: 835px) {
+  .top-en-body__body__concept {
+    font-size: 1.125rem;
+    line-height: 40px;
+  }
 }
 .top-en-body__body__concept__inner {
   margin-top: 80px;
@@ -48,9 +59,19 @@
   font-size: 1.25rem;
   margin-top: 60px;
 }
+@media screen and (max-width: 835px) {
+  .top-en-body__body__text:first-child {
+    font-size: 1.125rem;
+  }
+}
 .top-en-body__body__text:last-child {
   font-size: 1.25rem;
   margin-top: 30px;
+}
+@media screen and (max-width: 835px) {
+  .top-en-body__body__text:last-child {
+    font-size: 1.125rem;
+  }
 }
 .top-en-body__body__text__inner {
   margin-top: 40px;
@@ -64,6 +85,12 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 835px) {
+  .top-en-about__inner {
+    height: auto;
+    padding-top: 14%;
+  }
 }
 .top-en-about__body {
   margin-left: 7%;
@@ -92,12 +119,27 @@
   padding: 120px 0 120px 120px;
   background: #000;
 }
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__inner {
+    padding: 120px 0;
+  }
+}
 .top-en-design-housing__content {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__content {
+    display: block;
+  }
+}
 .top-en-design-housing__body {
   color: #fff;
+}
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__body {
+    padding: 0 7%;
+  }
 }
 .top-en-design-housing__body__title {
   line-height: 66px;
@@ -106,11 +148,22 @@
 .top-en-design-housing__body__text {
   line-height: 39px;
 }
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__body__text {
+    line-height: 28px;
+  }
+}
 .top-en-design-housing__body__text__inner {
   margin-top: 30px;
 }
 .top-en-design-housing__img__inner {
   margin-top: 100px;
+}
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__img__inner {
+    margin-top: 100px;
+    margin-left: 20%;
+  }
 }
 .top-en-design-housing__sub__img__inner {
   width: 40%;
@@ -118,6 +171,14 @@
   margin: 0 auto;
   padding-left: 120px;
   margin-top: -220px;
+}
+@media screen and (max-width: 835px) {
+  .top-en-design-housing__sub__img__inner {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    margin-top: -220px;
+  }
 }
 
 .top-en-design-trend {
@@ -129,12 +190,28 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .top-en-design-trend__content {
+    flex-direction: column-reverse;
+    padding: 0 7%;
+  }
+}
 .top-en-design-trend__img__inner {
   display: grid;
   gap: 5px;
 }
+@media screen and (max-width: 835px) {
+  .top-en-design-trend__img__inner {
+    margin-top: 20%;
+  }
+}
 .top-en-design-trend__body {
   margin-left: 200px;
+}
+@media screen and (max-width: 835px) {
+  .top-en-design-trend__body {
+    margin-left: 0;
+  }
 }
 .top-en-design-trend__body__title {
   line-height: 66px;

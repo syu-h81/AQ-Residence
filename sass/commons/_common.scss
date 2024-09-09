@@ -108,6 +108,7 @@ img {
     margin-left: 7%;
     @include g.mq(md) {
       margin-left: 0;
+      margin-top: 30px;
     }
   }
 }
@@ -223,6 +224,7 @@ img {
       font-size: 1.5rem;
       font-weight: 500;
       margin-top: 20%;
+      display: block;
       @include g.mq(md) {
         font-size: 1.125rem;
         margin-top: 0;
@@ -527,6 +529,7 @@ input[type="radio"] {
       }
     }
     &__architecture__hope__radio {
+      margin-left: 0;
       &__inner {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -562,6 +565,7 @@ input[type="radio"] {
     &__architecture__budget {
       &__radio {
         width: 200px;
+        margin-left: 0;
         &__inner {
           display: grid;
           gap: 20px;

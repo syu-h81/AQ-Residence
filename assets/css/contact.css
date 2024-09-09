@@ -10,6 +10,12 @@
   background: #fff;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .contact__title__inner {
+    margin: -60px 10% 0 0;
+    padding: 60px 0 0 16%;
+  }
+}
 .contact__title {
   text-align: justify;
 }
@@ -18,6 +24,11 @@
   margin: 0 auto;
   margin-top: 40px;
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .contact__text__inner {
+    padding: 0 7%;
+  }
 }
 .contact__text {
   font-size: 0.875rem;
@@ -43,6 +54,12 @@
   justify-content: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 835px) {
+  .mh-reservation-banner__inner {
+    width: auto;
+    background-position: center;
+  }
+}
 .mh-reservation-banner__content {
   color: #fff;
   position: relative;
@@ -64,6 +81,11 @@
   justify-content: center;
   margin-top: 50px;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .mh-reservation-banner__content__btn {
+    display: none;
+  }
 }
 .mh-reservation-banner__content__btn::after {
   content: "";

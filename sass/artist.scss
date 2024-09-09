@@ -124,7 +124,7 @@
     margin-top: 160px;
     display: flex;
     @include g.mq(md) {
-      flex-direction: column-reverse;
+      display: none;
     }
     &:nth-of-type(even) {
       flex-direction: row-reverse;
@@ -213,6 +213,9 @@
   &__text {
     line-height: 39px;
     text-align: center;
+    @include g.mq(md) {
+      line-height: 28px;
+    }
     &__inner {
       margin-top: 50px;
     }
@@ -222,6 +225,9 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: 120px;
+    @include g.mq(md) {
+      position: relative;
+    }
     &:nth-of-type(even) {
       flex-direction: row-reverse;
       margin-top: 240px;
@@ -231,11 +237,28 @@
       width: 240px;
       margin-bottom: 80px;
       position: relative;
+      @include g.mq(md) {
+        width: 200px;
+        margin-bottom: 140%;
+        margin-left: 50%;
+        position: relative;
+      }
+      &__even {
+        @include g.mq(md) {
+          margin-right: 50%;
+          margin-left: 0;
+        }
+      }
       img {
         position: absolute;
         bottom: -60px;
         right: -100px;
         z-index: 10;
+        @include g.mq(md) {
+          bottom: 200px;
+          top: auto;
+          right: auto;
+        }
       }
       &__even {
         img {
@@ -247,18 +270,32 @@
     &__icon__body__img__inner {
       width: 100%;
       position: relative;
+      @include g.mq(md) {
+        position: static;
+      }
       img {
         width: 700px;
         z-index: 10;
         position: absolute;
         top: 100px;
         left: -100px;
+        @include g.mq(md) {
+          width: 360px;
+          top: 20%;
+          right: 0;
+          left: auto;
+        }
       }
       &__even {
         img {
           right: -100px;
           top: 100px;
           left: auto;
+          @include g.mq(md) {
+            right: auto;
+            top: 20%;
+            left: 0;
+          }
         }
       }
     }
@@ -269,10 +306,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      @include g.mq(md) {
+        width: auto;
+      }
       &__inner {
         color: #fff;
         margin-bottom: 220px;
         width: 58%;
+        @include g.mq(md) {
+          width: auto;
+          margin-bottom: 0;
+          padding: 0 8%;
+          margin-top: 100%;
+        }
       }
       &__position {
         font-weight: 300;
@@ -292,4 +338,76 @@
 
 .artist-about-content__after {
   background-image: url(../images/about_after_img_02.png);
+}
+
+
+.sp-artist-designer__content {
+  display: none;
+}
+@include g.mq(md) {
+  .sp-artist-designer__content {
+    display: flex;
+    &__odd {
+      margin-top: 100px;
+    }
+    &__flex__even {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__even {
+      display: block;
+    }
+    &__body {
+      width: 70%;
+      &__even {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      &__icon__inner {
+        max-width: 200px;
+        img:first-child {
+          margin-left: 15%;
+        }
+        img:last-child {
+          width: 190%;
+          z-index: 1;
+          margin-top: 20px;
+          position: relative;
+        }
+        &__even {
+          img:last-child {
+            width: 200px;
+            margin-top: 0;
+          }
+        }
+      }
+      &__body {
+        padding:  7%;
+        padding-top: 8%;
+        &__title {
+          &__inner {
+            margin-top: 20px;
+          }
+        }
+        &__text {
+          &__inner {
+            margin-top: 40px;
+          }
+        }
+      }
+    }
+    &__bg {
+      width: 35%;
+      height: 450px;
+      background-color: #000;
+      margin-top: 22%;
+      &__even {
+        margin-top: 30%;
+      }
+    }
+  }
+  .sp-artist-designer__img__inner {
+    width: 90%;
+    margin-left: auto;
+  }
 }

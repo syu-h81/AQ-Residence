@@ -34,9 +34,20 @@
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
+@media screen and (max-width: 835px) {
+  .top-body__body__title {
+    font-size: 2.375rem;
+  }
+}
 .top-body__body__concept {
   font-size: 1.625rem;
   font-weight: 500;
+}
+@media screen and (max-width: 835px) {
+  .top-body__body__concept {
+    font-size: 1.125rem;
+    line-height: 40px;
+  }
 }
 .top-body__body__concept__inner {
   margin-top: 80px;
@@ -48,9 +59,19 @@
   font-size: 1.25rem;
   margin-top: 60px;
 }
+@media screen and (max-width: 835px) {
+  .top-body__body__text:first-child {
+    font-size: 1.125rem;
+  }
+}
 .top-body__body__text:last-child {
   font-size: 1.25rem;
   margin-top: 30px;
+}
+@media screen and (max-width: 835px) {
+  .top-body__body__text:last-child {
+    font-size: 1.125rem;
+  }
 }
 .top-body__body__text__inner {
   margin-top: 40px;
@@ -60,11 +81,21 @@
   background: #000;
   padding: 120px 0 180px 0;
 }
+@media screen and (max-width: 835px) {
+  .top-about__inner {
+    padding-bottom: 100px;
+  }
+}
 .top-about__title {
   font-size: 5rem;
   font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: justify;
+}
+@media screen and (max-width: 835px) {
+  .top-about__title {
+    font-size: 2.375rem;
+  }
 }
 .top-about__title__inner {
   color: #fff;
@@ -74,9 +105,19 @@
   font-size: 1.25rem;
   margin-top: 40px;
 }
+@media screen and (max-width: 835px) {
+  .top-about__title__text {
+    font-size: 1.125rem;
+  }
+}
 .top-about__content__inner {
   padding-top: 60px;
   display: flex;
+}
+@media screen and (max-width: 835px) {
+  .top-about__content__inner {
+    display: block;
+  }
 }
 .top-about__content {
   width: 25%;
@@ -86,6 +127,14 @@
   display: flex;
   justify-content: center;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .top-about__content {
+    width: auto;
+    height: 180px;
+    margin-top: 20px;
+    align-items: center;
+  }
 }
 .top-about__content__design {
   background-image: url(../images/top_about_design.png);
@@ -103,13 +152,31 @@
   color: #fff;
   margin-top: 100px;
 }
+@media screen and (max-width: 835px) {
+  .top-about__content__body {
+    margin-top: 0;
+    margin-right: 80px;
+  }
+}
 .top-about__content__body__title {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 835px) {
+  .top-about__content__body__title {
+    font-size: 1.125rem;
+    font-weight: bold;
+  }
 }
 .top-about__content__body__desc {
   font-size: 1.25rem;
   font-weight: 500;
   margin-top: 20px;
+}
+@media screen and (max-width: 835px) {
+  .top-about__content__body__desc {
+    font-size: 0.875rem;
+    margin-top: 0;
+  }
 }
 
 .top-mh__inner {
@@ -123,6 +190,12 @@
   font-family: "Jost", sans-serif;
   font-weight: 600;
   text-align: justify;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-title__body__title {
+    font-size: 2.375rem;
+    line-height: 60px;
+  }
 }
 .top-mh-title__body__text {
   line-height: 39px;
@@ -140,6 +213,11 @@
   padding: 15px;
   margin-top: 60px;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-title__body__link {
+    display: none;
+  }
 }
 .top-mh-title__body__link::after {
   content: "";
@@ -173,6 +251,11 @@
 .top-mh-odd-inner {
   padding-left: 0;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-odd-inner {
+    flex-direction: column;
+  }
+}
 .top-mh-odd-inner__bg {
   width: 90%;
   height: 700px;
@@ -182,9 +265,19 @@
   right: 0;
   z-index: -10;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-odd-inner__bg {
+    display: none;
+  }
+}
 .top-mh-even-inner {
   padding-right: 0;
   align-items: flex-end;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-even-inner {
+    flex-direction: column-reverse;
+  }
 }
 .top-mh-even-inner__bg {
   width: 90%;
@@ -195,9 +288,19 @@
   left: 0;
   z-index: -10;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-even-inner__bg {
+    display: none;
+  }
+}
 .top-mh__img__inner {
   position: relative;
   width: 63%;
+}
+@media screen and (max-width: 835px) {
+  .top-mh__img__inner {
+    width: auto;
+  }
 }
 .top-mh__img__inner::after {
   content: "";
@@ -208,11 +311,24 @@
   writing-mode: vertical-rl;
   opacity: 0.7;
 }
+@media screen and (max-width: 835px) {
+  .top-mh__img__inner::after {
+    font-size: 6rem;
+  }
+}
 .top-mh-komazawa__img__inner::after {
   content: "駒沢";
   position: absolute;
   top: -200px;
   right: -110px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-komazawa__img__inner::after {
+    top: auto;
+    right: auto;
+    left: 10%;
+    bottom: -50%;
+  }
 }
 .top-mh-shinjuku__img__inner::after {
   content: "新宿";
@@ -220,11 +336,27 @@
   top: -200px;
   left: -110px;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-shinjuku__img__inner::after {
+    top: auto;
+    right: auto;
+    left: 10%;
+    bottom: -50%;
+  }
+}
 .top-mh-seta__img__inner::after {
   content: "瀬田";
   position: absolute;
   top: -150px;
   right: -110px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-seta__img__inner::after {
+    top: auto;
+    right: auto;
+    left: 10%;
+    bottom: -50%;
+  }
 }
 .top-mh-magome__img__inner::after {
   content: "馬込";
@@ -232,19 +364,49 @@
   top: -200px;
   left: -110px;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-magome__img__inner::after {
+    top: auto;
+    right: auto;
+    left: 10%;
+    bottom: -50%;
+  }
+}
 .top-mh-komazawa__body, .top-mh-seta__body {
   margin-top: 60px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-komazawa__body, .top-mh-seta__body {
+    width: 100%;
+    margin-top: 20%;
+  }
 }
 .top-mh__body__title {
   font-size: 20px;
   font-weight: 500;
 }
+@media screen and (max-width: 835px) {
+  .top-mh__body__title {
+    line-height: 40px;
+    margin-left: 35%;
+  }
+}
 .top-mh-shinjuku__body__title, .top-mh-magome__body__title {
   margin-top: 30px;
   line-height: 44px;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-shinjuku__body__title, .top-mh-magome__body__title {
+    margin-top: 20%;
+  }
+}
 .top-mh-shinjuku__body__title__inner, .top-mh-magome__body__title__inner {
   margin-left: 60px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-magome__body__title__inner {
+    margin-left: 30px;
+  }
 }
 .top-mh-shinjuku__body__text__inner, .top-mh-magome__body__text__inner {
   margin-left: 60px;
@@ -254,6 +416,27 @@
 }
 .top-mh__body__text__inner {
   margin-top: 30px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh__body__text__inner {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .top-mh-shinjuku__body__text__inner, .top-mh-magome__body__text__inner {
+    margin-left: 40%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .top-mh-magome__body__text__inner {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 835px) {
+  .top-mh-magome__body__text {
+    width: 70%;
+    margin-left: auto;
+  }
 }
 .top-mh__body__text {
   font-size: 0.875rem;
@@ -289,14 +472,43 @@
   background: #fff;
   color: #000;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-komazawa__body__btn, .top-mh-seta__body__btn {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
 .top-mh-shinjuku__body__btn, .top-mh-magome__body__btn {
   margin-left: 60px;
+}
+.top-mh-magome__body__btn {
+  margin-left: 0;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-magome__body__btn {
+    margin-left: 60px;
+  }
 }
 .top-mh-komazawa__body__img__inner, .top-mh-seta__body__img__inner {
   margin-top: 60px;
 }
+@media screen and (max-width: 835px) {
+  .top-mh-komazawa__body__img__inner, .top-mh-seta__body__img__inner {
+    text-align: right;
+  }
+}
 .top-mh-komazawa__body__img__inner img, .top-mh-seta__body__img__inner img {
   width: 350px;
+}
+@media screen and (max-width: 835px) {
+  .top-mh-komazawa__body__img__inner img, .top-mh-seta__body__img__inner img {
+    width: auto;
+  }
+}
+@media screen and (max-width: 835px) {
+  .top-mh-shinjuku__body__img__inner, .top-mh-magome__body__img__inner {
+    margin-top: 60px;
+  }
 }
 
 .top-gallery {
@@ -311,6 +523,11 @@
   transition: opacity 0.5s, transform 0.5s;
   width: 100%;
 }
+@media screen and (max-width: 835px) {
+  .top-gallery__img__inner .slick-img img {
+    height: 230px;
+  }
+}
 .top-gallery__img__inner .slider .slick-center img {
   opacity: 1;
   transform: scale(1.4);
@@ -322,6 +539,11 @@
   padding: 100px 0;
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 835px) {
+  .top-news__inner {
+    display: block;
+  }
 }
 .top-news__title__inner {
   margin-left: 14%;
@@ -339,15 +561,39 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
+  display: block;
+  display: block;
+}
+@media screen and (max-width: 835px) {
+  .top-news__body__article {
+    margin-left: 14%;
+  }
 }
 .top-news__body__article:first-child {
   margin-top: 0;
 }
+@media screen and (max-width: 835px) {
+  .top-news__body__article:first-child {
+    margin-top: 40px;
+  }
+}
 .top-news__body__article__date {
   font-weight: 200;
 }
+@media screen and (max-width: 835px) {
+  .top-news__body__article__date {
+    font-size: 0.8125rem;
+  }
+}
 .top-news__body__article__date__inner {
   margin-right: 100px;
+}
+@media screen and (max-width: 835px) {
+  .top-news__body__article__title {
+    font-size: 0.8125rem;
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .top-event__inner {
@@ -355,11 +601,28 @@
   margin: 0 auto;
   margin-top: 120px;
 }
+@media screen and (max-width: 835px) {
+  .top-event__inner {
+    padding: 0 7%;
+  }
+}
+.top-event__title {
+  font-size: 2.5rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+  text-align: justify;
+}
 .top-event__content {
   border: 1px solid #000;
   display: flex;
   padding: 20px;
+  margin-top: 40px;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .top-event__content {
+    display: block;
+  }
 }
 .top-event__content__body {
   padding-top: 40px;
@@ -370,12 +633,22 @@
   top: 20px;
   right: 20px;
 }
+@media screen and (max-width: 835px) {
+  .top-event__content__body__date__inner {
+    position: static;
+  }
+}
 .top-event__content__body__title {
   font-family: "Jost", sans-serif;
   font-weight: 600;
 }
 .top-event__content__body__text {
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .top-event__content__body__text {
+    line-height: 30px;
+  }
 }
 .top-event__content__body__text__inner {
   margin-top: 50px;

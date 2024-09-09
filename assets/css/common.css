@@ -499,6 +499,7 @@ img {
 @media screen and (max-width: 835px) {
   .c-head-img {
     margin-left: 0;
+    margin-top: 30px;
   }
 }
 
@@ -627,6 +628,7 @@ img {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 20%;
+  display: block;
 }
 @media screen and (max-width: 835px) {
   .c-modelHouse__card__title {
@@ -958,6 +960,9 @@ input[type=radio] {
   display: flex;
   align-items: center;
 }
+.c-form__architecture__hope__radio {
+  margin-left: 0;
+}
 .c-form__architecture__hope__radio__inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -991,6 +996,7 @@ input[type=radio] {
 }
 .c-form__architecture__budget__radio {
   width: 200px;
+  margin-left: 0;
 }
 .c-form__architecture__budget__radio__inner {
   display: grid;
@@ -1328,6 +1334,7 @@ input[type=radio] {
 @media screen and (max-width: 835px) {
   .footer-logo {
     padding-top: 120px;
+    max-width: 100%;
   }
 }
 .footer-nav__body {
@@ -1402,8 +1409,7 @@ input[type=radio] {
   margin: 0 5px;
 }
 .footer-copyright {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 1rem;
   font-weight: 200;
   letter-spacing: 2px;
@@ -1413,5 +1419,6 @@ input[type=radio] {
   .footer-copyright {
     color: #fff;
     margin-top: 40px;
+    line-height: 22px;
   }
 }/*# sourceMappingURL=common.css.map */

@@ -24,6 +24,7 @@
     max-width: 300px;
     @include g.mq(md) {
       padding-top: 120px;
+      max-width: 100%;
     }
   }
   &-nav__body {
@@ -88,8 +89,7 @@
     }
   }
   &-copyright {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 2px;
@@ -97,6 +97,7 @@
     @include g.mq(md) {
       color: #fff;
       margin-top: 40px;
+      line-height: 22px;
     }
   }
 }

@@ -5,6 +5,11 @@
 
 ---------------------------------*/
 @media screen and (max-width: 835px) {
+  .after-head-img {
+    margin-left: 7%;
+  }
+}
+@media screen and (max-width: 835px) {
   .after-head-img img {
     height: 300px;
   }

@@ -7,6 +7,9 @@
 ---------------------------------*/
 .after {
   &-head-img {
+    @include g.mq(md) {
+      margin-left: 7%;
+    }
     img {
       @include g.mq(md) {
         height: 300px;

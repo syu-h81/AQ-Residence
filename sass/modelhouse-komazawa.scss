@@ -8,11 +8,18 @@
 .mh-komazawa {
   &-main {
     padding-top: 100px;
+    @include g.mq(md) {
+      padding-top: 60px;
+    }
   }
   &-inner {
     display: flex;
     align-items: end;
     padding: 100px 0;
+    @include g.mq(md) {
+      display: block;
+      padding: 0;
+    }
   }
   &-odd-inner {
     padding-left: 0;
@@ -26,6 +33,9 @@
   &__img__inner {
     position: relative;
     width: 58%;
+    @include g.mq(md) {
+      width: auto;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -42,16 +52,32 @@
       position: absolute;
       top: -150px;
       right: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right: auto;
+        bottom: -180px;
+        left: 0;
+        font-size: 6.25rem;
+      }
     }
   }
   &__body,
   &-seta__body {
     margin-left: 120px;
     width: 25%;
+    @include g.mq(md) {
+      width: auto;
+      margin-left: 0;
+      margin-top: 100px;
+    }
   }
   &__body__title {
     font-size: 20px;
     font-weight: 500;
+    @include g.mq(md) {
+      line-height: 40px;
+      margin-left: 40%;
+    }
   }
   &-shinjuku__body__title,
   &-magome__body__title {
@@ -63,10 +89,17 @@
   }
   &__body__text__inner {
     margin-top: 30px;
+    @include g.mq(md) {
+      margin-left: 7%;
+    }
   }
   &__body__text {
     font-size: 0.875rem;
     line-height: 39px;
+    @include g.mq(md) {
+      line-height: 29px;
+    }
+
   }
 }
 
@@ -80,6 +113,10 @@
   &__content__body__text {
     font-size: 0.875rem;
     line-height: 39px;
+    @include g.mq(md) {
+      line-height: 28px;
+      width: auto;
+    }
   }
 }
 
@@ -98,18 +135,44 @@
     display: flex;
     align-items: end;
     justify-content: space-between;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+      margin-left: 7%;
+    }
     &__body {
       width: 40%;
       margin-left: auto;
       margin-right: 60px;
+      @include g.mq(md) {
+        width: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+      }
       &__text__inner {
         width: 50%;
         margin-top: 50px;
+        @include g.mq(md) {
+          width: auto;
+        }
       }
       &__img__inner {
         display: flex;
         margin-top: 50px;
         gap: 10px;
+        @include g.mq(md) {
+          margin-top: 20px;
+          margin-bottom: 60px;
+          display: block;
+        }
+        img {
+          @include g.mq(md) {
+            width: 200px;
+            &:last-child {
+              margin-left: 140px;
+            }
+          }
+        }
       }
     }
   }
@@ -119,12 +182,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include g.mq(md) {
+      display: block;
+    }
     &__img__inner  {
       &__box:last-child {
         display: flex;
         justify-content: end;
         margin-top: 40px;
         margin-right: 140px;
+        @include g.mq(md) {
+          justify-content: flex-start;
+        }
        img {
         width: 200px;
        }
@@ -133,9 +202,16 @@
     &__body {
       width: 30%;
       margin-left: 100px;
+      @include g.mq(md) {
+        width: auto;
+        margin-left: 7%;
+      }
       &__text__inner {
         width: 70%;
         margin-top: 50px;
+        @include g.mq(md) {
+          width: auto;
+        }
       }
     }
   }
@@ -145,17 +221,30 @@
     display: flex;
     justify-content: end;
     align-items: center;
+    @include g.mq(md) {
+      flex-direction: column-reverse;
+    }
     &__body {
       width: 30%;
+      @include g.mq(md) {
+        width: auto;
+        margin: 0 7%;
+      }
       &__text__inner {
         width: 75%;
         margin-top: 50px;
+        @include g.mq(md) {
+          width: auto;
+        }
       }
     }
   }
   &__img__inner {
     margin-top: 60px;
     width: 500px;
+    @include g.mq(md) {
+      width: auto;
+    }
   }
 }
 .mh-c-sec5 {
@@ -163,10 +252,16 @@
   &__inner {
     background:#F5F5F5;
     padding: 80px;
+    @include g.mq(md) {
+      padding: 80px 7%;
+    }
   }
   &__content {
     display: flex;
     justify-content: space-around;
+    @include g.mq(md) {
+      display: block;
+    }
     &__body {
       margin-top: 50px;
       &__title {
@@ -179,6 +274,9 @@
         font-size: 0.875rem;
         font-weight: 200;
       }
+    }
+    &__map__inner {
+      margin-top: 80px;
     }
     &__map__btn {
       width: 200px;

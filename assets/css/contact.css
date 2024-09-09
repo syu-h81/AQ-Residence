@@ -4,26 +4,6 @@
   contact 資料請求ページcss
 
 ---------------------------------*/
-input[type=date],
-input[type=text],
-input[type=number] {
-  width: 670px;
-  height: 46px;
-  border: 1px solid #040000;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-input[type=checkbox] {
-  width: 18px;
-  height: 18px;
-}
-
-input[type=radio] {
-  width: 20px;
-  height: 20px;
-}
-
 .contact__title__inner {
   margin: -120px 10% 0 0;
   padding: 120px 0 0px 16%;

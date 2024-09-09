@@ -799,6 +799,13 @@ input[type=number] {
   border-radius: 5px;
   margin-top: 10px;
 }
+@media screen and (max-width: 835px) {
+  input[type=date],
+  input[type=text],
+  input[type=number] {
+    width: 100%;
+  }
+}
 
 input[type=checkbox] {
   width: 18px;
@@ -813,6 +820,11 @@ input[type=radio] {
 .c-form__inner {
   max-width: 1000px;
   margin: 0 auto;
+}
+@media screen and (max-width: 835px) {
+  .c-form__inner {
+    padding: 0 7%;
+  }
 }
 .c-form__inner input {
   -moz-appearance: auto;
@@ -829,6 +841,11 @@ input[type=radio] {
   line-height: 150%;
   margin-top: 60px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__desc {
+    font-size: 1.125rem;
+  }
+}
 .c-form__desc__en {
   font-size: 0.8125rem;
 }
@@ -844,6 +861,12 @@ input[type=radio] {
 .c-form__label__inner {
   margin-top: 20px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__label__inner {
+    font-size: 0.8125rem;
+    font-weight: 500;
+  }
+}
 .c-form__label__inner .require {
   color: red;
 }
@@ -855,6 +878,11 @@ input[type=radio] {
 .c-form__label__inner__en span {
   color: red;
   margin-left: 5px;
+}
+@media screen and (max-width: 835px) {
+  .c-form__label__inner__en span {
+    display: none;
+  }
 }
 .c-form__hope__exhibition__label__inner {
   position: relative;
@@ -872,6 +900,13 @@ input[type=radio] {
 .c-form__radio {
   margin-left: 20px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__radio {
+    display: flex;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
 .c-form__radio:first-child {
   margin-left: 0;
 }
@@ -880,12 +915,23 @@ input[type=radio] {
   align-items: center;
   margin-top: 10px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__radio__inner {
+    display: block;
+  }
+}
 .c-form__radio__flex {
   display: flex;
   align-items: center;
 }
 .c-form__radio__flex .radio-name {
   margin-left: 10px;
+}
+@media screen and (max-width: 835px) {
+  .c-form__radio__flex .radio-name {
+    font-size: 0.8125rem;
+    white-space: nowrap;
+  }
 }
 .c-form__radio__box__name__en {
   font-size: 0.75rem;
@@ -919,6 +965,11 @@ input[type=radio] {
   width: 84%;
   margin-top: 10px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__architecture__hope__radio__inner {
+    display: block;
+  }
+}
 .c-form__architecture__season__call__text {
   color: #999999;
   font-size: 0.84375rem;
@@ -949,11 +1000,27 @@ input[type=radio] {
   margin-left: auto;
   margin-top: 20px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__architecture__budget__radio__inner {
+    display: block;
+  }
+}
 .c-form__trigger__checkbox {
   width: 300px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__trigger__checkbox {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
 .c-form__trigger__checkbox__3, .c-form__trigger__checkbox__6 {
   margin-left: -120px;
+}
+@media screen and (max-width: 835px) {
+  .c-form__trigger__checkbox__3, .c-form__trigger__checkbox__6 {
+    margin-left: 0;
+  }
 }
 .c-form__trigger__checkbox .checkbox-name {
   font-size: 15px;
@@ -965,6 +1032,11 @@ input[type=radio] {
   flex-wrap: wrap;
   gap: 20px;
   margin-top: 20px;
+}
+@media screen and (max-width: 835px) {
+  .c-form__trigger__checkbox__inner {
+    display: block;
+  }
 }
 .c-form__trigger__checkbox__flex {
   display: flex;
@@ -980,6 +1052,11 @@ input[type=radio] {
   border-radius: 8px;
   padding: 10px;
 }
+@media screen and (max-width: 835px) {
+  .c-form__question__textarea__inner textarea {
+    width: 100%;
+  }
+}
 .c-form__submit__inner {
   width: 320px;
   display: flex;
@@ -989,6 +1066,11 @@ input[type=radio] {
   border-radius: 8px;
   margin-top: 40px;
   position: relative;
+}
+@media screen and (max-width: 835px) {
+  .c-form__submit__inner {
+    width: 100%;
+  }
 }
 .c-form__submit__inner input {
   height: 50px;

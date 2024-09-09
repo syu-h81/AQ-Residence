@@ -1,7 +1,7 @@
 // ギャラリーのスライドショーの設定
 $(function() {
   $('.slider').slick({
-    autoplay: true, // 自動再生ON
+    autoplay: false, // 自動再生ON
     autoplaySpeed: 3000,
     speed: 400,
     dots: false, // ドットインジケーターON

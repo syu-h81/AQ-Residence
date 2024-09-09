@@ -81,6 +81,9 @@ img {
   &-img {
     margin-top: 60px;
     margin-left: 7%;
+    @include g.mq(md) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -239,21 +242,35 @@ img {
   background: #9A9A9A;
   &__inner {
     padding: 60px 0;
+    @include g.mq(md) {
+      position: relative;
+      padding-bottom: 160px;
+    }
   }
   &-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 10%;
+    @include g.mq(md) {
+      display: block;
+    }
     &__heading {
       color: #fff;
       font-size: 2.5rem;
       font-family: "Jost", sans-serif;
       font-weight: 600;
+      @include g.mq(md) {
+        display: grid;
+      }
       span {
         font-size: 0.875rem;
         font-weight: 200;
         margin-left: 30px;
+        @include g.mq(md) {
+          margin-top: 20px;
+          margin-left: 0;
+        }
       }
     }
     &__construction__btn {
@@ -263,6 +280,16 @@ img {
       padding: 10px 60px;
       font-family: "Shippori Mincho", serif;
       position: relative;
+      @include g.mq(md) {
+        padding: 10px;
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
       &::after {
         content: '';
         width: 10px;
@@ -287,11 +314,19 @@ img {
         opacity: .3; // スライドを薄くする
         transition: opacity .5s, transform .5s; // スライド透過率と拡大のアニメーション時間を0.5秒に設定
         width: 100%;
+        @include g.mq(md) {
+          height: 230px;
+        }
       }
     }
     .slider .slick-center img {
       opacity: 1; // 中央のスライドは透過しない
       transform: scale(1); // 中央のスライドは小さくしない
+      @include g.mq(md) {
+        transform: scale(2.3);
+        z-index: 10;
+        position: relative;
+      }
     }
   }
 }

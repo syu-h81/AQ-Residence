@@ -11,11 +11,24 @@
   padding-left: 12%;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .company-info__title__inner {
+    background: #fff;
+    padding: 40px 40px 0 12%;
+    position: relative;
+    margin: -40px 40px 0 0;
+  }
+}
 .company-info__title {
   text-align: justify;
 }
 .company-info__content {
   padding: 0 12%;
+}
+@media screen and (max-width: 835px) {
+  .company-info__content {
+    margin-top: 60px;
+  }
 }
 .company-info__content__item {
   border-bottom: 1px solid #000;
@@ -25,6 +38,16 @@
   padding: 20px 0;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .company-info__content__item {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+  .company-info__content__item:first-child {
+    padding-top: 0;
+  }
+}
 .company-info__content__item::after {
   position: absolute;
   content: " ";
@@ -33,45 +56,89 @@
   bottom: -2px;
   width: 24%;
 }
+@media screen and (max-width: 835px) {
+  .company-info__content__item::after {
+    display: none;
+  }
+}
 .company-info__content__item__label {
   width: 280px;
+}
+@media screen and (max-width: 835px) {
+  .company-info__content__item__label {
+    position: relative;
+  }
+  .company-info__content__item__label::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #000;
+    bottom: 0;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .company-info__content__item__text {
+    margin-top: 20px;
+  }
 }
 .company-info__recruit {
   border: 1px solid #000;
   margin: 0 16%;
   margin-top: 100px;
 }
+@media screen and (max-width: 835px) {
+  .company-info__recruit {
+    margin: 0 12%;
+    margin-top: 100px;
+  }
+}
 .company-info__recruit__inner {
   display: flex;
   justify-content: space-between;
   padding: 60px;
 }
+@media screen and (max-width: 835px) {
+  .company-info__recruit__inner {
+    display: block;
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
 .company-info__recruit__body__title {
   font-size: 1.675rem;
   font-weight: 500;
+}
+@media screen and (max-width: 835px) {
+  .company-info__recruit__body__title {
+    font-size: 1.125rem;
+  }
 }
 .company-info__recruit__body__text {
   line-height: 28px;
   margin-top: 40px;
   width: 440px;
 }
+@media screen and (max-width: 835px) {
+  .company-info__recruit__body__text {
+    width: auto;
+  }
+}
 .company-info__recruit__body__number {
   font-size: 1.25rem;
   font-weight: 200;
   margin-top: 40px;
   display: flex;
-  /*&::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    background-image: url(../images/phone_icon.png);
-  }*/
 }
 .company-info__recruit__body__number__img {
   width: 13px;
   height: 100%;
   margin-right: 10px;
+}
+@media screen and (max-width: 835px) {
+  .company-info__recruit__img {
+    margin-top: 30px;
+  }
 }
 
 .company-modelHouse {
@@ -82,18 +149,38 @@
   padding: 80px 0;
   padding-bottom: 140px;
 }
+@media screen and (max-width: 835px) {
+  .company-modelHouse__inner {
+    padding-bottom: 100px;
+  }
+}
 .company-modelHouse__heading__inner {
   margin: 0 12%;
+}
+@media screen and (max-width: 835px) {
+  .company-modelHouse__heading__inner {
+    margin-right: 0;
+  }
 }
 .company-modelHouse__heading {
   color: #fff;
   font-size: 5rem;
   font-weight: 600;
 }
+@media screen and (max-width: 835px) {
+  .company-modelHouse__heading {
+    font-size: 2.375rem;
+  }
+}
 .company-modelHouse__exhibition__inner {
   color: #fff;
   display: flex;
   margin-top: 60px;
+}
+@media screen and (max-width: 835px) {
+  .company-modelHouse__exhibition__inner {
+    display: block;
+  }
 }
 .company-modelHouse__exhibition {
   width: 360px;
@@ -105,6 +192,14 @@
   justify-content: center;
   position: relative;
 }
+@media screen and (max-width: 835px) {
+  .company-modelHouse__exhibition {
+    width: auto;
+    height: 130px;
+    background-position-y: 30%;
+    margin-top: 30px;
+  }
+}
 .company-modelHouse__exhibition__komazawa {
   background-image: url(../images/company_gallery_img_01.png);
 }
@@ -114,11 +209,26 @@
 .company-modelHouse__exhibition__seta {
   background-image: url(../images/company_gallery_img_03.png);
 }
+@media screen and (max-width: 835px) {
+  .company-modelHouse__exhibition__seta {
+    background-position-y: 70%;
+  }
+}
 .company-modelHouse__exhibition__magome {
   background-image: url(../images/company_gallery_img_04.png);
 }
+@media screen and (max-width: 835px) {
+  .company-modelHouse__exhibition__magome {
+    background-position-y: 80%;
+  }
+}
 .company-modelHouse__exhibition__name {
   margin-right: 140px;
+}
+@media screen and (max-width: 835px) {
+  .company-modelHouse__exhibition__name {
+    font-size: 1.25rem;
+  }
 }
 .company-modelHouse__exhibition__name::after {
   content: "";

@@ -12,12 +12,21 @@
     background: #fff;
     padding-left: 12%;
     position: relative;
+    @include g.mq(md) {
+      background: #fff;
+      padding: 40px 40px 0 12%;
+      position: relative;
+      margin: -40px 40px 0 0;
+    }
   }
   &__title {
     text-align: justify;
   }
   &__content {
     padding: 0 12%;
+    @include g.mq(md) {
+      margin-top: 60px;
+    }
     &__item {
       border-bottom: 1px solid #000;
       display: flex;
@@ -25,6 +34,14 @@
       line-height: 39px;
       padding: 20px 0;
       position: relative;
+      @include g.mq(md) {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 0;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
       &::after {
         position: absolute;
         content: " ";
@@ -32,9 +49,28 @@
         border-bottom: 2px solid #000;
         bottom: -2px;
         width: 24%;
+        @include g.mq(md) {
+          display: none;
+        }
       }
       &__label {
         width: 280px;
+        @include g.mq(md) {
+          position: relative;
+          &::after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: 2px solid #000;
+            bottom: 0;
+            width: 40%;
+          }
+        }
+      }
+      &__text {
+        @include g.mq(md) {
+          margin-top: 20px;
+        }
       }
     }
   }
@@ -42,20 +78,35 @@
     border: 1px solid #000;
     margin: 0 16%;
     margin-top: 100px;
+    @include g.mq(md) {
+      margin: 0 12%;
+      margin-top: 100px;
+    }
     &__inner {
       display: flex;
       justify-content: space-between;
       padding: 60px;
+      @include g.mq(md) {
+        display: block;
+        padding: 20px;
+        padding-top: 40px;
+      }
     }
     &__body {
       &__title {
         font-size: 1.675rem;
         font-weight: 500;
+        @include g.mq(md) {
+          font-size: 1.125rem;
+        }
       }
       &__text {
         line-height: 28px;
         margin-top: 40px;
         width: 440px;
+        @include g.mq(md) {
+          width: auto;
+        }
       }
       &__number {
         font-size: 1.25rem;
@@ -67,13 +118,11 @@
           height: 100%;
           margin-right: 10px;
         }
-        /*&::after {
-          content: '';
-          display: block;
-          position: absolute;
-          left: 0;
-          background-image: url(../images/phone_icon.png);
-        }*/
+      }
+    }
+    &__img {
+      @include g.mq(md) {
+        margin-top: 30px;
       }
     }
   }
@@ -85,19 +134,31 @@
   &__inner {
     padding: 80px 0;
     padding-bottom: 140px;
+    @include g.mq(md) {
+      padding-bottom: 100px;
+    }
   }
   &__heading__inner {
     margin: 0 12%;
+    @include g.mq(md) {
+      margin-right: 0;
+    }
   }
   &__heading {
     color: #fff;
     font-size: 5rem;
     font-weight: 600;
+    @include g.mq(md) {
+      font-size: 2.375rem;
+    }
   }
   &__exhibition__inner {
     color: #fff;
     display: flex;
     margin-top: 60px;
+    @include g.mq(md) {
+      display: block;
+    }
   }
   &__exhibition {
     width: 360px;
@@ -108,6 +169,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @include g.mq(md) {
+      width: auto;
+      height: 130px;
+      background-position-y: 30%;
+      margin-top: 30px;
+    }
     &__komazawa {
       background-image: url(../images/company_gallery_img_01.png);
     }
@@ -116,12 +183,21 @@
     }
     &__seta {
       background-image: url(../images/company_gallery_img_03.png);
+      @include g.mq(md) {
+        background-position-y: 70%;
+      }
     }
     &__magome {
       background-image: url(../images/company_gallery_img_04.png);
+      @include g.mq(md) {
+        background-position-y: 80%;
+      }
     }
     &__name {
       margin-right: 140px;
+      @include g.mq(md) {
+        font-size: 1.25rem;
+      }
       &::after {
         content: "";
         width: 15px;

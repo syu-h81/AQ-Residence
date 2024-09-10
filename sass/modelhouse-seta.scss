@@ -8,11 +8,18 @@
 .mh-seta {
   &-main {
     padding-top: 100px;
+    @include g.mq(md) {
+      padding-top: 60px;
+    }
   }
   &-inner {
     display: flex;
     align-items: end;
     padding: 100px 0;
+    @include g.mq(md) {
+      display: block;
+      padding: 0;
+    }
   }
   &-odd-inner {
     padding-left: 0;
@@ -26,6 +33,9 @@
   &__img__inner {
     position: relative;
     width: 58%;
+    @include g.mq(md) {
+      width: auto;
+    }
     &::after {
       content: '';
       position: absolute;
@@ -42,27 +52,50 @@
       position: absolute;
       top: -150px;
       right: -110px;
+      @include g.mq(md) {
+        top: auto;
+        right: auto;
+        bottom: -180px;
+        left: 0;
+        font-size: 6.25rem;
+      }
     }
   }
   &__body,
   &-seta__body {
     margin-left: 120px;
     width: 25%;
+    @include g.mq(md) {
+      width: auto;
+      margin-left: 0;
+      margin-top: 100px;
+    }
   }
   &__body__title {
     font-size: 20px;
     font-weight: 500;
     line-height: 44px;
+    @include g.mq(md) {
+      line-height: 40px;
+      margin-left: 40%;
+    }
   }
   &-seta__body__title {
     line-height: 49px;
   }
   &__body__text__inner {
     margin-top: 30px;
+    @include g.mq(md) {
+      margin-left: 7%;
+    }
   }
   &__body__text {
     font-size: 0.875rem;
     line-height: 39px;
+    @include g.mq(md) {
+      font-size: 0.8125rem;
+      line-height: 31px;
+    }
   }
 }
 

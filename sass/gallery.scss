@@ -1,3 +1,5 @@
+@use "global" as g;
+
 /*---------------------------------
 
   gallery ギャラリーページcss
@@ -5,11 +7,24 @@
 ---------------------------------*/
 .gallery {
   padding-top: 100px;
+  @include g.mq(md) {
+    padding-top: 50%;
+  }
+  &:first-child {
+    @include g.mq(md) {
+      padding-top: 10%;
+    }
+  }
   &__head__inner {
     margin-left: 7%;
     &__even {
       margin-left: 0;
       margin-right: 7%;
+    }
+    img {
+      @include g.mq(md) {
+        height: 275px;
+      }
     }
   }
   &__content {
@@ -18,18 +33,32 @@
     display: flex;
     align-items: end;
     justify-content: space-between;
+    @include g.mq(md) {
+      display: block;
+      padding: 100px 0;
+      padding-bottom: 0;
+    }
     &__even {
       flex-direction: row-reverse;
     }
     &__body {
       color: #fff;
       margin-left: 40px;
+      @include g.mq(md) {
+        margin-left: 0;
+      }
       &__even {
         margin-left: 0;
         margin-right: 40px;
+        @include g.mq(md) {
+          margin-right: 0;
+        }
       }
       &__title__inner {
         margin-left: 80px;
+        @include g.mq(md) {
+          margin-left: 40%;
+        }
         &__even {
           margin-left: 60px;
         }
@@ -41,12 +70,46 @@
           display: block;
           font-weight: 200;
           margin-top: 10px;
+          @include g.mq(md) {
+            font-size: 0.8125rem;
+          }
         }
       }
-      &__img__inner {
-        display: flex;
-        gap: 20px;
-        margin-top: 140px;
+      &__img {
+        &:last-child {
+          text-align: right;
+          margin-top: 20px;
+        }
+        img {
+          @include g.mq(md) {
+            width: 55%;
+          }
+        }
+        &__even {
+          &:first-child {
+            text-align: right;
+          }
+          &:last-child {
+            text-align: left;
+          }
+        }
+        &__inner {
+          display: flex;
+          gap: 20px;
+          margin-top: 140px;
+          @include g.mq(md) {
+            display: block;
+            margin-top: 0;
+            padding-top: 40px;
+            background: #000;
+            height: 45vh;
+          }
+        } 
+      }
+    }
+    &__img__inner {
+      @include g.mq(md) {
+        margin-top: 20%;
       }
     }
   }
@@ -60,19 +123,31 @@
   &__inner {
     padding: 80px 0;
     padding-bottom: 140px;
+    @include g.mq(md) {
+      padding: 80px 10%;
+    }
   }
   &__heading__inner {
     margin: 0 12%;
+    @include g.mq(md) {
+      margin: 0;
+    }
   }
   &__heading {
     color: #fff;
     font-size: 5rem;
     font-weight: 600;
+    @include g.mq(md) {
+      font-size: 2.375rem;
+    }
   }
   &__exhibition__inner {
     color: #fff;
     display: flex;
     margin-top: 60px;
+    @include g.mq(md) {
+      display: block;
+    }
   }
   &__exhibition {
     width: 360px;
@@ -83,6 +158,12 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    @include g.mq(md) {
+      width: auto;
+      height: 115px;
+      margin-top: 20px;
+      background-position-y: 30%;
+    }
     &__komazawa {
       background-image: url(../images/company_gallery_img_01.png);
     }

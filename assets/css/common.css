@@ -431,7 +431,6 @@ img {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -545,6 +544,7 @@ img {
 @media screen and (max-width: 835px) {
   .c-about__content__inner {
     display: block;
+    padding: 0 10%;
   }
 }
 .c-about__content {
@@ -575,6 +575,9 @@ img {
 }
 .c-about__content__artist {
   background-image: url(../images/about_img_03.png);
+}
+.c-about__content__after {
+  background-image: url(../images/about_img_04.png);
 }
 .c-about__content__name {
   color: #fff;
@@ -861,7 +864,7 @@ input[type=radio] {
   font-size: 1.25rem;
 }
 .c-form__label__inner {
-  margin-top: 20px;
+  margin-top: 60px;
 }
 @media screen and (max-width: 835px) {
   .c-form__label__inner {
@@ -885,6 +888,9 @@ input[type=radio] {
   .c-form__label__inner__en span {
     display: none;
   }
+}
+.c-form__date__label__inner {
+  margin-top: 30px;
 }
 .c-form__hope__exhibition__label__inner {
   position: relative;
@@ -1071,6 +1077,7 @@ input[type=radio] {
   border: 1px solid #000;
   border-radius: 8px;
   margin-top: 40px;
+  padding-bottom: 10px;
   position: relative;
 }
 @media screen and (max-width: 835px) {
@@ -1090,11 +1097,19 @@ input[type=radio] {
   letter-spacing: 0;
 }
 
+.slider div {
+  width: 100%;
+}
+
 /*---------------------------------
 
   header ヘッダーcss
 
 ---------------------------------*/
+.header {
+  position: relative;
+  z-index: 1;
+}
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -1182,25 +1197,45 @@ input[type=radio] {
   background-color: #fff;
 }
 
-/*---------------------------------
-
-  footer フッターcss
-
----------------------------------*/
 .sp-menu-nav {
   background: #000;
   display: none;
+  padding-bottom: 100px;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+.sp-menu-nav__close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  z-index: 10;
 }
 @media screen and (max-width: 835px) {
-  .sp-menu-nav {
+  .sp-menu-nav__close {
     display: none;
-    padding-bottom: 100px;
-    padding-bottom: 100px;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    width: 100%;
   }
+}
+.sp-menu-nav__close__bar::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: #fff;
+}
+.sp-menu-nav__close__bar__1::after {
+  transform: rotate(45deg);
+}
+.sp-menu-nav__close__bar__2::after {
+  display: none;
+}
+.sp-menu-nav__close__bar__3::after {
+  transform: rotate(-45deg);
 }
 .sp-menu-nav-inner {
   color: #fff;

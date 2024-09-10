@@ -1,3 +1,16 @@
+//トップページheroのスライドショーの設定
+$(function() {
+  $('.top-hero__bgImg__inner').slick({
+      fade: true,
+      autoplay: true,
+      speed: 1500,
+      autoplaySpeed : 3000,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      arrows: false,
+  })
+});
+
 // ギャラリーのスライドショーの設定
 $(function() {
   $('.slider').slick({
@@ -13,8 +26,9 @@ $(function() {
 
 //ハンバーガーメニューの実装
 $(function() {
-  $('.sp-header-humburger').on('click', function() {
+  $('.sp-header-humburger, .header-menu-btn, .sp-menu-nav__close').on('click', function() {
     $('.sp-menu-nav').fadeToggle();
     $('.sp-header-humburger__bar').toggleClass('close');
   });
 });
+

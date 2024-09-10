@@ -5,17 +5,34 @@
   top topページcss
   
 ---------------------------------*/
+.top-header-translate {
+  &__link {
+    color: #fff;
+  }
+}
 .top-hero {
-  &__inner {
-    height: 100vh;
+  margin-top: -100px;
+  &__bg {
+    height: 120vh;
     width: 100%;
-    background-image: url(../images/top_hero_bg.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: bottom;
     background-attachment: fixed;
     margin-top: -100px;
     min-height: 400px;
+    &__01 {
+      background-image: url(../images/top_hero_bg.png);
+    }
+    &__02 {
+      background-image: url(../images/top_hero_bg_02.png);
+    }
+    &__03 {
+      background-image: url(../images/top_hero_bg_03.png);
+    }
+    &__04 {
+      background-image: url(../images/top_hero_bg_04.png);
+    }
   }
 }
 .top-body {
@@ -97,6 +114,9 @@
       margin-top: 40px;
       @include g.mq(md) {
         font-size: 1.125rem;
+        &:last-child {
+          font-size: 1rem;
+        }
       }
     }
   }
@@ -123,15 +143,31 @@
     }
     &__design {
       background-image: url(../images/top_about_design.png);
+      &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
     }
     &__performance {
       background-image: url(../images/top_about_structure.png);
+      &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
     }
     &__after {
       background-image: url(../images/top_about_after.png);
+      &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
     }
     &__artist {
       background-image: url(../images/top_about_artist.png);
+      &:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
     }
     &__body {
       color: #fff;
@@ -144,7 +180,7 @@
         font-size: 2.5rem;
         @include g.mq(md) {
           font-size: 1.125rem;
-          font-weight: bold;
+          font-weight: 500;
         }
       }
       &__desc {
@@ -180,6 +216,7 @@
       &__inner {
         margin-top: 40px;
       }
+
     }
     &__link {
       border: 1px solid;
@@ -458,7 +495,8 @@
   &-seta__body__img__inner {
     margin-top: 60px;
     @include g.mq(md) {
-      text-align: right;
+      display: flex;
+      justify-content: flex-end;
     }
     img {
       width: 350px;
@@ -471,6 +509,13 @@
   &-magome__body__img__inner {
     @include g.mq(md) {
       margin-top: 60px;
+      display: flex!important;
+    }
+    img:last-child {
+      @include g.mq(md) {
+        width: auto;
+        display: block;
+      }
     }
   }
 }
@@ -492,6 +537,11 @@
     .slider .slick-center img {
       opacity: 1; // 中央のスライドは透過しない
       transform: scale(1.4); // 中央のスライドは小さくしない
+      @include g.mq(md) {
+        transform: scale(2.3);
+        z-index: 10;
+        position: relative;
+      }
     }
   }
 }
@@ -521,10 +571,9 @@
       display: flex;
       align-items: center;
       margin-top: 40px;
-      display: block;
-      display: block;
       @include g.mq(md) {
         margin-left: 14%;
+        display: block;
       }
       &:first-child {
         margin-top: 0;

@@ -7,10 +7,21 @@
 .mh-seta-main {
   padding-top: 100px;
 }
+@media screen and (max-width: 835px) {
+  .mh-seta-main {
+    padding-top: 60px;
+  }
+}
 .mh-seta-inner {
   display: flex;
   align-items: end;
   padding: 100px 0;
+}
+@media screen and (max-width: 835px) {
+  .mh-seta-inner {
+    display: block;
+    padding: 0;
+  }
 }
 .mh-seta-odd-inner {
   padding-left: 0;
@@ -24,6 +35,11 @@
 .mh-seta__img__inner {
   position: relative;
   width: 58%;
+}
+@media screen and (max-width: 835px) {
+  .mh-seta__img__inner {
+    width: auto;
+  }
 }
 .mh-seta__img__inner::after {
   content: "";
@@ -40,14 +56,36 @@
   top: -150px;
   right: -110px;
 }
+@media screen and (max-width: 835px) {
+  .mh-seta__img__inner::after {
+    top: auto;
+    right: auto;
+    bottom: -180px;
+    left: 0;
+    font-size: 6.25rem;
+  }
+}
 .mh-seta__body, .mh-seta-seta__body {
   margin-left: 120px;
   width: 25%;
+}
+@media screen and (max-width: 835px) {
+  .mh-seta__body, .mh-seta-seta__body {
+    width: auto;
+    margin-left: 0;
+    margin-top: 100px;
+  }
 }
 .mh-seta__body__title {
   font-size: 20px;
   font-weight: 500;
   line-height: 44px;
+}
+@media screen and (max-width: 835px) {
+  .mh-seta__body__title {
+    line-height: 40px;
+    margin-left: 40%;
+  }
 }
 .mh-seta-seta__body__title {
   line-height: 49px;
@@ -55,9 +93,20 @@
 .mh-seta__body__text__inner {
   margin-top: 30px;
 }
+@media screen and (max-width: 835px) {
+  .mh-seta__body__text__inner {
+    margin-left: 7%;
+  }
+}
 .mh-seta__body__text {
   font-size: 0.875rem;
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .mh-seta__body__text {
+    font-size: 0.8125rem;
+    line-height: 31px;
+  }
 }
 
 .mh-c-sec {

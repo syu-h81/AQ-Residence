@@ -38,9 +38,17 @@
       padding: 15px;
       margin-top: 20px;
       position: relative;
+      @include g.mq(md) {
+        margin: 0 auto;
+      }
       &:first-child {
         @include g.mq(md) {
           margin-top: 80px;
+        }
+      }
+      &:last-child {
+        @include g.mq(md) {
+          margin-top: 20px;
         }
       }
       &::after {
@@ -126,7 +134,7 @@
     @include g.mq(md) {
       display: none;
     }
-    &:nth-of-type(even) {
+    &__even {
       flex-direction: row-reverse;
     }
     &__body {
@@ -232,6 +240,9 @@
       flex-direction: row-reverse;
       margin-top: 240px;
       margin-bottom: 300px;
+      @include g.mq(md) {
+        margin-bottom: 0;
+      }
     }
     &__icon__img__inner {
       width: 240px;
@@ -272,6 +283,8 @@
       position: relative;
       @include g.mq(md) {
         position: static;
+        margin-top: -80%;
+        text-align: right;
       }
       img {
         width: 700px;
@@ -281,7 +294,7 @@
         left: -100px;
         @include g.mq(md) {
           width: 360px;
-          top: 20%;
+          top: 24%;
           right: 0;
           left: auto;
         }
@@ -292,9 +305,9 @@
           top: 100px;
           left: auto;
           @include g.mq(md) {
+            position: relative;
+            top: auto;
             right: auto;
-            top: 20%;
-            left: 0;
           }
         }
       }
@@ -309,6 +322,11 @@
       @include g.mq(md) {
         width: auto;
       }
+      &__even {
+        @include g.mq(md) {
+          align-items: flex-start;
+        }
+      }
       &__inner {
         color: #fff;
         margin-bottom: 220px;
@@ -316,8 +334,13 @@
         @include g.mq(md) {
           width: auto;
           margin-bottom: 0;
-          padding: 0 8%;
-          margin-top: 100%;
+          padding: 0 12%;
+          margin-top: 120%;
+        }
+        &__even {
+          @include g.mq(md) {
+            margin-top: 40%;
+          }
         }
       }
       &__position {
@@ -336,6 +359,11 @@
   }
 }
 
+.artist-about {
+  @include g.mq(md) {
+    margin-top: 80%;
+  }
+}
 .artist-about-content__after {
   background-image: url(../images/about_after_img_02.png);
 }
@@ -353,6 +381,7 @@
     &__flex__even {
       display: flex;
       flex-direction: row-reverse;
+      align-items: center;
     }
     &__even {
       display: block;
@@ -398,7 +427,7 @@
     }
     &__bg {
       width: 35%;
-      height: 450px;
+      height: 550px;
       background-color: #000;
       margin-top: 22%;
       &__even {
@@ -409,5 +438,6 @@
   .sp-artist-designer__img__inner {
     width: 90%;
     margin-left: auto;
+    margin-top: -8%;
   }
 }

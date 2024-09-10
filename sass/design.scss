@@ -8,7 +8,7 @@
 .design-head-img {
   img {
     @include g.mq(md) {
-      margin-left: 7%;
+      padding-left: 7%;
     }
     @include g.mq(md) {
       height: 300px;
@@ -36,6 +36,7 @@
     color: #fff;
     @include g.mq(md) {
       padding: 7%;
+      margin-top: 80px;
     }
     &__title {
       line-height: 66px;
@@ -51,6 +52,9 @@
       }
       &__inner {
         margin-top: 30px;
+        @include g.mq(md) {
+          margin-top: 60px;
+        }
       }
     }
   }
@@ -83,6 +87,9 @@
 }
 .design-trend {
   padding-top: 140px;
+  @include g.mq(md) {
+    padding-top: 80px;
+  }
   &__content {
     display: flex;
     align-items: center;
@@ -97,7 +104,7 @@
     gap: 5px;
     @include g.mq(md) {
       margin: 0 7%;
-      margin-top: 80px;
+      margin-top: 120px;
     }
   }
   &__body {
@@ -148,6 +155,99 @@
         right: 20px;
         bottom: 0;
         margin: auto;
+      }
+    }
+  }
+}
+
+.c-gallery {
+  background: #9A9A9A;
+  &__inner {
+    padding: 60px 0;
+    @include g.mq(md) {
+      position: relative;
+      padding-bottom: 160px;
+    }
+  }
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10%;
+    @include g.mq(md) {
+      display: block;
+    }
+    &__heading {
+      color: #fff;
+      font-size: 2.5rem;
+      font-family: "Jost", sans-serif;
+      font-weight: 600;
+      @include g.mq(md) {
+        display: grid;
+      }
+      span {
+        font-size: 0.875rem;
+        font-weight: 200;
+        margin-left: 30px;
+        @include g.mq(md) {
+          margin-top: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+    &__construction__btn {
+      display: block;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 10px 60px;
+      font-family: "Shippori Mincho", serif;
+      position: relative;
+      @include g.mq(md) {
+        padding: 10px;
+        width: 150px;
+        height: 45px;
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+      &::after {
+        content: '';
+        width: 10px;
+        height: 10px;
+        border: 0;
+        border-top: solid 1px #fff;
+        border-right: solid 1px #fff;
+        transform: rotate(45deg);
+        position: absolute;
+        top: 0;
+        right: 10px;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+  &__img__inner {
+    margin-top: 60px;
+    .slick-img {
+      img {
+        height: 420px;
+        opacity: .3; // スライドを薄くする
+        transition: opacity .5s, transform .5s; // スライド透過率と拡大のアニメーション時間を0.5秒に設定
+        width: 100%;
+        @include g.mq(md) {
+          height: 230px;
+        }
+      }
+    }
+    .slider .slick-center img {
+      opacity: 1; // 中央のスライドは透過しない
+      transform: scale(1.6); // 中央のスライドは小さくしない
+      @include g.mq(md) {
+        transform: scale(2.3);
+        z-index: 10;
+        position: relative;
       }
     }
   }

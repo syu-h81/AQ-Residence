@@ -4,16 +4,34 @@
   top topページcss
 
 ---------------------------------*/
-.top-hero__inner {
-  height: 100vh;
+.top-header-translate__link {
+  color: #fff;
+}
+
+.top-hero {
+  margin-top: -100px;
+}
+.top-hero__bg {
+  height: 120vh;
   width: 100%;
-  background-image: url(../images/top_hero_bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: bottom;
   background-attachment: fixed;
   margin-top: -100px;
   min-height: 400px;
+}
+.top-hero__bg__01 {
+  background-image: url(../images/top_hero_bg.png);
+}
+.top-hero__bg__02 {
+  background-image: url(../images/top_hero_bg_02.png);
+}
+.top-hero__bg__03 {
+  background-image: url(../images/top_hero_bg_03.png);
+}
+.top-hero__bg__04 {
+  background-image: url(../images/top_hero_bg_04.png);
 }
 
 .top-body__inner {
@@ -109,6 +127,9 @@
   .top-about__title__text {
     font-size: 1.125rem;
   }
+  .top-about__title__text:last-child {
+    font-size: 1rem;
+  }
 }
 .top-about__content__inner {
   padding-top: 60px;
@@ -139,14 +160,30 @@
 .top-about__content__design {
   background-image: url(../images/top_about_design.png);
 }
+.top-about__content__design:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 .top-about__content__performance {
   background-image: url(../images/top_about_structure.png);
+}
+.top-about__content__performance:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .top-about__content__after {
   background-image: url(../images/top_about_after.png);
 }
+.top-about__content__after:hover {
+  opacity: 0.6;
+  transition: 0.3s;
+}
 .top-about__content__artist {
   background-image: url(../images/top_about_artist.png);
+}
+.top-about__content__artist:hover {
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .top-about__content__body {
   color: #fff;
@@ -164,7 +201,7 @@
 @media screen and (max-width: 835px) {
   .top-about__content__body__title {
     font-size: 1.125rem;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 .top-about__content__body__desc {
@@ -494,7 +531,8 @@
 }
 @media screen and (max-width: 835px) {
   .top-mh-komazawa__body__img__inner, .top-mh-seta__body__img__inner {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .top-mh-komazawa__body__img__inner img, .top-mh-seta__body__img__inner img {
@@ -508,6 +546,13 @@
 @media screen and (max-width: 835px) {
   .top-mh-shinjuku__body__img__inner, .top-mh-magome__body__img__inner {
     margin-top: 60px;
+    display: flex !important;
+  }
+}
+@media screen and (max-width: 835px) {
+  .top-mh-shinjuku__body__img__inner img:last-child, .top-mh-magome__body__img__inner img:last-child {
+    width: auto;
+    display: block;
   }
 }
 
@@ -531,6 +576,13 @@
 .top-gallery__img__inner .slider .slick-center img {
   opacity: 1;
   transform: scale(1.4);
+}
+@media screen and (max-width: 835px) {
+  .top-gallery__img__inner .slider .slick-center img {
+    transform: scale(2.3);
+    z-index: 10;
+    position: relative;
+  }
 }
 
 .top-news__inner {
@@ -561,12 +613,11 @@
   display: flex;
   align-items: center;
   margin-top: 40px;
-  display: block;
-  display: block;
 }
 @media screen and (max-width: 835px) {
   .top-news__body__article {
     margin-left: 14%;
+    display: block;
   }
 }
 .top-news__body__article:first-child {

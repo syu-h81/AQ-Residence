@@ -109,13 +109,18 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 44px;
+    @include g.mq(md) {
+      margin-top: 10%;
+    }
   }
   &__content__body__text {
     font-size: 0.875rem;
     line-height: 39px;
     @include g.mq(md) {
-      line-height: 28px;
+      line-height: 31px;
       width: auto;
+      font-size: 0.8125rem;
+      margin-left: 4%;
     }
   }
 }
@@ -187,10 +192,9 @@
     }
     &__img__inner  {
       &__box:last-child {
-        display: flex;
-        justify-content: end;
+        width: 40%;
+        margin-left: auto;
         margin-top: 40px;
-        margin-right: 140px;
         @include g.mq(md) {
           justify-content: flex-start;
         }
@@ -204,7 +208,11 @@
       margin-left: 100px;
       @include g.mq(md) {
         width: auto;
-        margin-left: 7%;
+        margin-left: 0;
+        margin-top: 10%;
+      }
+      &__title__inner {
+        padding-left: 10%;
       }
       &__text__inner {
         width: 70%;
@@ -212,10 +220,19 @@
         @include g.mq(md) {
           width: auto;
         }
+        &__sec3 {
+          @include g.mq(md) {
+            padding-right: 10%;
+            line-height: 31px;
+            width: 65%;
+            margin-left: auto; 
+          }
+        }
       }
     }
   }
 }
+
 .mh-c-sec4 {
   &__content {
     display: flex;
@@ -291,6 +308,10 @@
       margin-top: 50px;
       padding-right: 60px;
       position: relative;
+      @include g.mq(md) {
+        margin: 0 auto;
+        margin-top: 50px;
+      }
       &::after {
         content: "";
         width: 7px;

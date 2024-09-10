@@ -66,6 +66,11 @@
   margin-top: 100px;
   text-align: center;
 }
+@media screen and (max-width: 835px) {
+  .after-guarantee__content {
+    margin-top: 60px;
+  }
+}
 .after-guarantee__content__title {
   width: 700px;
   border-bottom: 1px solid #000;
@@ -77,6 +82,7 @@
 @media screen and (max-width: 835px) {
   .after-guarantee__content__title {
     width: auto;
+    font-size: 1.4375rem;
   }
 }
 .after-guarantee__content__drawing__inner {
@@ -212,6 +218,11 @@
   margin-top: 60px;
   max-width: 700px;
   line-height: 39px;
+}
+@media screen and (max-width: 835px) {
+  .after-guarantee__content__text__inner {
+    text-align: justify;
+  }
 }
 .after-guarantee__content__text__supplyment {
   margin-top: 30px;

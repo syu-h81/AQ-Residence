@@ -48,7 +48,6 @@ img {
 }
 
 .wrapper {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -148,6 +147,7 @@ img {
     justify-content: center;
     @include g.mq(md) {
       display: block;
+      padding: 0 10%;
     }
   }
   &__content {
@@ -175,6 +175,9 @@ img {
     }
     &__artist {
       background-image: url(../images/about_img_03.png);
+    }
+    &__after {
+      background-image: url(../images/about_img_04.png);
     }
     &__name {
       color: #fff;
@@ -435,7 +438,7 @@ input[type="radio"] {
       }
     }
     &__label__inner {
-      margin-top: 20px;
+      margin-top: 60px;
       @include g.mq(md) {
         font-size: 0.8125rem;
         font-weight: 500;
@@ -455,6 +458,9 @@ input[type="radio"] {
           }
         }
       }
+    }
+    &__date__label__inner {
+      margin-top: 30px;
     }
     &__hope__exhibition__label__inner {
       position: relative;
@@ -636,6 +642,7 @@ input[type="radio"] {
       border: 1px solid #000;
       border-radius: 8px;
       margin-top: 40px;
+      padding-bottom: 10px;
       position: relative;
       @include g.mq(md) {
         width: 100%;
@@ -653,4 +660,8 @@ input[type="radio"] {
       }
     }
   }
+}
+
+.slider div {
+  width: 100%;
 }

@@ -10,6 +10,8 @@
 
 .top-hero {
   margin-top: -100px;
+  position: relative;
+  z-index: -1;
 }
 .top-hero__bg {
   height: 120vh;

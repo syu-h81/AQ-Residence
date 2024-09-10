@@ -12,6 +12,8 @@
 }
 .top-hero {
   margin-top: -100px;
+  position: relative;
+  z-index: -1;
   &__bg {
     height: 120vh;
     width: 100%;

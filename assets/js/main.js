@@ -1,3 +1,11 @@
+'use strict';
+
+$(function() {
+  $(window).on('load', function (){
+    $('.first-section').addClass('show');
+  });
+})
+
 //トップページheroのスライドショーの設定
 $(function() {
   $('.top-hero__bgImg__inner').slick({
@@ -26,9 +34,34 @@ $(function() {
 
 //ハンバーガーメニューの実装
 $(function() {
-  $('.sp-header-humburger, .header-menu-btn, .sp-menu-nav__close').on('click', function() {
+  $('.header-menu-btn').on('click', function() {
     $('.sp-menu-nav').fadeToggle();
     $('.sp-header-humburger__bar').toggleClass('close');
+    if ($('.header-menu-btn').text() === 'close') {
+      $(this).text('menu');
+    } else {
+      $(this).text('close');
+    }
+  });
+});
+$(function() {
+  $('.sp-header-humburger').on('click', function() {
+    $('.sp-menu-nav').fadeToggle();
+    $('.sp-header-humburger__bar').toggleClass('close');
+  });
+});
+
+//各セクション スクロール時の要素の表示
+$(function(){
+  $(window).scroll(function (){
+    $(".section").each(function(){
+      var elemPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll-200 > elemPos - windowHeight){
+        $(this).addClass('show');
+      }
+    });
   });
 });
 

@@ -34,6 +34,22 @@ body {
   margin: 0 auto;
 }
 
+.first-section {
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.section {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: .5s;
+  &.show {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 p {
   @include g.mq(md) {
     font-size: 13px;
@@ -375,6 +391,10 @@ img {
       }
     }
   }
+}
+.slick-next {
+  right: auto;
+  display: none!important;
 }
 
 input[type="date"],

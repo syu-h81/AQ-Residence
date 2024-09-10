@@ -7,8 +7,6 @@
 ---------------------------------*/
 
 .header {
-  position: relative;
-  z-index: 1;
   &-inner {
     display: flex;
     justify-content: space-between;
@@ -42,12 +40,17 @@
     padding: 15px 50px;
     margin-left: 10px;
   }
+  &-menu-btn {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+  }
   &-translate {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: serif;
-    margin-left: 10px;
+    margin-left: 20px;
     span {
       margin: 0 5px;
     }
@@ -108,42 +111,7 @@
   top: 0;
   z-index: 1;
   width: 100%;
-  &__close {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    position: absolute;
-    right: 4%;
-    top: 4%;
-    z-index: 10;
-    @include g.mq(md) {
-      display: none;
-    }
-    &__bar {
-      &::after {
-        content: "";
-        display: block;
-        width: 40px;
-        height: 2px;
-        background-color: #fff;
-      }
-      &__1 {
-        &::after {
-          transform: rotate(45deg);
-        }
-      }
-      &__2 {
-        &::after {
-          display: none;
-        }
-      }
-      &__3 {
-        &::after {
-          transform: rotate(-45deg);
-        }
-      }
-    }
-  }
+  height: 100vh;
   &-inner {
     color: #fff;
     padding: 100px 7%;

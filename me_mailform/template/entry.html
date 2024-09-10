@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>お問い合わせ</title>
+    <link href="./me_mailform/assets/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>お問い合わせ</h1>
+      </div>
+      <div id="error_message"  class="alert alert-danger" role="alert">入力内容に誤りがあります。</div>
+      <form name="me_mailform" action="index.php" method="post" enctype="multipart/form-data">
+        <div class="form-group row">
+          <label for="comment" class="col-sm-3 col-form-label">お問い合わせ内容 <span class="badge badge-danger">必須</span></label>
+          <div class="col-sm-9">
+            <textarea id="comment" name="comment" class="form-control" rows="10"></textarea>
+            <div id="comment_error"  class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="name" class="col-sm-3 col-form-label">お名前 <span class="badge badge-danger">必須</span></label>
+          <div class="col-sm-9">
+            <input type="text" id="name" name="name" class="form-control" placeholder="例）山田 太郎" value="">
+            <div id="name_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="email" class="col-sm-3 col-form-label">メールアドレス <span class="badge badge-danger">必須</span></label>
+          <div class="col-sm-9">
+            <input type="email" id="email" name="email" class="form-control" placeholder="例）info@example.com" value="">
+            <div id="email_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="zipcode" class="col-sm-3 col-form-label">郵便番号</label>
+          <div class="col-sm-4">
+            <div class="input-group">
+              <div class="input-group-prepend"><span class="input-group-text">〒</span></div>
+              <input type="text" id="zipcode" name="zipcode" class="form-control" value="" placeholder="例）1000001">
+              <div id="zipcode_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <input type="button" class="btn btn-info" value="住所を自動入力" onclick="memf.zipAddrRun('zipcode', '', 'addr'); return false;" title="郵便番号から住所を自動入力する">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="addr" class="col-sm-3 col-form-label">住所</label>
+          <div class="col-sm-9">
+            <input type="text" id="addr" name="addr" class="form-control" value="" placeholder="例）東京都千代田区千代田1番1号">
+            <div id="addr_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+<!--
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">ご用件 <span class="badge badge-danger">必須</span></label>
+          <div class="col-sm-9">
+            <div><label><input type="radio" name="purpose" value="お見積依頼">
+              お見積依頼</label></div>
+            <div><label><input type="radio" name="purpose" value="採用情報について">
+              採用情報について</label></div>
+            <div><label><input type="radio" name="purpose" value="その他お問い合わせ">
+              その他お問い合わせ</label></div>
+            <div id="purpose_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="work" class="col-sm-3 col-form-label">ご職業</label>
+          <div class="col-sm-9">
+            <select id="work" name="work" class="form-control">
+              <option value="">選択してください</option>
+              <option value="学生">学生</option>
+              <option value="主婦">主婦</option>
+              <option value="会社員">会社員</option>
+              <option value="会社役員">会社役員</option>
+              <option value="自営業">自営業</option>
+              <option value="公務員">公務員</option>
+              <option value="パート・アルバイト">パート・アルバイト</option>
+              <option value="その他">その他</option>
+            </select>
+            <div id="work_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-sm-3 col-form-label">ご利用用途</label>
+          <div class="col-sm-9">
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="use[]" class="form-check-input" value="お問い合わせフォーム">お問い合わせフォーム</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="use[]" class="form-check-input" value="アンケートフォーム">アンケートフォーム</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="use[]" class="form-check-input" value="求人募集フォーム">求人募集フォーム</label>
+            </div>
+            <div id="use_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="captcha" class="col-sm-3 col-form-label">画像認証 <span class="badge badge-danger">必須</span></label>
+          <div class="col-sm-9">
+            <img src="index.php?captcha" width="150" height="40" title="画像認証">
+            <input id="captcha" type="text" name="captcha" class="form-control" placeholder="画像に表示されている文字を入力してください。">
+            <div id="captcha_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="file" class="col-sm-3 col-form-label">添付ファイル</label>
+          <div class="col-sm-9">
+            <input type="file" id="file" name="file" class="form-control-file" value="">
+            <div id="file_error" class="alert alert-danger" role="alert">エラーメッセージ</div>
+          </div>
+        </div>
+-->
+        <input type="submit" class="btn btn-primary" value="確認画面へ">
+      </form>
+      <p class="text-right"><span id="powered_by_me"></span></p>
+    </div>
+    <script src="./me_mailform/assets/js/memf.js" charset="UTF-8" type="text/javascript"></script>
+  </body>
+</html>

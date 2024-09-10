@@ -154,9 +154,8 @@
               Please fill out the form below so that we can send you information about AQ Residence free of charge.
             </p>
           </div>
-  
           <div class="c-form__inner">
-            <form action="">
+            <form action="index.php" method="post">
               <!-- お客様情報 -->
               <div class="c-form__customer__info__inner c-form__content">
                 <div class="c-form__desc__inner">
@@ -173,7 +172,7 @@
                     </div>
                   </div>
                   <div class="c-form__customer__input__inner">
-                    <input type="text" name="name" value="">
+                    <input type="text" name="name" value="" required>
                   </div>
                 </div>
                 <div class="c-form__customer__name__inner c-form__customer__content__inner">
@@ -182,7 +181,7 @@
                     <span class="require">※必須</span>
                   </div>
                   <div class="c-form__customer__input__inner">
-                    <input type="text" name="yomigana" value="">
+                    <input type="text" name="yomigana" value="" required>
                   </div>
                 </div>
                 <div class="c-form__customer__name__inner c-form__customer__content__inner">
@@ -195,7 +194,7 @@
                     </div>
                   </div>
                   <div class="c-form__customer__input__inner">
-                    <input type="number" name="phone" value="">
+                    <input type="number" name="phone" value="" required>
                   </div>
                 </div>
                 <div class="c-form__customer__name__inner c-form__customer__content__inner">
@@ -208,7 +207,7 @@
                     </div>
                   </div>
                   <div class="c-form__customer__input__inner">
-                    <input type="text" name="email" value="">
+                    <input type="text" name="email" value="" required>
                   </div>
                 </div>
                 <div class="c-form__customer__name__inner c-form__customer__content__inner">
@@ -221,8 +220,8 @@
                     </div>
                   </div>
                   <div class="c-form__customer__input__inner c-form__customer__post__input__inner">
-                    <input type="text" name="post" class="c-form__customer__post__input" value="">
-                    <input type="text" name="post" class="c-form__customer__post__input" placeholder="住所自動入力">
+                    <input type="text" id="zipcode" name="zipcode" class="c-form__customer__post__input" value="" placeholder="例）1000001" required>
+                    <input type="button" class="c-form__customer__post__input" value="住所自動入力" onclick="memf.zipAddrRun('zipcode', '', 'addr'); return false;" title="郵便番号から住所を自動入力する">
                   </div>
                 </div>
                 <div class="c-form__customer__name__inner c-form__customer__content__inner">
@@ -235,7 +234,7 @@
                     </div>
                   </div>
                   <div class="c-form__customer__input__inner">
-                    <input type="text" name="address" value="">
+                    <input type="text" name="address" value="" required>
                   </div>
                 </div>
               </div>
@@ -252,7 +251,7 @@
                 <div class="c-form__architecture__hope__radio__inner">
                   <div class="c-form__architecture__hope__radio c-form__radio">
                     <div class="c-form__architecture__hope__radio__flex c-form__radio__flex">
-                      <input type="radio" name="place">
+                      <input type="radio" name="place" required>
                       <span class="radio-name">東京 - Tokyo</span>
                     </div>
                   </div>
@@ -299,7 +298,7 @@
                 <div class="c-form__architecture__season__radio__inner">
                   <div class="c-form__architecture__season__radio">
                     <div class="c-form__architecture__season__radio__flex c-form__radio__flex">
-                      <input type="radio" name="season">
+                      <input type="radio" name="season" value>
                       <span class="radio-name">今すぐ - Right Now</span>
                     </div>
                   </div>
@@ -348,7 +347,7 @@
                 <div class="c-form__architecture__budget__radio__inner">
                   <div class="c-form__architecture__budget__radio c-form__radio">
                     <div class="c-form__architecture__budget__radio__flex c-form__radio__flex">
-                      <input type="radio" name="budget">
+                      <input type="radio" name="budget" value>
                       <span class="radio-name">4,000～5,000万</span>
                     </div>
                   </div>

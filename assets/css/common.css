@@ -803,6 +803,7 @@ input[type=number] {
   border: 1px solid #040000;
   border-radius: 5px;
   margin-top: 10px;
+  padding: 10px;
 }
 @media screen and (max-width: 835px) {
   input[type=date],
@@ -820,6 +821,20 @@ input[type=checkbox] {
 input[type=radio] {
   width: 20px;
   height: 20px;
+}
+
+input[type=button] {
+  border-radius: 5px;
+  width: 220px;
+  height: 46px;
+  color: #666;
+  margin-top: 10px;
+}
+@media screen and (max-width: 835px) {
+  input[type=button] {
+    width: 100%;
+    font-size: 12px;
+  }
 }
 
 .c-form__inner {

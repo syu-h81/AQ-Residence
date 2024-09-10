@@ -1,0 +1,14 @@
+@use "global" as g;
+
+/*---------------------------------
+
+  thanks お問い合わせ済みページcss
+  
+---------------------------------*/
+.thanks {
+  &__title__inner {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 120px 0;
+  }
+}
